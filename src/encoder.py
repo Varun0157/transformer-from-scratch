@@ -4,7 +4,6 @@ import torch.nn as nn
 from src.utils import TransformerBlock
 
 
-# todo: move encoder and decoder to a different file
 # todo: replace the vocab embedding with torchtext
 class Encoder(nn.Module):
     def __init__(

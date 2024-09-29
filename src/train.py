@@ -1,13 +1,16 @@
+import os
+import time
+
 import torch
 import torch.nn as nn
 from torch.optim.adam import Adam
 from torch.utils.data import Dataset, DataLoader
 from torchtext.data.utils import get_tokenizer
 from torchtext.vocab import build_vocab_from_iterator
+
 from src.config import get_max_length, get_model_path, get_device
 from src.transformer import Transformer
-import os
-import time
+
 
 # Paths
 DATA_HOME = "./data/ted-talks-corpus"
@@ -152,7 +155,7 @@ def main():
         src_pad_idx=en_vocab["<pad>"],
         trg_pad_idx=fr_vocab["<pad>"],
         device=DEVICE,
-        max_length=get_max_length()
+        max_length=get_max_length(),
     ).to(DEVICE)
 
     # Loss and optimizer

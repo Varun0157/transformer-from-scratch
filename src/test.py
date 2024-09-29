@@ -1,15 +1,16 @@
-import torch
-from src.config import get_device, get_max_length, get_model_path
-from src.transformer import Transformer
-from torchtext.data.utils import get_tokenizer
-from nltk.translate.bleu_score import sentence_bleu
-import nltk
 import os
 
-# Download NLTK data for BLEU score calculation
+import torch
+from torchtext.data.utils import get_tokenizer
+import nltk
+from nltk.translate.bleu_score import sentence_bleu
+
+from src.config import get_device, get_max_length, get_model_path
+from src.transformer import Transformer
+
 nltk.download("punkt")
 
-# Paths
+# config details
 DATA_HOME = "./data/ted-talks-corpus"
 TEST_EN = DATA_HOME + "/test.en"
 TEST_FR = DATA_HOME + "/test.fr"
