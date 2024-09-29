@@ -1,3 +1,4 @@
+from math import e
 import os
 import time
 
@@ -55,21 +56,23 @@ class TranslationDataset(Dataset):
     def __len__(self):
         return len(self.en_data)
 
-    def wrap_sentence(self, sentence: str) -> str:
-        return " ".join([self.specials["SOS"], sentence.strip(), self.specials["EOS"]])
+    def create_tokenised_sent(self, line, tokenizer, vocab) -> torch.Tensor:
+        sos_token = vocab[self.specials["SOS"]]
+        eos_token = vocab[self.specials["EOS"]]
 
-    def __getitem__(self, idx):
-        en_text = self.wrap_sentence(self.en_data[idx])
-        fr_text = self.wrap_sentence(self.fr_data[idx])
-
-        en_tensor = torch.tensor(
-            [self.en_vocab[token] for token in en_tokenizer(en_text)]
-        )
-        fr_tensor = torch.tensor(
-            [self.fr_vocab[token] for token in fr_tokenizer(fr_text)]
+        return torch.cat(
+            [
+                torch.tensor([sos_token]),
+                torch.tensor([vocab[token] for token in tokenizer(line.strip())]),
+                torch.tensor([eos_token]),
+            ]
         )
 
-        return en_tensor, fr_tensor
+    def __getitem__(self, idx) -> tuple[torch.Tensor, torch.Tensor]:
+        return (
+            self.create_tokenised_sent(self.en_data[idx], en_tokenizer, self.en_vocab),
+            self.create_tokenised_sent(self.fr_data[idx], fr_tokenizer, self.fr_vocab),
+        )
 
     def collate_fn(self, batch):
         en_batch, fr_batch = zip(*batch)
