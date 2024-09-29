@@ -6,10 +6,11 @@ from torchtext.data.utils import get_tokenizer
 from torchtext.vocab import build_vocab_from_iterator
 from src.transformer import Transformer
 import os
+import time
 
 # Paths
 DATA_HOME = "./data/ted-talks-corpus"
-TRAI_EN, TRAI_FR = DATA_HOME + "/dev.en", DATA_HOME + "/dev.fr"
+TRAI_EN, TRAI_FR = DATA_HOME + "/train.en", DATA_HOME + "/train.fr"
 EVAL_EN, EVAL_FR = DATA_HOME + "/dev.en", DATA_HOME + "/dev.fr"
 MODEL_SAVE_PATH = "transformer_en_fr.pth"
 
@@ -160,11 +161,13 @@ def main():
 
     # Training loop
     for epoch in range(NUM_EPOCHS):
+        start_time = time.time()
         train_loss = train(model, dataloader, optimizer, criterion)
-
         eval_loss = eval(model, dataloader, criterion)
+        epoch_time = time.time() - start_time
+
         print(
-            f"epoch {epoch} -> train loss: {train_loss:.4f}, eval loss: {eval_loss:.4f}"
+            f"epoch {epoch} -> train loss: {train_loss:.4f}, eval loss: {eval_loss:.4f}\ttime: {epoch_time:.2f}s"
         )
 
         if eval_loss >= best_loss:
