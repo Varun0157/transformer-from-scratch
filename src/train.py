@@ -9,8 +9,8 @@ import os
 
 # Paths
 DATA_HOME = "./data/ted-talks-corpus"
-TRAIN_EN = DATA_HOME + "/train.en"
-TRAIN_FR = DATA_HOME + "/train.fr"
+TRAI_EN, TRAI_FR = DATA_HOME + "/train.en", DATA_HOME + "/train.fr"
+EVAL_EN, EVAL_FR = DATA_HOME + "/dev.en", DATA_HOME + "/dev.fr"
 MODEL_SAVE_PATH = "transformer_en_fr.pth"
 
 # Hyperparameters
@@ -73,19 +73,71 @@ def build_vocab(filepath, tokenizer):
     return vocab
 
 
-def train():
+def train(model: Transformer, dataloader: DataLoader, optimizer, criterion):
+    model.train()
+    total_loss = 0
+
+    for _, (en_batch, fr_batch) in enumerate(dataloader):
+        en_batch, fr_batch = en_batch.to(DEVICE), fr_batch.to(DEVICE)
+
+        optimizer.zero_grad()
+        output = model(en_batch, fr_batch[:, :-1])
+
+        output = output.reshape(-1, output.shape[2])
+        fr_batch = fr_batch[:, 1:].reshape(-1)
+
+        loss = criterion(output, fr_batch)
+        loss.backward()
+        optimizer.step()
+
+        total_loss += loss.item()
+
+    avg_loss = total_loss / len(dataloader)
+    return avg_loss
+
+
+def eval(model: Transformer, dataloader: DataLoader, criterion):
+    model.eval()
+    total_loss = 0
+
+    for _, (en_batch, fr_batch) in enumerate(dataloader):
+        en_batch, fr_batch = en_batch.to(DEVICE), fr_batch.to(DEVICE)
+
+        output = model(en_batch, fr_batch[:, :-1])
+
+        output = output.reshape(-1, output.shape[2])
+        fr_batch = fr_batch[:, 1:].reshape(-1)
+
+        loss = criterion(output, fr_batch)
+        total_loss += loss.item()
+
+    avg_loss = total_loss / len(dataloader)
+    return avg_loss
+
+
+def main():
     DEVICE = torch.device("cuda" if torch.cuda.is_available() and False else "cpu")
 
     # Build vocabularies
-    en_vocab = build_vocab(TRAIN_EN, en_tokenizer)
+    en_vocab = build_vocab(TRAI_EN, en_tokenizer)
     print("english vocab size : ", len(en_vocab))
-    fr_vocab = build_vocab(TRAIN_FR, fr_tokenizer)
+    fr_vocab = build_vocab(TRAI_FR, fr_tokenizer)
     print("french vocab size : ", len(fr_vocab))
+
+    def save_model(model, en_vocab=en_vocab, fr_vocab=fr_vocab):
+        torch.save(
+            {
+                "model_state_dict": model.state_dict(),
+                "en_vocab": en_vocab,
+                "fr_vocab": fr_vocab,
+            },
+            MODEL_SAVE_PATH,
+        )
 
     os.system("cls || clear")
 
     # Create dataset and dataloader
-    dataset = TranslationDataset(TRAIN_EN, TRAIN_FR, en_vocab, fr_vocab)
+    dataset = TranslationDataset(TRAI_EN, TRAI_FR, en_vocab, fr_vocab)
     dataloader = DataLoader(
         dataset,
         batch_size=BATCH_SIZE,
@@ -106,47 +158,26 @@ def train():
     criterion = nn.CrossEntropyLoss(ignore_index=fr_vocab["<pad>"])
     optimizer = Adam(model.parameters(), lr=LEARNING_RATE)
 
+    best_loss = float("inf")
+
     # Training loop
     for epoch in range(NUM_EPOCHS):
         print(f"epoch {epoch+1}/{NUM_EPOCHS}")
 
-        model.train()
-        total_loss = 0
+        train_loss = train(model, dataloader, optimizer, criterion)
 
-        for batch_idx, (en_batch, fr_batch) in enumerate(dataloader):
-            en_batch, fr_batch = en_batch.to(DEVICE), fr_batch.to(DEVICE)
+        eval_loss = eval(model, dataloader, criterion)
+        print(
+            f"epoch {epoch} -> train loss: {train_loss:.4f}, eval loss: {eval_loss:.4f}"
+        )
 
-            optimizer.zero_grad()
-            output = model(en_batch, fr_batch[:, :-1])
+        if eval_loss >= best_loss:
+            continue
 
-            output = output.reshape(-1, output.shape[2])
-            fr_batch = fr_batch[:, 1:].reshape(-1)
-
-            loss = criterion(output, fr_batch)
-            loss.backward()
-            optimizer.step()
-
-            total_loss += loss.item()
-
-            if batch_idx % 20 == 0 or batch_idx + 1 == len(dataloader):
-                print(
-                    f"\t\tstep [{batch_idx + 1}/{len(dataloader)}] -> loss: {loss.item():.4f}"
-                )
-
-        avg_loss = total_loss / len(dataloader)
-        print(f"\average loss : {avg_loss:.4f}")
-
-    # Save the model
-    torch.save(
-        {
-            "model_state_dict": model.state_dict(),
-            "en_vocab": en_vocab,
-            "fr_vocab": fr_vocab,
-        },
-        MODEL_SAVE_PATH,
-    )
-    print(f"Model saved to {MODEL_SAVE_PATH}")
+        best_loss = eval_loss
+        save_model(model)
+        print(f"\tmodel saved with loss: {best_loss:.4f}")
 
 
 if __name__ == "__main__":
-    train()
+    main()
