@@ -4,6 +4,7 @@ from torch.optim.adam import Adam
 from torch.utils.data import Dataset, DataLoader
 from torchtext.data.utils import get_tokenizer
 from torchtext.vocab import build_vocab_from_iterator
+from src.config import get_max_length, get_model_path, get_device
 from src.transformer import Transformer
 import os
 import time
@@ -12,13 +13,13 @@ import time
 DATA_HOME = "./data/ted-talks-corpus"
 TRAI_EN, TRAI_FR = DATA_HOME + "/train.en", DATA_HOME + "/train.fr"
 EVAL_EN, EVAL_FR = DATA_HOME + "/dev.en", DATA_HOME + "/dev.fr"
-MODEL_SAVE_PATH = "transformer_en_fr.pth"
+MODEL_SAVE_PATH = get_model_path()
 
 # Hyperparameters
 BATCH_SIZE = 4
 NUM_EPOCHS = 10
 LEARNING_RATE = 1e-4
-DEVICE = torch.device("cuda" if torch.cuda.is_available() and False else "cpu")
+DEVICE = get_device()
 
 # Tokenizers
 en_tokenizer = get_tokenizer("spacy", language="en_core_web_sm")
@@ -151,6 +152,7 @@ def main():
         src_pad_idx=en_vocab["<pad>"],
         trg_pad_idx=fr_vocab["<pad>"],
         device=DEVICE,
+        max_length=get_max_length()
     ).to(DEVICE)
 
     # Loss and optimizer

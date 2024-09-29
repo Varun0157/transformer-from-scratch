@@ -1,4 +1,5 @@
 import torch
+from src.config import get_device, get_max_length, get_model_path
 from src.transformer import Transformer
 from torchtext.data.utils import get_tokenizer
 from nltk.translate.bleu_score import sentence_bleu
@@ -12,10 +13,10 @@ nltk.download("punkt")
 DATA_HOME = "./data/ted-talks-corpus"
 TEST_EN = DATA_HOME + "/test.en"
 TEST_FR = DATA_HOME + "/test.fr"
-MODEL_LOAD_PATH = "transformer_en_fr.pth"
+MODEL_LOAD_PATH = get_model_path()
 OUTPUT_FILE = "translations_with_bleu.txt"
 
-DEVICE = torch.device("cuda" if torch.cuda.is_available() and False else "cpu")
+DEVICE = get_device()
 
 
 def load_model():
@@ -38,7 +39,7 @@ def load_model():
 
 
 def translate_sentence(
-    model, sentence, en_vocab, fr_vocab, en_tokenizer, max_length=750
+    model, sentence, en_vocab, fr_vocab, en_tokenizer, max_length=get_max_length()
 ):
     model.eval()
 
@@ -72,6 +73,7 @@ def calculate_bleu(reference, hypothesis):
     return sentence_bleu([reference.split()], hypothesis.split())
 
 
+# todo: can make this faster by reading in batches probably
 def main():
     en_tokenizer = get_tokenizer("spacy", language="en_core_web_sm")
 
