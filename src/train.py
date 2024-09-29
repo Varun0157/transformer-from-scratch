@@ -22,7 +22,21 @@ MODEL_SAVE_PATH = get_model_path()
 BATCH_SIZE = 4
 NUM_EPOCHS = 10
 LEARNING_RATE = 1e-4
+NUM_LAYERS = 3
+NUM_HEADS = 2
+EMB_DIM = 240
 DEVICE = get_device()
+
+
+def print_hyperparams() -> None:
+    print("Hyperparameters:")
+    print(f"- device:         {DEVICE}")
+    print(f"- learning rate:  {LEARNING_RATE}")
+    print(f"- num layers:     {NUM_LAYERS}")
+    print(f"- num heads:      {NUM_HEADS}")
+    print(f"- embedding dim:  {EMB_DIM}")
+    print()
+
 
 # Tokenizers
 en_tokenizer = get_tokenizer("spacy", language="en_core_web_sm")
@@ -138,6 +152,7 @@ def main():
         )
 
     os.system("cls || clear")
+    print_hyperparams()
 
     # Create dataset and dataloader
     dataset = TranslationDataset(TRAI_EN, TRAI_FR, en_vocab, fr_vocab)
@@ -158,13 +173,18 @@ def main():
         max_length=get_max_length(),
     ).to(DEVICE)
 
-    # Loss and optimizer
+    # loss and optimizer
     criterion = nn.CrossEntropyLoss(ignore_index=fr_vocab["<pad>"])
     optimizer = Adam(model.parameters(), lr=LEARNING_RATE)
+    print("Details:")
+    print(f"- batch size:   {BATCH_SIZE}")
+    print(f"- criterion:    {criterion}")
+    print(f"- optimizer:    {optimizer}")
+    print()
 
     best_loss = float("inf")
 
-    # Training loop
+    # training loop
     for epoch in range(NUM_EPOCHS):
         start_time = time.time()
         train_loss = train(model, dataloader, optimizer, criterion)
@@ -181,6 +201,8 @@ def main():
         best_loss = eval_loss
         save_model(model)
         print(f"\tmodel saved with loss: {best_loss:.4f}")
+
+    print("\ntraining complete.")
 
 
 if __name__ == "__main__":
