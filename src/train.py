@@ -56,22 +56,20 @@ class TranslationDataset(Dataset):
     def __len__(self):
         return len(self.en_data)
 
-    def create_tokenised_sent(self, line, tokenizer, vocab) -> torch.Tensor:
-        sos_token = vocab[self.specials["SOS"]]
-        eos_token = vocab[self.specials["EOS"]]
+    def create_sentence_rep(self, line, tokenizer, vocab) -> torch.Tensor:
+        sos_ind = vocab[self.specials["SOS"]]
+        eos_ind = vocab[self.specials["EOS"]]
 
-        return torch.cat(
-            [
-                torch.tensor([sos_token]),
-                torch.tensor([vocab[token] for token in tokenizer(line.strip())]),
-                torch.tensor([eos_token]),
-            ]
+        return torch.tensor(
+            data=[sos_ind]
+            + [vocab[token] for token in tokenizer(line.strip())]
+            + [eos_ind]
         )
 
     def __getitem__(self, idx) -> tuple[torch.Tensor, torch.Tensor]:
         return (
-            self.create_tokenised_sent(self.en_data[idx], en_tokenizer, self.en_vocab),
-            self.create_tokenised_sent(self.fr_data[idx], fr_tokenizer, self.fr_vocab),
+            self.create_sentence_rep(self.en_data[idx], en_tokenizer, self.en_vocab),
+            self.create_sentence_rep(self.fr_data[idx], fr_tokenizer, self.fr_vocab),
         )
 
     def collate_fn(self, batch):
@@ -189,8 +187,8 @@ def main():
     optimizer = Adam(model.parameters(), lr=LEARNING_RATE)
     print("Details:")
     print(f"- batch size:   {BATCH_SIZE}")
-    print(f"- criterion:    {criterion}")
-    print(f"- optimizer:    {optimizer}")
+    print(f"- criterion:    {type(criterion)}")
+    print(f"- optimizer:    {type(optimizer)}")
     print()
 
     best_loss = float("inf")
