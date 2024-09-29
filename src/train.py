@@ -14,9 +14,9 @@ TRAIN_FR = DATA_HOME + "/train.fr"
 MODEL_SAVE_PATH = "transformer_en_fr.pth"
 
 # Hyperparameters
-BATCH_SIZE = 32
+BATCH_SIZE = 4
 NUM_EPOCHS = 10
-LEARNING_RATE = 0.0001
+LEARNING_RATE = 1e-4
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Tokenizers

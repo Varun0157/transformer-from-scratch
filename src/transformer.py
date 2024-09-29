@@ -12,13 +12,13 @@ class Transformer(nn.Module):
         trg_vocab_size,
         src_pad_idx,
         trg_pad_idx,
-        embed_size=256,
-        num_layers=6,
+        embed_size=240,
+        num_layers=3,
         forward_expansion=4,
-        heads=8,
+        heads=3,
         dropout=0.2,
         device: torch.device = torch.device("cpu"),
-        max_length=1000,  # todo: check
+        max_length=750,  # todo: check
     ):
         super(Transformer, self).__init__()
 
