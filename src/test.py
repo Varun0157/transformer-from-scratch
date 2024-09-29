@@ -100,10 +100,10 @@ def main():
             )
             bleu_score = calculate_bleu(fr_sentence, translation)
 
-            out_file.write(f"Source: {en_sentence}\n")
-            out_file.write(f"Target: {fr_sentence}\n")
-            out_file.write(f"Translation: {translation}\n")
-            out_file.write(f"BLEU Score: {bleu_score:.4f}\n\n")
+            out_file.write(f"Source:        {en_sentence}\n")
+            out_file.write(f"Target:        {fr_sentence}\n")
+            out_file.write(f"Translation:   {translation}\n")
+            out_file.write(f"BLEU Score:    {bleu_score:.4f}\n\n")
 
             print(f"score: {bleu_score:.4f} for sentence: {en_sentence}")
 
