@@ -1,19 +1,22 @@
 import torch
-from transformer import Transformer
+from src.transformer import Transformer
 from torchtext.data.utils import get_tokenizer
 from nltk.translate.bleu_score import sentence_bleu
 import nltk
+import os
 
 # Download NLTK data for BLEU score calculation
 nltk.download("punkt")
 
 # Paths
-TEST_EN = "data/test-en.txt"
-TEST_FR = "data/test-fr.txt"
+DATA_HOME = "./data/ted-talks-corpus"
+TEST_EN = DATA_HOME + "/test.en"
+TEST_FR = DATA_HOME + "/test.fr"
 MODEL_LOAD_PATH = "transformer_en_fr.pth"
 OUTPUT_FILE = "translations_with_bleu.txt"
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() and False else "cpu")
+
 
 def load_model():
     checkpoint = torch.load(MODEL_LOAD_PATH)
@@ -74,6 +77,8 @@ def main():
 
     model, en_vocab, fr_vocab = load_model()
 
+    os.system("cls || clear")
+
     with open(TEST_EN, "r", encoding="utf-8") as en_file, open(
         TEST_FR, "r", encoding="utf-8"
     ) as fr_file, open(OUTPUT_FILE, "w", encoding="utf-8") as out_file:
@@ -92,9 +97,7 @@ def main():
             out_file.write(f"Translation: {translation}\n")
             out_file.write(f"BLEU Score: {bleu_score:.4f}\n\n")
 
-            print(f"Processed: {en_sentence}")
-            print(f"BLEU Score: {bleu_score:.4f}")
-            print()
+            print(f"score: {bleu_score:.4f} for sentence: {en_sentence}")
 
 
 if __name__ == "__main__":

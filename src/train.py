@@ -9,7 +9,7 @@ import os
 
 # Paths
 DATA_HOME = "./data/ted-talks-corpus"
-TRAI_EN, TRAI_FR = DATA_HOME + "/train.en", DATA_HOME + "/train.fr"
+TRAI_EN, TRAI_FR = DATA_HOME + "/dev.en", DATA_HOME + "/dev.fr"
 EVAL_EN, EVAL_FR = DATA_HOME + "/dev.en", DATA_HOME + "/dev.fr"
 MODEL_SAVE_PATH = "transformer_en_fr.pth"
 
