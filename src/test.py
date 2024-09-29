@@ -13,8 +13,7 @@ TEST_FR = "data/test-fr.txt"
 MODEL_LOAD_PATH = "transformer_en_fr.pth"
 OUTPUT_FILE = "translations_with_bleu.txt"
 
-DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
+DEVICE = torch.device("cuda" if torch.cuda.is_available() and False else "cpu")
 
 def load_model():
     checkpoint = torch.load(MODEL_LOAD_PATH)

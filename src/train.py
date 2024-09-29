@@ -17,7 +17,7 @@ MODEL_SAVE_PATH = "transformer_en_fr.pth"
 BATCH_SIZE = 4
 NUM_EPOCHS = 10
 LEARNING_RATE = 1e-4
-DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+DEVICE = torch.device("cuda" if torch.cuda.is_available() and False else "cpu")
 
 # Tokenizers
 en_tokenizer = get_tokenizer("spacy", language="en_core_web_sm")
@@ -116,8 +116,6 @@ def eval(model: Transformer, dataloader: DataLoader, criterion):
 
 
 def main():
-    DEVICE = torch.device("cuda" if torch.cuda.is_available() and False else "cpu")
-
     # Build vocabularies
     en_vocab = build_vocab(TRAI_EN, en_tokenizer)
     print("english vocab size : ", len(en_vocab))
@@ -162,8 +160,6 @@ def main():
 
     # Training loop
     for epoch in range(NUM_EPOCHS):
-        print(f"epoch {epoch+1}/{NUM_EPOCHS}")
-
         train_loss = train(model, dataloader, optimizer, criterion)
 
         eval_loss = eval(model, dataloader, criterion)
