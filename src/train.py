@@ -8,7 +8,7 @@ from torch.utils.data import Dataset, DataLoader
 from torchtext.data.utils import get_tokenizer
 from torchtext.vocab import build_vocab_from_iterator
 
-from src.config import get_max_length, get_model_path, get_device
+from src.config import get_max_length, get_model_path, get_device, get_special_tokens
 from src.transformer import Transformer
 
 
@@ -50,12 +50,17 @@ class TranslationDataset(Dataset):
         self.en_vocab = en_vocab
         self.fr_vocab = fr_vocab
 
+        self.specials = get_special_tokens()
+
     def __len__(self):
         return len(self.en_data)
 
+    def wrap_sentence(self, sentence: str) -> str:
+        return " ".join([self.specials["SOS"], sentence.strip(), self.specials["EOS"]])
+
     def __getitem__(self, idx):
-        en_text = self.en_data[idx].strip()
-        fr_text = self.fr_data[idx].strip()
+        en_text = self.wrap_sentence(self.en_data[idx])
+        fr_text = self.wrap_sentence(self.fr_data[idx])
 
         en_tensor = torch.tensor(
             [self.en_vocab[token] for token in en_tokenizer(en_text)]
@@ -69,11 +74,12 @@ class TranslationDataset(Dataset):
     def collate_fn(self, batch):
         en_batch, fr_batch = zip(*batch)
 
+        PAD = self.specials["PAD"]
         en_batch = nn.utils.rnn.pad_sequence(
-            en_batch, padding_value=self.en_vocab["<pad>"], batch_first=True
+            en_batch, padding_value=self.en_vocab[PAD], batch_first=True
         )
         fr_batch = nn.utils.rnn.pad_sequence(
-            fr_batch, padding_value=self.fr_vocab["<pad>"], batch_first=True
+            fr_batch, padding_value=self.fr_vocab[PAD], batch_first=True
         )
 
         return en_batch, fr_batch
@@ -85,10 +91,11 @@ def build_vocab(filepath, tokenizer):
             for line in f:
                 yield tokenizer(line.strip())
 
+    token_dict = get_special_tokens()
     vocab = build_vocab_from_iterator(
-        yield_tokens(filepath), specials=["<unk>", "<pad>", "<sos>", "<eos>"]
+        yield_tokens(filepath), specials=[val for val in token_dict.values()]
     )
-    vocab.set_default_index(vocab["<unk>"])
+    vocab.set_default_index(vocab[token_dict["UNK"]])
     return vocab
 
 
@@ -164,17 +171,18 @@ def main():
     )
 
     # Initialize model
+    PAD = get_special_tokens()["PAD"]
     model = Transformer(
         src_vocab_size=len(en_vocab),
         trg_vocab_size=len(fr_vocab),
-        src_pad_idx=en_vocab["<pad>"],
-        trg_pad_idx=fr_vocab["<pad>"],
+        src_pad_idx=en_vocab[PAD],
+        trg_pad_idx=fr_vocab[PAD],
         device=DEVICE,
         max_length=get_max_length(),
     ).to(DEVICE)
 
     # loss and optimizer
-    criterion = nn.CrossEntropyLoss(ignore_index=fr_vocab["<pad>"])
+    criterion = nn.CrossEntropyLoss(ignore_index=fr_vocab[PAD])
     optimizer = Adam(model.parameters(), lr=LEARNING_RATE)
     print("Details:")
     print(f"- batch size:   {BATCH_SIZE}")

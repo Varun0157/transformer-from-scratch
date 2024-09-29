@@ -11,3 +11,12 @@ def get_model_path():
 
 def get_max_length():
     return 750
+
+
+def get_special_tokens():
+    return {
+        "PAD": "<pad>",
+        "SOS": "<sos>",
+        "EOS": "<eos>",
+        "UNK": "<unk>",
+    }

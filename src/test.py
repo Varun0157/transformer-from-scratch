@@ -5,7 +5,7 @@ from torchtext.data.utils import get_tokenizer
 import nltk
 from nltk.translate.bleu_score import sentence_bleu
 
-from src.config import get_device, get_max_length, get_model_path
+from src.config import get_device, get_max_length, get_model_path, get_special_tokens
 from src.transformer import Transformer
 
 nltk.download("punkt")
@@ -25,11 +25,12 @@ def load_model():
     en_vocab = checkpoint["en_vocab"]
     fr_vocab = checkpoint["fr_vocab"]
 
+    special_tokens = get_special_tokens()
     model = Transformer(
         src_vocab_size=len(en_vocab),
         trg_vocab_size=len(fr_vocab),
-        src_pad_idx=en_vocab["<pad>"],
-        trg_pad_idx=fr_vocab["<pad>"],
+        src_pad_idx=en_vocab[special_tokens["PAD"]],
+        trg_pad_idx=fr_vocab[special_tokens["PAD"]],
         device=DEVICE,
     ).to(DEVICE)
 
@@ -44,7 +45,11 @@ def translate_sentence(
 ):
     model.eval()
 
-    tokens = ["<sos>"] + en_tokenizer(sentence) + ["<eos>"]
+    start_of_sent, end_of_sent = (
+        get_special_tokens()["SOS"],
+        get_special_tokens()["EOS"],
+    )
+    tokens = [start_of_sent] + en_tokenizer(sentence) + [end_of_sent]
     src_indexes = [en_vocab[token] for token in tokens]
     src_tensor = torch.LongTensor(src_indexes).unsqueeze(0).to(DEVICE)
 
@@ -52,7 +57,7 @@ def translate_sentence(
 
     enc_src = model.encoder(src_tensor, src_mask)
 
-    trg_indexes = [fr_vocab["<sos>"]]
+    trg_indexes = [fr_vocab[start_of_sent]]
 
     for _ in range(max_length):
         trg_tensor = torch.LongTensor(trg_indexes).unsqueeze(0).to(DEVICE)
@@ -67,7 +72,7 @@ def translate_sentence(
             break
 
     trg_tokens = [fr_vocab.get_itos()[i] for i in trg_indexes]
-    return " ".join(trg_tokens[1:-1])  # Remove <sos> and <eos>
+    return " ".join(trg_tokens[1:-1])  # Remove SOS and EOS
 
 
 def calculate_bleu(reference, hypothesis):
