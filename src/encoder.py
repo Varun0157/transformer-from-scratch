@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-from src.utils import TransformerBlock
+from src.utils import PositionalEncoding, TransformerBlock
 
 
 # todo: replace the vocab embedding with torchtext
@@ -23,7 +23,7 @@ class Encoder(nn.Module):
         self.word_embedding = nn.Embedding(src_vocab_size, embed_size)
 
         # todo: replace with sinusoidal positional encoding
-        self.position_embedding = nn.Embedding(max_length, embed_size)
+        self.with_positional_encoding = PositionalEncoding(embed_size, max_length)
 
         self.layers = nn.ModuleList(
             [
@@ -35,10 +35,7 @@ class Encoder(nn.Module):
         self.dropout = nn.Dropout(dropout)
 
     def forward(self, x, mask):
-        N, seq_length = x.shape
-        positions = torch.arange(0, seq_length).expand(N, seq_length).to(self.device)
-
-        out = self.dropout(self.word_embedding(x) + self.position_embedding(positions))
+        out = self.dropout(self.with_positional_encoding(self.word_embedding(x)))
 
         for layer in self.layers:
             out = layer(out, out, out, mask)
