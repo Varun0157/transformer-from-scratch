@@ -40,6 +40,8 @@ class Decoder(nn.Module):
         self.word_embedding = nn.Embedding(trg_vocab_size, embed_size)
         self.with_positional_embedding = PositionalEncoding(embed_size, max_length)
 
+        self.dropout = nn.Dropout(dropout)
+
         self.layers = nn.ModuleList(
             [
                 DecoderBlock(embed_size, heads, forward_expansion, dropout)
@@ -48,7 +50,7 @@ class Decoder(nn.Module):
         )
 
         self.fc_out = nn.Linear(embed_size, trg_vocab_size)
-        self.dropout = nn.Dropout(dropout)
+        self.softmax = nn.LogSoftmax(dim=-1)
 
     def forward(self, x, enc_out, src_mask, trg_mask):
         x = self.dropout(self.with_positional_embedding(self.word_embedding(x)))
@@ -58,4 +60,4 @@ class Decoder(nn.Module):
 
         out = self.fc_out(x)
 
-        return out
+        return self.softmax(out)
