@@ -13,7 +13,7 @@ class SelfAttention(nn.Module):
         self.heads = heads
         assert (
             self.embed_size % self.heads
-        ) == 0, "[SelfAttention::init] embed size needs to be divisible by heads"
+        ) == 0, "[SelfAttention::__init__] embed size needs to be divisible by heads"
 
         self.head_dim = embed_size // heads
 

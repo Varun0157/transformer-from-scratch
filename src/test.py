@@ -42,7 +42,7 @@ def load_model():
 
 def translate_sentence(
     model, sentence, en_vocab, fr_vocab, en_tokenizer, max_length=get_max_length()
-):
+) -> list[str]:
     model.eval()
 
     start_of_sent, end_of_sent = (
@@ -68,22 +68,28 @@ def translate_sentence(
 
         trg_indexes.append(pred_token)
 
-        if pred_token == fr_vocab["<eos>"]:
+        if pred_token == fr_vocab[end_of_sent]:
             break
 
     trg_tokens = [fr_vocab.get_itos()[i] for i in trg_indexes]
-    return " ".join(trg_tokens[1:-1])  # Remove SOS and EOS
+    return trg_tokens
 
 
 def calculate_bleu(reference, hypothesis):
-    return sentence_bleu([reference.split()], hypothesis.split())
+    return sentence_bleu([reference], hypothesis)
 
 
 # todo: can make this faster by reading in batches probably
 def main():
     en_tokenizer = get_tokenizer("spacy", language="en_core_web_sm")
+    fr_tokenizer = get_tokenizer("spacy", language="fr_core_news_sm")
 
     model, en_vocab, fr_vocab = load_model()
+
+    start_of_sent, end_of_sent = (
+        get_special_tokens()["SOS"],
+        get_special_tokens()["EOS"],
+    )
 
     os.system("cls || clear")
 
@@ -91,18 +97,19 @@ def main():
         TEST_FR, "r", encoding="utf-8"
     ) as fr_file, open(OUTPUT_FILE, "w", encoding="utf-8") as out_file:
 
-        for en_sentence, fr_sentence in zip(en_file, fr_file):
-            en_sentence = en_sentence.strip()
-            fr_sentence = fr_sentence.strip()
-
-            translation = translate_sentence(
-                model, en_sentence, en_vocab, fr_vocab, en_tokenizer
+        for en_sentence, fr_tokens in zip(en_file, fr_file):
+            fr_tokens = (
+                [start_of_sent] + fr_tokenizer(fr_tokens.strip()) + [end_of_sent]
             )
-            bleu_score = calculate_bleu(fr_sentence, translation)
+
+            tr_tokens = translate_sentence(
+                model, en_sentence.strip(), en_vocab, fr_vocab, en_tokenizer
+            )
+            bleu_score = calculate_bleu(fr_tokens, tr_tokens)
 
             out_file.write(f"Source:        {en_sentence}\n")
-            out_file.write(f"Target:        {fr_sentence}\n")
-            out_file.write(f"Translation:   {translation}\n")
+            out_file.write(f"Target:        {fr_tokens}\n")
+            out_file.write(f"Translation:   {tr_tokens}\n")
             out_file.write(f"BLEU Score:    {bleu_score:.4f}\n\n")
 
             print(f"score: {bleu_score:.4f} for sentence: {en_sentence}")
