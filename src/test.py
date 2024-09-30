@@ -76,8 +76,8 @@ def translate_sentence(
 
 
 def calculate_bleu(reference, hypothesis):
-    smo_fun = SmoothingFunction().method1
-    return sentence_bleu([reference], hypothesis, smoothing_function=smo_fun)
+    smo_func = SmoothingFunction()
+    return sentence_bleu([reference], hypothesis, smoothing_function=smo_func.method1)
 
 
 # todo: can make this faster by reading in batches probably

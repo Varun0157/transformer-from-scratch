@@ -21,11 +21,12 @@ MODEL_SAVE_PATH = get_model_path()
 # Hyperparameters
 BATCH_SIZE = 4
 NUM_EPOCHS = 10
-LEARNING_RATE = 1e-4
+LEARNING_RATE = 5e-4
 NUM_LAYERS = 3
 NUM_HEADS = 2
 EMB_DIM = 240
 DEVICE = get_device()
+DROPOUT = 0.3
 
 
 def print_hyperparams() -> None:
@@ -35,6 +36,7 @@ def print_hyperparams() -> None:
     print(f"- num layers:     {NUM_LAYERS}")
     print(f"- num heads:      {NUM_HEADS}")
     print(f"- embedding dim:  {EMB_DIM}")
+    print(f"- dropout:        {DROPOUT}")
     print()
 
 
@@ -100,6 +102,7 @@ def build_vocab(filepath, tokenizer):
 
 
 def train(model: Transformer, dataloader: DataLoader, optimizer, criterion):
+    num_items = len(dataloader.dataset) # type: ignore
     model.train()
     total_loss = 0
 
@@ -107,10 +110,10 @@ def train(model: Transformer, dataloader: DataLoader, optimizer, criterion):
         en_batch, fr_batch = en_batch.to(DEVICE), fr_batch.to(DEVICE)
 
         optimizer.zero_grad()
-        output = model(en_batch, fr_batch[:, :-1])
+        output = model(en_batch, fr_batch[:, :-1])  # Exclude last token for input
 
         output = output.reshape(-1, output.shape[2])
-        fr_batch = fr_batch[:, 1:].reshape(-1)
+        fr_batch = fr_batch[:, 1:].reshape(-1)  # Exclude first token for target
 
         loss = criterion(output, fr_batch)
         loss.backward()
@@ -118,26 +121,27 @@ def train(model: Transformer, dataloader: DataLoader, optimizer, criterion):
 
         total_loss += loss.item()
 
-    avg_loss = total_loss / len(dataloader)
+    avg_loss = total_loss / num_items
     return avg_loss
 
 
 def eval(model: Transformer, dataloader: DataLoader, criterion):
+    num_items = len(dataloader.dataset) # type: ignore
     model.eval()
     total_loss = 0
 
     for _, (en_batch, fr_batch) in enumerate(dataloader):
         en_batch, fr_batch = en_batch.to(DEVICE), fr_batch.to(DEVICE)
 
-        output = model(en_batch, fr_batch[:, :-1])
+        output = model(en_batch, fr_batch[:, :-1])  # Exclude last token for input
 
         output = output.reshape(-1, output.shape[2])
-        fr_batch = fr_batch[:, 1:].reshape(-1)
+        fr_batch = fr_batch[:, 1:].reshape(-1)  # Exclude first token for target
 
         loss = criterion(output, fr_batch)
         total_loss += loss.item()
 
-    avg_loss = total_loss / len(dataloader)
+    avg_loss = total_loss / num_items
     return avg_loss
 
 
@@ -162,12 +166,20 @@ def main():
     print_hyperparams()
 
     # Create dataset and dataloader
-    dataset = TranslationDataset(TRAI_EN, TRAI_FR, en_vocab, fr_vocab)
-    dataloader = DataLoader(
-        dataset,
+    train_dataset = TranslationDataset(TRAI_EN, TRAI_FR, en_vocab, fr_vocab)
+    train_loader = DataLoader(
+        train_dataset,
         batch_size=BATCH_SIZE,
         shuffle=True,
-        collate_fn=dataset.collate_fn,
+        collate_fn=train_dataset.collate_fn,
+    )
+    
+    eval_dataset = TranslationDataset(EVAL_EN, EVAL_FR, en_vocab, fr_vocab)
+    eval_loader = DataLoader(
+        eval_dataset,
+        batch_size=BATCH_SIZE,
+        shuffle=True,
+        collate_fn=eval_dataset.collate_fn
     )
 
     # Initialize model
@@ -179,10 +191,11 @@ def main():
         trg_pad_idx=fr_vocab[PAD],
         device=DEVICE,
         max_length=get_max_length(),
+        dropout=DROPOUT,
     ).to(DEVICE)
 
     # loss and optimizer
-    criterion = nn.CrossEntropyLoss(ignore_index=fr_vocab[PAD])
+    criterion = nn.CrossEntropyLoss(ignore_index=fr_vocab[PAD], reduction="sum")
     optimizer = Adam(model.parameters(), lr=LEARNING_RATE)
     print("Details:")
     print(f"- batch size:   {BATCH_SIZE}")
@@ -195,8 +208,8 @@ def main():
     # training loop
     for epoch in range(NUM_EPOCHS):
         start_time = time.time()
-        train_loss = train(model, dataloader, optimizer, criterion)
-        eval_loss = eval(model, dataloader, criterion)
+        train_loss = train(model, train_loader, optimizer, criterion)
+        eval_loss = eval(model, eval_loader, criterion)
         epoch_time = time.time() - start_time
 
         print(
@@ -208,7 +221,7 @@ def main():
 
         best_loss = eval_loss
         save_model(model)
-        print(f"\tmodel saved with loss: {best_loss:.4f}")
+        print(f"\tmodel saved")
 
     print("\ntraining complete.")
 
