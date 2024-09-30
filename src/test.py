@@ -3,7 +3,7 @@ import os
 import torch
 from torchtext.data.utils import get_tokenizer
 import nltk
-from nltk.translate.bleu_score import sentence_bleu
+from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 
 from src.config import get_device, get_max_length, get_model_path, get_special_tokens
 from src.transformer import Transformer
@@ -76,7 +76,8 @@ def translate_sentence(
 
 
 def calculate_bleu(reference, hypothesis):
-    return sentence_bleu([reference], hypothesis)
+    smo_fun = SmoothingFunction().method1
+    return sentence_bleu([reference], hypothesis, smoothing_function=smo_fun)
 
 
 # todo: can make this faster by reading in batches probably
