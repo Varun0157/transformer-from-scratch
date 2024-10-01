@@ -1,3 +1,5 @@
+import sys
+
 import torchtext
 
 torchtext.disable_torchtext_deprecation_warning()
@@ -7,7 +9,13 @@ from torchtext.data.utils import get_tokenizer
 import nltk
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 
-from src.config import get_device, get_max_length, get_model_path, get_special_tokens
+from src.config import (
+    get_device,
+    get_max_length,
+    get_model_path,
+    get_special_tokens,
+    get_hyper_details,
+)
 from src.transformer import Transformer
 
 nltk.download("punkt")
@@ -16,13 +24,12 @@ nltk.download("punkt")
 DATA_HOME = "./data/ted-talks-corpus/clean"
 TEST_EN = DATA_HOME + "/test.en"
 TEST_FR = DATA_HOME + "/test.fr"
-MODEL_LOAD_PATH = get_model_path()
-OUTPUT_FILE = "translations_with_bleu.txt"
+OUTPUT_FILE = "translations_with_bleu"
 
 DEVICE = get_device()
 
 
-def load_model():
+def load_model(MODEL_LOAD_PATH):
     checkpoint = torch.load(MODEL_LOAD_PATH)
     en_vocab = checkpoint["en_vocab"]
     fr_vocab = checkpoint["fr_vocab"]
@@ -45,7 +52,14 @@ def load_model():
     model.load_state_dict(checkpoint["model_state_dict"])
     model.eval()
 
-    return model, en_vocab, fr_vocab
+    hyper_details = get_hyper_details(
+        hyperparams["dropout"],
+        hyperparams["emb_dim"],
+        hyperparams["num_layers"],
+        hyperparams["num_heads"],
+    )
+
+    return model, en_vocab, fr_vocab, hyper_details
 
 
 def translate_sentence(
@@ -91,20 +105,21 @@ def calculate_bleu(reference, hypothesis) -> float:
 
 
 # todo: can make this faster by reading in batches probably
-def main():
+def test(MODEL_LOAD_PATH):
     en_tokenizer = get_tokenizer("spacy", language="en_core_web_sm")
     fr_tokenizer = get_tokenizer("spacy", language="fr_core_news_sm")
 
-    model, en_vocab, fr_vocab = load_model()
+    model, en_vocab, fr_vocab, hyper_details = load_model(MODEL_LOAD_PATH)
 
     start_of_sent, end_of_sent = (
         get_special_tokens()["SOS"],
         get_special_tokens()["EOS"],
     )
 
+    output_path = OUTPUT_FILE + "-" + hyper_details + ".txt"
     with open(TEST_EN, "r", encoding="utf-8") as en_file, open(
         TEST_FR, "r", encoding="utf-8"
-    ) as fr_file, open(OUTPUT_FILE, "w", encoding="utf-8") as out_file:
+    ) as fr_file, open(output_path, "w", encoding="utf-8") as out_file:
         num_sent = 0
         total_bleu = 0
 
@@ -134,6 +149,18 @@ def main():
         assert num_sent != 0
         avg_bleu = total_bleu / num_sent
         write_and_print(f"\n\n--> average score: {avg_bleu:.4f}")
+
+
+def main():
+    # read the model load path as the only command line argument
+    if len(sys.argv) != 2:
+        print("Usage: python test.py <model_load_path>")
+        sys.exit(1)
+
+    model_path = sys.argv[1]
+    assert type(model_path) == str
+
+    test(model_path)
 
 
 if __name__ == "__main__":

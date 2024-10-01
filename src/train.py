@@ -12,13 +12,19 @@ from torch.utils.data import Dataset, DataLoader
 from torchtext.data.utils import get_tokenizer
 from torchtext.vocab import build_vocab_from_iterator
 
-from src.config import get_max_length, get_model_path, get_device, get_special_tokens
+from src.config import (
+    get_hyper_details,
+    get_max_length,
+    get_model_path,
+    get_device,
+    get_special_tokens,
+)
 from src.transformer import Transformer
 
 
 # paths
 DATA_HOME = "./data/ted-talks-corpus/clean"
-TRAI_EN, TRAI_FR = DATA_HOME + "/test.en", DATA_HOME + "/test.fr"
+TRAI_EN, TRAI_FR = DATA_HOME + "/train.en", DATA_HOME + "/train.fr"
 EVAL_EN, EVAL_FR = DATA_HOME + "/dev.en", DATA_HOME + "/dev.fr"
 MODEL_SAVE_PATH = get_model_path()
 
@@ -181,15 +187,9 @@ def save_model(model, en_vocab, fr_vocab, DROPOUT, EMB_DIM, NUM_LAYERS, NUM_HEAD
                 "num_heads": NUM_HEADS,
             },
         },
-        "-".join(
-            [
-                MODEL_SAVE_PATH,
-                str(DROPOUT),
-                str(EMB_DIM),
-                str(NUM_LAYERS),
-                str(NUM_HEADS),
-            ]
-        )
+        MODEL_SAVE_PATH
+        + "-"
+        + get_hyper_details(DROPOUT, EMB_DIM, NUM_LAYERS, NUM_HEADS)
         + ".pth",
     )
 
