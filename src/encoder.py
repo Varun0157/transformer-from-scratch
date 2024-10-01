@@ -3,7 +3,6 @@ import torch.nn as nn
 from src.utils import PositionalEncoding, TransformerBlock
 
 
-# todo: replace the vocab embedding with torchtext
 class Encoder(nn.Module):
     def __init__(
         self,
@@ -19,9 +18,9 @@ class Encoder(nn.Module):
         super(Encoder, self).__init__()
         self.embed_size = embed_size
         self.device = device
+
         self.word_embedding = nn.Embedding(src_vocab_size, embed_size)
 
-        # todo: replace with sinusoidal positional encoding
         self.with_positional_encoding = PositionalEncoding(embed_size, max_length)
 
         self.layers = nn.ModuleList(
