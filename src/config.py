@@ -6,7 +6,7 @@ def get_device():
 
 
 def get_model_path():
-    return "transformer_en_fr.pth"
+    return "transformer_en_fr"
 
 
 def get_max_length():

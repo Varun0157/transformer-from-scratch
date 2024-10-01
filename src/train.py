@@ -12,20 +12,19 @@ from src.config import get_max_length, get_model_path, get_device, get_special_t
 from src.transformer import Transformer
 
 
-# Paths
+# paths
 DATA_HOME = "./data/ted-talks-corpus/clean"
 TRAI_EN, TRAI_FR = DATA_HOME + "/train.en", DATA_HOME + "/train.fr"
 EVAL_EN, EVAL_FR = DATA_HOME + "/dev.en", DATA_HOME + "/dev.fr"
 MODEL_SAVE_PATH = get_model_path()
 
-# Hyperparameters
+# hypterparams
 BATCH_SIZE = 4
 NUM_EPOCHS = 10
 LEARNING_RATE = 5e-4
 NUM_LAYERS = 3
 NUM_HEADS = 2
 EMB_DIM = 240
-DEVICE = get_device()
 DROPOUT = 0.3
 
 
@@ -39,7 +38,9 @@ def print_hyperparams() -> None:
     print()
 
 
-# Tokenizers
+DEVICE = get_device()
+
+# tokenizers
 en_tokenizer = get_tokenizer("spacy", language="en_core_web_sm")
 fr_tokenizer = get_tokenizer("spacy", language="fr_core_news_sm")
 
@@ -48,6 +49,10 @@ class TranslationDataset(Dataset):
     def __init__(self, en_path, fr_path, en_vocab, fr_vocab):
         self.en_data = open(en_path, "r", encoding="utf-8").readlines()
         self.fr_data = open(fr_path, "r", encoding="utf-8").readlines()
+        assert len(self.en_data) == len(
+            self.fr_data
+        ), "[TranslationDataset::__init__] data mismatch"
+
         self.en_vocab = en_vocab
         self.fr_vocab = fr_vocab
 
@@ -56,7 +61,7 @@ class TranslationDataset(Dataset):
     def __len__(self):
         return len(self.en_data)
 
-    def create_sentence_rep(self, line, tokenizer, vocab) -> torch.Tensor:
+    def _create_sentence_rep(self, line, tokenizer, vocab) -> torch.Tensor:
         sos_ind = vocab[self.specials["SOS"]]
         eos_ind = vocab[self.specials["EOS"]]
 
@@ -68,8 +73,8 @@ class TranslationDataset(Dataset):
 
     def __getitem__(self, idx) -> tuple[torch.Tensor, torch.Tensor]:
         return (
-            self.create_sentence_rep(self.en_data[idx], en_tokenizer, self.en_vocab),
-            self.create_sentence_rep(self.fr_data[idx], fr_tokenizer, self.fr_vocab),
+            self._create_sentence_rep(self.en_data[idx], en_tokenizer, self.en_vocab),
+            self._create_sentence_rep(self.fr_data[idx], fr_tokenizer, self.fr_vocab),
         )
 
     def collate_fn(self, batch):
@@ -87,6 +92,8 @@ class TranslationDataset(Dataset):
 
 
 def build_vocab(filepath, tokenizer):
+    # creating a generator because build_vocab_from_iterator expects an iterator
+    # https://pytorch.org/text/stable/vocab.html#build-vocab-from-iterator
     def yield_tokens(file_path):
         with open(file_path, "r", encoding="utf-8") as f:
             for line in f:
@@ -97,11 +104,13 @@ def build_vocab(filepath, tokenizer):
         yield_tokens(filepath), specials=[val for val in token_dict.values()]
     )
     vocab.set_default_index(vocab[token_dict["UNK"]])
+
     return vocab
 
 
 def train(model: Transformer, dataloader: DataLoader, optimizer, criterion):
     num_items = len(dataloader.dataset)  # type: ignore
+
     model.train()
     total_loss = 0
 
@@ -132,10 +141,10 @@ def eval(model: Transformer, dataloader: DataLoader, criterion):
     for _, (en_batch, fr_batch) in enumerate(dataloader):
         en_batch, fr_batch = en_batch.to(DEVICE), fr_batch.to(DEVICE)
 
-        output = model(en_batch, fr_batch[:, :-1])  # Exclude last token for input
+        output = model(en_batch, fr_batch[:, :-1])  # exclude last token for input
 
         output = output.reshape(-1, output.shape[2])
-        fr_batch = fr_batch[:, 1:].reshape(-1)  # Exclude first token for target
+        fr_batch = fr_batch[:, 1:].reshape(-1)  # exclude first token for target
 
         loss = criterion(output, fr_batch)
         total_loss += loss.item()
@@ -147,9 +156,7 @@ def eval(model: Transformer, dataloader: DataLoader, criterion):
 def main():
     # Build vocabularies
     en_vocab = build_vocab(TRAI_EN, en_tokenizer)
-    print("english vocab size : ", len(en_vocab))
     fr_vocab = build_vocab(TRAI_FR, fr_tokenizer)
-    print("french vocab size : ", len(fr_vocab))
 
     def save_model(model, en_vocab=en_vocab, fr_vocab=fr_vocab):
         torch.save(
@@ -158,7 +165,16 @@ def main():
                 "en_vocab": en_vocab,
                 "fr_vocab": fr_vocab,
             },
-            MODEL_SAVE_PATH,
+            "-".join(
+                [
+                    MODEL_SAVE_PATH,
+                    str(DROPOUT),
+                    str(EMB_DIM),
+                    str(NUM_LAYERS),
+                    str(NUM_HEADS),
+                ]
+            )
+            + ".pth",
         )
 
     os.system("cls || clear")
@@ -191,16 +207,21 @@ def main():
         device=DEVICE,
         max_length=get_max_length(),
         dropout=DROPOUT,
+        num_layers=NUM_LAYERS,
+        heads=NUM_HEADS,
+        embed_size=EMB_DIM,
     ).to(DEVICE)
 
     # loss and optimizer
     criterion = nn.CrossEntropyLoss(ignore_index=fr_vocab[PAD], reduction="sum")
     optimizer = Adam(model.parameters(), lr=LEARNING_RATE)
     print("Details:")
-    print(f"- device:       {DEVICE}")
-    print(f"- batch size:   {BATCH_SIZE}")
-    print(f"- criterion:    {type(criterion)}")
-    print(f"- optimizer:    {type(optimizer)}")
+    print(f"- device:        {DEVICE}")
+    print(f"- batch size:    {BATCH_SIZE}")
+    print(f"- criterion:     {type(criterion)}")
+    print(f"- optimizer:     {type(optimizer)}")
+    print(f"- eng vocab len: {len(en_vocab)}")
+    print(f"- fr vocab len:  {len(fr_vocab)}")
     print()
 
     best_loss = float("inf")
