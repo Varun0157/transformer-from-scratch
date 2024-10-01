@@ -1,4 +1,4 @@
-name: anlp-temp
+name: anlp-a2
 channels:
   - pytorch
   - nvidia
@@ -41,6 +41,7 @@ dependencies:
   - idna=3.10=pyhd8ed1ab_0
   - importlib-metadata=8.5.0=pyha770c72_0
   - jinja2=3.1.4=pyhd8ed1ab_0
+  - joblib=1.4.2=pyhd8ed1ab_0
   - langcodes=3.4.1=pyhd8ed1ab_0
   - language-data=1.2.0=pyhd8ed1ab_0
   - ld_impl_linux-64=2.43=h712a8e2_1
@@ -88,6 +89,7 @@ dependencies:
   - murmurhash=1.0.10=py312h30efb56_1
   - ncurses=6.5=he02047a_1
   - networkx=3.3=pyhd8ed1ab_1
+  - nltk=3.9.1=pyhd8ed1ab_0
   - numpy=1.26.4=py312heda63a1_0
   - openssl=3.3.2=hb9d3cd8_0
   - packaging=24.1=pyhd8ed1ab_0
@@ -105,6 +107,7 @@ dependencies:
   - pytorch-mutex=1.0=cuda
   - pyyaml=6.0.2=py312h66e93f0_1
   - readline=8.2=h8228510_1
+  - regex=2024.9.11=py312h66e93f0_0
   - requests=2.32.3=pyhd8ed1ab_0
   - rich=13.8.1=pyhd8ed1ab_0
   - setuptools=75.1.0=pyhd8ed1ab_0
