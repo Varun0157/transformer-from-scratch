@@ -25,6 +25,7 @@ def load_model():
     checkpoint = torch.load(MODEL_LOAD_PATH)
     en_vocab = checkpoint["en_vocab"]
     fr_vocab = checkpoint["fr_vocab"]
+    hyperparams = checkpoint["hyperparams"]
 
     special_tokens = get_special_tokens()
     model = Transformer(
@@ -32,6 +33,11 @@ def load_model():
         trg_vocab_size=len(fr_vocab),
         src_pad_idx=en_vocab[special_tokens["PAD"]],
         trg_pad_idx=fr_vocab[special_tokens["PAD"]],
+        embed_size=hyperparams["emb_dim"],
+        num_layers=hyperparams["num_layers"],
+        heads=hyperparams["num_heads"],
+        dropout=hyperparams["dropout"],
+        max_length=get_max_length(),
         device=DEVICE,
     ).to(DEVICE)
 
@@ -77,7 +83,7 @@ def translate_sentence(
 
 
 def calculate_bleu(reference, hypothesis) -> float:
-    smo_func = SmoothingFunction().method1
+    smo_func = SmoothingFunction().method7
     scores = sentence_bleu([reference], hypothesis, smoothing_function=smo_func)
     assert type(scores) == float
     return scores

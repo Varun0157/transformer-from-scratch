@@ -164,6 +164,12 @@ def main():
                 "model_state_dict": model.state_dict(),
                 "en_vocab": en_vocab,
                 "fr_vocab": fr_vocab,
+                "hyperparams": {
+                    "dropout": DROPOUT,
+                    "emb_dim": EMB_DIM,
+                    "num_layers": NUM_LAYERS,
+                    "num_heads": NUM_HEADS,
+                },
             },
             "-".join(
                 [

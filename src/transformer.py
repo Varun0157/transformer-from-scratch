@@ -18,7 +18,7 @@ class Transformer(nn.Module):
         heads=3,
         dropout=0.2,
         device: torch.device = torch.device("cpu"),
-        max_length=750,  # todo: check
+        max_length=750,  # todo: check, and generalize
     ):
         super(Transformer, self).__init__()
 
