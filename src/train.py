@@ -13,7 +13,7 @@ from src.transformer import Transformer
 
 
 # Paths
-DATA_HOME = "./data/ted-talks-corpus"
+DATA_HOME = "./data/ted-talks-corpus/clean"
 TRAI_EN, TRAI_FR = DATA_HOME + "/train.en", DATA_HOME + "/train.fr"
 EVAL_EN, EVAL_FR = DATA_HOME + "/dev.en", DATA_HOME + "/dev.fr"
 MODEL_SAVE_PATH = get_model_path()
@@ -101,7 +101,7 @@ def build_vocab(filepath, tokenizer):
 
 
 def train(model: Transformer, dataloader: DataLoader, optimizer, criterion):
-    num_items = len(dataloader.dataset) # type: ignore
+    num_items = len(dataloader.dataset)  # type: ignore
     model.train()
     total_loss = 0
 
@@ -109,10 +109,10 @@ def train(model: Transformer, dataloader: DataLoader, optimizer, criterion):
         en_batch, fr_batch = en_batch.to(DEVICE), fr_batch.to(DEVICE)
 
         optimizer.zero_grad()
-        output = model(en_batch, fr_batch[:, :-1])  # Exclude last token for input
+        output = model(en_batch, fr_batch[:, :-1])  # exclude last token for input
 
         output = output.reshape(-1, output.shape[2])
-        fr_batch = fr_batch[:, 1:].reshape(-1)  # Exclude first token for target
+        fr_batch = fr_batch[:, 1:].reshape(-1)  # exclude first token for target
 
         loss = criterion(output, fr_batch)
         loss.backward()
@@ -125,7 +125,7 @@ def train(model: Transformer, dataloader: DataLoader, optimizer, criterion):
 
 
 def eval(model: Transformer, dataloader: DataLoader, criterion):
-    num_items = len(dataloader.dataset) # type: ignore
+    num_items = len(dataloader.dataset)  # type: ignore
     model.eval()
     total_loss = 0
 
@@ -172,13 +172,13 @@ def main():
         shuffle=True,
         collate_fn=train_dataset.collate_fn,
     )
-    
+
     eval_dataset = TranslationDataset(EVAL_EN, EVAL_FR, en_vocab, fr_vocab)
     eval_loader = DataLoader(
         eval_dataset,
         batch_size=BATCH_SIZE,
         shuffle=True,
-        collate_fn=eval_dataset.collate_fn
+        collate_fn=eval_dataset.collate_fn,
     )
 
     # Initialize model

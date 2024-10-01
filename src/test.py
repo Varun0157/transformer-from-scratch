@@ -1,4 +1,5 @@
 import os
+from typing import List
 
 import torch
 from torchtext.data.utils import get_tokenizer
@@ -11,7 +12,7 @@ from src.transformer import Transformer
 nltk.download("punkt")
 
 # config details
-DATA_HOME = "./data/ted-talks-corpus"
+DATA_HOME = "./data/ted-talks-corpus/clean"
 TEST_EN = DATA_HOME + "/test.en"
 TEST_FR = DATA_HOME + "/test.fr"
 MODEL_LOAD_PATH = get_model_path()
@@ -75,9 +76,11 @@ def translate_sentence(
     return trg_tokens
 
 
-def calculate_bleu(reference, hypothesis):
-    smo_func = SmoothingFunction()
-    return sentence_bleu([reference], hypothesis, smoothing_function=smo_func.method1)
+def calculate_bleu(reference, hypothesis) -> float:
+    smo_func = SmoothingFunction().method1
+    scores = sentence_bleu([reference], hypothesis, smoothing_function=smo_func)
+    assert type(scores) == float
+    return scores
 
 
 # todo: can make this faster by reading in batches probably
@@ -97,8 +100,14 @@ def main():
     with open(TEST_EN, "r", encoding="utf-8") as en_file, open(
         TEST_FR, "r", encoding="utf-8"
     ) as fr_file, open(OUTPUT_FILE, "w", encoding="utf-8") as out_file:
+        num_sent = 0
+        total_bleu = 0
 
-        for en_sentence, fr_tokens in zip(en_file, fr_file):
+        def write_and_print(line):
+            out_file.write(line)
+            print(line)
+
+        for index, (en_sentence, fr_tokens) in enumerate(zip(en_file, fr_file)):
             fr_tokens = (
                 [start_of_sent] + fr_tokenizer(fr_tokens.strip()) + [end_of_sent]
             )
@@ -107,13 +116,21 @@ def main():
                 model, en_sentence.strip(), en_vocab, fr_vocab, en_tokenizer
             )
             bleu_score = calculate_bleu(fr_tokens, tr_tokens)
+            total_bleu += bleu_score
+            num_sent += 1
 
             out_file.write(f"Source:        {en_sentence}\n")
             out_file.write(f"Target:        {fr_tokens}\n")
             out_file.write(f"Translation:   {tr_tokens}\n")
             out_file.write(f"BLEU Score:    {bleu_score:.4f}\n\n")
 
-            print(f"score: {bleu_score:.4f} for sentence: {en_sentence}")
+            write_and_print(
+                f"{index} -> score: {bleu_score:.4f} for sentence: {en_sentence}"
+            )
+
+        assert num_sent != 0
+        avg_bleu = total_bleu / num_sent
+        write_and_print(f"\n--> average score: {avg_bleu:.4f}")
 
 
 if __name__ == "__main__":
