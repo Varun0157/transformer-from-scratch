@@ -59,8 +59,9 @@ class SelfAttention(nn.Module):
 
         if mask is not None:
             QK_T = QK_T.masked_fill(mask == 0, NEG_INF)
-            # NOTE: mask out the values that are not to be seen at the current level
-            #  of the decoder stack
+            # (q_len, k_len). because of our lower triangular mask, the way it works 
+            #   is that the first row can only attend to itself, the second row can 
+            #   attend to the first and itself, and so on.
 
         QK_T_scaled = torch.softmax(QK_T / (self.embed_size ** (1 / 2)), dim=3)
         # NOTE: dim = 3 is to normalise the scores of each query across all keys
