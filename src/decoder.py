@@ -9,7 +9,10 @@ class DecoderBlock(nn.Module):
     ):
         super(DecoderBlock, self).__init__()
         self.attention = SelfAttention(embed_size, heads)
+        
+        # why layer norm and not batch norm? 
         self.norm = nn.LayerNorm(embed_size)
+        
         self.transformer_block = TransformerBlock(
             embed_size, heads, dropout, forward_expansion
         )

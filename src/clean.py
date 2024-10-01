@@ -1,10 +1,13 @@
 import os
 
+import re
 from string import punctuation as PUNCTUATION
 
 
 def _clean(sentence: str) -> str:
     sentence = sentence.lower().strip()
+    # remove all text that lies between square brackets using regex - because there seem to be random citations
+    sentence = re.sub(r"\[.*?\]", "", sentence)
 
     for ch in "'":
         sentence = sentence.replace(ch, "")
