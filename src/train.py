@@ -31,7 +31,6 @@ DROPOUT = 0.3
 
 def print_hyperparams() -> None:
     print("Hyperparameters:")
-    print(f"- device:         {DEVICE}")
     print(f"- learning rate:  {LEARNING_RATE}")
     print(f"- num layers:     {NUM_LAYERS}")
     print(f"- num heads:      {NUM_HEADS}")
@@ -198,6 +197,7 @@ def main():
     criterion = nn.CrossEntropyLoss(ignore_index=fr_vocab[PAD], reduction="sum")
     optimizer = Adam(model.parameters(), lr=LEARNING_RATE)
     print("Details:")
+    print(f"- device:       {DEVICE}")
     print(f"- batch size:   {BATCH_SIZE}")
     print(f"- criterion:    {type(criterion)}")
     print(f"- optimizer:    {type(optimizer)}")
