@@ -1,6 +1,10 @@
-import os
+import torchtext
+
+torchtext.disable_torchtext_deprecation_warning()
+
 import time
 
+import argparse
 import torch
 import torch.nn as nn
 from torch.optim.adam import Adam
@@ -14,7 +18,7 @@ from src.transformer import Transformer
 
 # paths
 DATA_HOME = "./data/ted-talks-corpus/clean"
-TRAI_EN, TRAI_FR = DATA_HOME + "/train.en", DATA_HOME + "/train.fr"
+TRAI_EN, TRAI_FR = DATA_HOME + "/test.en", DATA_HOME + "/test.fr"
 EVAL_EN, EVAL_FR = DATA_HOME + "/dev.en", DATA_HOME + "/dev.fr"
 MODEL_SAVE_PATH = get_model_path()
 
@@ -22,19 +26,30 @@ MODEL_SAVE_PATH = get_model_path()
 BATCH_SIZE = 4
 NUM_EPOCHS = 10
 LEARNING_RATE = 5e-4
-NUM_LAYERS = 3
-NUM_HEADS = 2
-EMB_DIM = 240
-DROPOUT = 0.3
 
 
-def print_hyperparams() -> None:
+def print_hyperparams(
+    NUM_LAYERS: int, NUM_HEADS: int, EMB_DIM: int, DROPOUT: float
+) -> None:
     print("Hyperparameters:")
     print(f"- learning rate:  {LEARNING_RATE}")
     print(f"- num layers:     {NUM_LAYERS}")
     print(f"- num heads:      {NUM_HEADS}")
     print(f"- embedding dim:  {EMB_DIM}")
     print(f"- dropout:        {DROPOUT}")
+    print()
+
+
+def print_training_details(
+    device, batch_size, criterion, optimizer, en_vocab, fr_vocab
+):
+    print("Details:")
+    print(f"- device:        {device}")
+    print(f"- batch size:    {batch_size}")
+    print(f"- criterion:     {type(criterion)}")
+    print(f"- optimizer:     {type(optimizer)}")
+    print(f"- eng vocab len: {len(en_vocab)}")
+    print(f"- fr vocab len:  {len(fr_vocab)}")
     print()
 
 
@@ -153,40 +168,33 @@ def eval(model: Transformer, dataloader: DataLoader, criterion):
     return avg_loss
 
 
-def main():
-    # Build vocabularies
-    en_vocab = build_vocab(TRAI_EN, en_tokenizer)
-    fr_vocab = build_vocab(TRAI_FR, fr_tokenizer)
-
-    def save_model(model, en_vocab=en_vocab, fr_vocab=fr_vocab):
-        torch.save(
-            {
-                "model_state_dict": model.state_dict(),
-                "en_vocab": en_vocab,
-                "fr_vocab": fr_vocab,
-                "hyperparams": {
-                    "dropout": DROPOUT,
-                    "emb_dim": EMB_DIM,
-                    "num_layers": NUM_LAYERS,
-                    "num_heads": NUM_HEADS,
-                },
+def save_model(model, en_vocab, fr_vocab, DROPOUT, EMB_DIM, NUM_LAYERS, NUM_HEADS):
+    torch.save(
+        {
+            "model_state_dict": model.state_dict(),
+            "en_vocab": en_vocab,
+            "fr_vocab": fr_vocab,
+            "hyperparams": {
+                "dropout": DROPOUT,
+                "emb_dim": EMB_DIM,
+                "num_layers": NUM_LAYERS,
+                "num_heads": NUM_HEADS,
             },
-            "-".join(
-                [
-                    MODEL_SAVE_PATH,
-                    str(DROPOUT),
-                    str(EMB_DIM),
-                    str(NUM_LAYERS),
-                    str(NUM_HEADS),
-                ]
-            )
-            + ".pth",
+        },
+        "-".join(
+            [
+                MODEL_SAVE_PATH,
+                str(DROPOUT),
+                str(EMB_DIM),
+                str(NUM_LAYERS),
+                str(NUM_HEADS),
+            ]
         )
+        + ".pth",
+    )
 
-    os.system("cls || clear")
-    print_hyperparams()
 
-    # Create dataset and dataloader
+def get_train_loader(en_vocab, fr_vocab):
     train_dataset = TranslationDataset(TRAI_EN, TRAI_FR, en_vocab, fr_vocab)
     train_loader = DataLoader(
         train_dataset,
@@ -195,6 +203,10 @@ def main():
         collate_fn=train_dataset.collate_fn,
     )
 
+    return train_loader
+
+
+def get_eval_loader(en_vocab, fr_vocab):
     eval_dataset = TranslationDataset(EVAL_EN, EVAL_FR, en_vocab, fr_vocab)
     eval_loader = DataLoader(
         eval_dataset,
@@ -203,13 +215,31 @@ def main():
         collate_fn=eval_dataset.collate_fn,
     )
 
-    # Initialize model
-    PAD = get_special_tokens()["PAD"]
+    return eval_loader
+
+
+def train_and_save(
+    DROPOUT: float,
+    EMB_DIM: int,
+    NUM_LAYERS: int,
+    NUM_HEADS: int,
+):
+    # Build vocabularies
+    en_vocab = build_vocab(TRAI_EN, en_tokenizer)
+    fr_vocab = build_vocab(TRAI_FR, fr_tokenizer)
+
+    print_hyperparams(NUM_LAYERS, NUM_HEADS, EMB_DIM, DROPOUT)
+
+    # create dataloaders
+    train_loader = get_train_loader(en_vocab, fr_vocab)
+    eval_loader = get_eval_loader(en_vocab, fr_vocab)
+
+    # initialise model
     model = Transformer(
         src_vocab_size=len(en_vocab),
         trg_vocab_size=len(fr_vocab),
-        src_pad_idx=en_vocab[PAD],
-        trg_pad_idx=fr_vocab[PAD],
+        src_pad_idx=en_vocab[get_special_tokens()["PAD"]],
+        trg_pad_idx=fr_vocab[get_special_tokens()["PAD"]],
         device=DEVICE,
         max_length=get_max_length(),
         dropout=DROPOUT,
@@ -219,20 +249,15 @@ def main():
     ).to(DEVICE)
 
     # loss and optimizer
-    criterion = nn.CrossEntropyLoss(ignore_index=fr_vocab[PAD], reduction="sum")
+    criterion = nn.CrossEntropyLoss(
+        ignore_index=fr_vocab[get_special_tokens()["PAD"]], reduction="sum"
+    )
     optimizer = Adam(model.parameters(), lr=LEARNING_RATE)
-    print("Details:")
-    print(f"- device:        {DEVICE}")
-    print(f"- batch size:    {BATCH_SIZE}")
-    print(f"- criterion:     {type(criterion)}")
-    print(f"- optimizer:     {type(optimizer)}")
-    print(f"- eng vocab len: {len(en_vocab)}")
-    print(f"- fr vocab len:  {len(fr_vocab)}")
-    print()
 
-    best_loss = float("inf")
+    print_training_details(DEVICE, BATCH_SIZE, criterion, optimizer, en_vocab, fr_vocab)
 
     # training loop
+    best_loss = float("inf")
     for epoch in range(NUM_EPOCHS):
         start_time = time.time()
         train_loss = train(model, train_loader, optimizer, criterion)
@@ -247,10 +272,40 @@ def main():
             continue
 
         best_loss = eval_loss
-        save_model(model)
+        save_model(model, en_vocab, fr_vocab, DROPOUT, EMB_DIM, NUM_LAYERS, NUM_HEADS)
         print(f"\tmodel saved")
 
     print("\ntraining complete.")
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Transformer training script")
+    parser.add_argument("--dropout", type=float, required=True, help="dropout rate")
+    parser.add_argument(
+        "--embed_dim", type=int, required=True, help="embedding dimension"
+    )
+    parser.add_argument(
+        "--num_layers", type=int, required=True, help="number of layers"
+    )
+    parser.add_argument(
+        "--num_heads", type=int, required=True, help="number of attention heads"
+    )
+
+    # Parse the arguments
+    args = parser.parse_args()
+
+    assert args.dropout >= 0 and args.dropout <= 1, "dropout must be between 0 and 1"
+    assert args.embed_dim > 0, "embedding dimension must be greater than 0"
+    assert args.num_layers > 0, "number of layers must be greater than 0"
+    assert args.num_heads > 0, "number of heads must be greater than 0"
+
+    # Call the train_and_save function with the parsed arguments
+    train_and_save(
+        DROPOUT=args.dropout,
+        EMB_DIM=args.embed_dim,
+        NUM_LAYERS=args.num_layers,
+        NUM_HEADS=args.num_heads,
+    )
 
 
 if __name__ == "__main__":

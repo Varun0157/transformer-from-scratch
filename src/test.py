@@ -1,5 +1,6 @@
-import os
-from typing import List
+import torchtext
+
+torchtext.disable_torchtext_deprecation_warning()
 
 import torch
 from torchtext.data.utils import get_tokenizer
@@ -101,8 +102,6 @@ def main():
         get_special_tokens()["EOS"],
     )
 
-    os.system("cls || clear")
-
     with open(TEST_EN, "r", encoding="utf-8") as en_file, open(
         TEST_FR, "r", encoding="utf-8"
     ) as fr_file, open(OUTPUT_FILE, "w", encoding="utf-8") as out_file:
@@ -130,13 +129,11 @@ def main():
             out_file.write(f"Translation:   {tr_tokens}\n")
             out_file.write(f"BLEU Score:    {bleu_score:.4f}\n\n")
 
-            write_and_print(
-                f"{index} -> score: {bleu_score:.4f} for sentence: {en_sentence}"
-            )
+            write_and_print(f"{index} -> <{en_sentence}> <{bleu_score:.4f}>")
 
         assert num_sent != 0
         avg_bleu = total_bleu / num_sent
-        write_and_print(f"\n--> average score: {avg_bleu:.4f}")
+        write_and_print(f"\n\n--> average score: {avg_bleu:.4f}")
 
 
 if __name__ == "__main__":
