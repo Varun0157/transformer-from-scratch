@@ -49,9 +49,10 @@ class Transformer(nn.Module):
         self.device = device
 
     def make_src_mask(self, src):
-        src_mask = (
-            (src != self.src_pad_idx).unsqueeze(1).unsqueeze(2)
-        )  # todo: prevent 2 calls?
+        src_mask = (src != self.src_pad_idx).unsqueeze(1).unsqueeze(2)
+        # shape: (N, 1, 1, src_len)
+        # used in the transformer_block to mask out the padding tokens
+
         return src_mask.to(self.device)
 
     def make_trg_mask(self, trg):

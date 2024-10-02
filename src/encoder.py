@@ -23,7 +23,7 @@ class Encoder(nn.Module):
 
         self.with_positional_encoding = PositionalEncoding(embed_size, max_length)
 
-        self.layers = nn.ModuleList(
+        self.transformer_blocks = nn.ModuleList(
             [
                 TransformerBlock(embed_size, heads, dropout, forward_expansion)
                 for _ in range(num_layers)
@@ -35,7 +35,7 @@ class Encoder(nn.Module):
     def forward(self, x, mask):
         out = self.dropout(self.with_positional_encoding(self.word_embedding(x)))
 
-        for layer in self.layers:
-            out = layer(out, out, out, mask)
+        for transformer_block in self.transformer_blocks:
+            out = transformer_block(out, out, out, mask)
 
         return out
