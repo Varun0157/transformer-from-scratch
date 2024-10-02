@@ -26,7 +26,7 @@ class SelfAttention(nn.Module):
         # there is bias in later layers anyway.
 
         self.fc_out = nn.Linear(heads * self.head_dim, embed_size)
-        # NOTE: heads * self.head_dim = embed_size, but we write it explicitly for clarity
+        # NOTE: heads * self.head_dim = embed_size, but I'm writing it explicitly for clarity
 
     def forward(
         self,
@@ -40,13 +40,9 @@ class SelfAttention(nn.Module):
         value_len, key_len, query_len = values.shape[1], keys.shape[1], query.shape[1]
 
         # split the embedding into self.heads pieces
-        values = values.reshape(N, value_len, self.heads, self.head_dim)
-        keys = keys.reshape(N, key_len, self.heads, self.head_dim)
-        query = query.reshape(N, query_len, self.heads, self.head_dim)
-
-        values = self.W_v(values)
-        keys = self.W_k(keys)
-        query = self.W_q(query)
+        values = self.W_v(values.reshape(N, value_len, self.heads, self.head_dim))
+        keys = self.W_k(keys.reshape(N, key_len, self.heads, self.head_dim))
+        query = self.W_q(query.reshape(N, query_len, self.heads, self.head_dim))
 
         # einsum is easier than having to perform the calculations and determine the
         #   batch multiplication (torch.bmm) because we have n items in a batch

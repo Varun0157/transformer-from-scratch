@@ -24,7 +24,7 @@ nltk.download("punkt")
 DATA_HOME = "./data/ted-talks-corpus/clean"
 TEST_EN = DATA_HOME + "/test.en"
 TEST_FR = DATA_HOME + "/test.fr"
-OUTPUT_FILE = "translations_with_bleu"
+OUTPUT_FILE = "./res/translations_with_bleu"
 
 DEVICE = get_device()
 
@@ -127,7 +127,7 @@ def test(MODEL_LOAD_PATH):
 
         def write_and_print(line):
             out_file.write(line)
-            print(line)
+            # print(line)
 
         for index, (en_sentence, fr_tokens) in enumerate(zip(en_file, fr_file)):
             fr_tokens = (
@@ -141,12 +141,10 @@ def test(MODEL_LOAD_PATH):
             total_bleu += bleu_score
             num_sent += 1
 
-            out_file.write(f"Source:        {en_sentence}\n")
-            out_file.write(f"Target:        {fr_tokens}\n")
-            out_file.write(f"Translation:   {tr_tokens}\n")
-            out_file.write(f"BLEU Score:    {bleu_score:.4f}\n\n")
+            write_and_print(f"{index} -> <{en_sentence.strip()}> <{bleu_score:.4f}>\n")
 
-            write_and_print(f"{index} -> <{en_sentence}> <{bleu_score:.4f}>")
+            if index % 100 == 0:
+                print("processed so far: ", index)
 
         assert num_sent != 0
         avg_bleu = total_bleu / num_sent

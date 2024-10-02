@@ -5,6 +5,7 @@ from src.decoder import Decoder
 from src.encoder import Encoder
 
 
+# major source: https://www.youtube.com/watch?v=U0s0f995w14
 class Transformer(nn.Module):
     def __init__(
         self,
@@ -21,6 +22,7 @@ class Transformer(nn.Module):
         max_length=750,  # todo: check, and generalize
     ):
         super(Transformer, self).__init__()
+        self.device = device
 
         self.encoder = Encoder(
             src_vocab_size,
@@ -46,7 +48,6 @@ class Transformer(nn.Module):
 
         self.src_pad_idx = src_pad_idx
         self.trg_pad_idx = trg_pad_idx
-        self.device = device
 
     def make_src_mask(self, src):
         src_mask = (src != self.src_pad_idx).unsqueeze(1).unsqueeze(2)
