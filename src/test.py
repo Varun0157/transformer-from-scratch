@@ -87,6 +87,8 @@ def translate_sentence(
     for _ in range(max_length):
         trg_tensor = torch.LongTensor(trg_indexes).unsqueeze(0).to(DEVICE)
         trg_mask = model.make_trg_mask(trg_tensor)
+        # again, mask may be redundant here because passing entire sequence from which to infer. 
+        # but do not want to change code last min. 
 
         output = model.decoder(trg_tensor, enc_src, src_mask, trg_mask)
         pred_token = output.argmax(2)[:, -1].item()
