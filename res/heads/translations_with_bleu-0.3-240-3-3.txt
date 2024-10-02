@@ -1,0 +1,1308 @@
+0 -> <when i was in my i saw my very first psychotherapy client> <0.0902>
+1 -> <i was a ph d student in clinical psychology at berkeley> <0.0975>
+2 -> <she was a year old woman named alex> <0.1107>
+3 -> <now alex walked into her first session wearing jeans and a big slouchy top and she dropped onto the couch in my office and kicked off her flats and told me she was there to talk about guy problems> <0.0734>
+4 -> <now when i heard this i was so relieved> <0.1107>
+5 -> <my classmate got an arsonist for her first client> <0.0920>
+6 -> <and i got a twentysomething who wanted to talk about boys> <0.1019>
+7 -> <this i thought i could handle> <0.1163>
+8 -> <but i didnt handle it> <0.1163>
+9 -> <with the funny stories that alex would bring to session it was easy for me just to nod my head while we kicked the can down the road> <0.0761>
+10 -> <thirtys the new alex would say and as far as i could tell she was right> <0.0947>
+11 -> <work happened later marriage happened later kids happened later even death happened later> <0.0674>
+12 -> <twentysomethings like alex and i had nothing but time> <0.0801>
+13 -> <but before long my supervisor pushed me to push alex about her love life> <0.0833>
+14 -> <i pushed back> <0.1163>
+15 -> <i said sure shes dating down shes sleeping with a knucklehead but its not like shes going to marry the guy> <0.0820>
+16 -> <and then my supervisor said not yet but she might marry the next one> <0.0946>
+17 -> <besides the best time to work on alexs marriage is before she has one> <0.0946>
+18 -> <thats what psychologists call an aha moment> <0.1107>
+19 -> <that was the moment i realized is not the new> <0.0931>
+20 -> <yes people settle down later than they used to but that didnt make alexs a developmental downtime> <0.0919>
+21 -> <that made alexs a developmental sweet spot and we were sitting there blowing it> <0.0808>
+22 -> <that was when i realized that this sort of benign neglect was a real problem and it had real consequences not just for alex and her love life but for the careers and the families and the futures of twentysomethings everywhere> <0.0732>
+23 -> <there are million twentysomethings in the united states right now> <0.0890>
+24 -> <were talking about percent of the population or percent if you consider that no ones getting through adulthood without going through their first> <0.0864>
+25 -> <raise your hand if youre in your> <0.1000>
+26 -> <i really want to see some twentysomethings here> <0.1000>
+27 -> <oh yay yalls awesome> <0.0988>
+28 -> <if you work with twentysomethings you love a twentysomething youre losing sleep over twentysomethings i want to see okay awesome twentysomethings really matter> <0.0477>
+29 -> <so i specialize in twentysomethings because i believe that every single one of those million twentysomethings deserves to know what psychologists sociologists neurologists and fertility specialists already know that claiming your is one of the simplest yet most transformative things you can do for work for love for your happiness maybe even for the world> <0.0810>
+30 -> <this is not my opinion these are the facts> <0.1000>
+31 -> <we know that percent of lifes most defining moments take place by age> <0.0961>
+32 -> <that means that eight out of of the decisions and experiences and aha moments that make your life what it is will have happened by your mid> <0.0858>
+33 -> <people who are over dont panic> <0.0705>
+34 -> <this crowd is going to be fine i think> <0.1000>
+35 -> <we know that the first years of a career has an exponential impact on how much money youre going to earn> <0.0862>
+36 -> <we know that more than half of americans are married or are living with or dating their future partner by> <0.0870>
+37 -> <we know that the brain caps off its second and last growth spurt in your as it rewires itself for adulthood which means that whatever it is you want to change about yourself now is the time to change it> <0.0834>
+38 -> <we know that personality changes more during your than at any other time in life and we know that female fertility peaks at age and things get tricky after age> <0.0716>
+39 -> <so your are the time to educate yourself about your body and your options> <0.0961>
+40 -> <so when we think about child development we all know that the first five years are a critical period for language and attachment in the brain> <0.0858>
+41 -> <its a time when your ordinary day to day life has an inordinate impact on who you will become> <0.0820>
+42 -> <but what we hear less about is that theres such a thing as adult development and our are that critical period of adult development> <0.0845>
+43 -> <but this isnt what twentysomethings are hearing> <0.0705>
+44 -> <newspapers talk about the changing timetable of adulthood> <0.1000>
+45 -> <researchers call the an extended adolescence> <0.1032>
+46 -> <journalists coin silly nicknames for twentysomethings like twixters and kidults> <0.0488>
+47 -> <its true> <0.2360>
+48 -> <as a culture we have trivialized what is actually the defining decade of adulthood> <0.0878>
+49 -> <leonard bernstein said that to achieve great things you need a plan and not quite enough time> <0.0959>
+50 -> <isnt that true> <0.1206>
+51 -> <so what do you think happens when you pat a twentysomething on the head and you say you have extra years to start your life> <0.0665>
+52 -> <nothing happens> <0.0988>
+53 -> <you have robbed that person of his urgency and ambition and absolutely nothing happens> <0.0874>
+54 -> <and then every day smart interesting twentysomethings like you or like your sons and daughters come into my office and say things like this i know my boyfriends no good for me but this relationship doesnt count im just killing time> <0.0979>
+55 -> <or they say everybody says as long as i get started on a career by the time im ill be fine> <0.0986>
+56 -> <but then it starts to sound like this my are almost over and i have nothing to show for myself> <0.1011>
+57 -> <i had a better résumé the day after i graduated from college> <0.0975>
+58 -> <and then it starts to sound like this dating in my was like musical chairs> <0.0974>
+59 -> <everybody was running around and having fun but then sometime around it was like the music turned off and everybody started sitting down> <0.0825>
+60 -> <i didnt want to be the only one left standing up so sometimes i think i married my husband because he was the closest chair to me at> <0.1053>
+61 -> <where are the twentysomethings here> <0.0444>
+62 -> <do not do that> <0.1206>
+63 -> <okay now that sounds a little flip but make no mistake the stakes are very high> <0.0996>
+64 -> <when a lot has been pushed to your there is enormous thirtysomething pressure to jump start a career pick a city partner up and have two or three kids in a much shorter period of time> <0.0730>
+65 -> <many of these things are incompatible and as research is just starting to show simply harder and more stressful to do all at once in our> <0.0795>
+66 -> <the post millennial midlife crisis isnt buying a red sports car> <0.0739>
+67 -> <its realizing you cant have that career you now want> <0.0862>
+68 -> <its realizing you cant have that child you now want or you cant give your child a sibling> <0.0873>
+69 -> <too many thirtysomethings and fortysomethings look at themselves and at me sitting across the room and say about their what was i doing what was i thinking> <0.0880>
+70 -> <i want to change what twentysomethings are doing and thinking> <0.0742>
+71 -> <heres a story about how that can go> <0.1107>
+72 -> <its a story about a woman named emma> <0.1000>
+73 -> <at emma came to my office because she was in her words having an identity crisis> <0.0833>
+74 -> <she said she thought she might like to work in art or entertainment but she hadnt decided yet so shed spent the last few years waiting tables instead> <0.0769>
+75 -> <because it was cheaper she lived with a boyfriend who displayed his temper more than his ambition> <0.0821>
+76 -> <and as hard as her were her early life had been even harder> <0.1098>
+77 -> <she often cried in our sessions but then would collect herself by saying you cant pick your family but you can pick your friends> <0.0858>
+78 -> <well one day emma comes in and she hangs her head in her lap and she sobbed for most of the hour> <0.0862>
+79 -> <shed just bought a new address book and shed spent the morning filling in her many contacts but then shed been left staring at that empty blank that comes after the words in case of emergency please call> <0.0769>
+80 -> <she was nearly hysterical when she looked at me and said whos going to be there for me if i get in a car wreck> <0.0855>
+81 -> <whos going to take care of me if i have cancer> <0.0975>
+82 -> <now in that moment it took everything i had not to say i will> <0.1047>
+83 -> <but what emma needed wasnt some therapist who really really cared> <0.0677>
+84 -> <emma needed a better life and i knew this was her chance> <0.1178>
+85 -> <i had learned too much since i first worked with alex to just sit there while emmas defining decade went parading by> <0.0809>
+86 -> <so over the next weeks and months i told emma three things that every twentysomething male or female deserves to hear> <0.0876>
+87 -> <first i told emma to forget about having an identity crisis and get some identity capital> <0.0878>
+88 -> <by get identity capital i mean do something that adds value to who you are> <0.0740>
+89 -> <do something thats an investment in who you might want to be next> <0.0946>
+90 -> <i didnt know the future of emmas career and no one knows the future of work but i do know this identity capital begets identity capital> <0.1090>
+91 -> <so now is the time for that cross country job that internship that startup you want to try> <0.0785>
+92 -> <im not discounting twentysomething exploration here but i am discounting exploration thats not supposed to count which by the way is not exploration> <0.0929>
+93 -> <thats procrastination> <0.1933>
+94 -> <i told emma to explore work and make it count> <0.0860>
+95 -> <second i told emma that the urban tribe is overrated> <0.1074>
+96 -> <best friends are great for giving rides to the airport but twentysomethings who huddle together with like minded peers limit who they know what they know how they think how they speak and where they work> <0.0769>
+97 -> <that new piece of capital that new person to date almost always comes from outside the inner circle> <0.0814>
+98 -> <new things come from what are called our weak ties our friends of friends of friends> <0.0867>
+99 -> <so yes half of twentysomethings are un or under employed> <0.0716>
+100 -> <but half arent and weak ties are how you get yourself into that group> <0.0973>
+101 -> <half of new jobs are never posted so reaching out to your neighbors boss is how you get that un posted job> <0.0717>
+102 -> <its not cheating its the science of how information spreads> <0.0994>
+103 -> <last but not least emma believed that you cant pick your family but you can pick your friends> <0.1060>
+104 -> <now this was true for her growing up but as a twentysomething soon emma would pick her family when she partnered with someone and created a family of her own> <0.0785>
+105 -> <i told emma the time to start picking your family is now> <0.0852>
+106 -> <now you may be thinking that is actually a better time to settle down than or even and i agree with you> <0.1086>
+107 -> <but grabbing whoever youre living with or sleeping with when everyone on facebook starts walking down the aisle is not progress> <0.0553>
+108 -> <the best time to work on your marriage is before you have one and that means being as intentional with love as you are with work> <0.0862>
+109 -> <picking your family is about consciously choosing who and what you want rather than just making it work or killing time with whoever happens to be choosing you> <0.0858>
+110 -> <so what happened to emma> <0.0906>
+111 -> <well we went through that address book and she found an old roommates cousin who worked at an art museum in another state> <0.0908>
+112 -> <that weak tie helped her get a job there> <0.0920>
+113 -> <that job offer gave her the reason to leave that live in boyfriend> <0.0842>
+114 -> <now five years later shes a special events planner for museums> <0.0902>
+115 -> <shes married to a man she mindfully chose> <0.1107>
+116 -> <she loves her new career she loves her new family and she sent me a card that said now the emergency contact blanks dont seem big enough> <0.0889>
+117 -> <now emmas story made that sound easy but thats what i love about working with twentysomethings> <0.0857>
+118 -> <they are so easy to help> <0.1163>
+119 -> <twentysomethings are like airplanes just leaving lax bound for somewhere west> <0.0569>
+120 -> <right after takeoff a slight change in course is the difference between landing in alaska or fiji> <0.0867>
+121 -> <likewise at or or even one good conversation one good break one good ted talk can have an enormous effect across years and even generations to come> <0.0820>
+122 -> <so heres an idea worth spreading to every twentysomething you know> <0.0627>
+123 -> <its as simple as what i learned to say to alex> <0.0994>
+124 -> <its what i now have the privilege of saying to twentysomethings like emma every single day thirty is not the new so claim your adulthood get some identity capital use your weak ties pick your family> <0.0784>
+125 -> <dont be defined by what you didnt know or didnt do> <0.1153>
+126 -> <youre deciding your life right now> <0.1026>
+127 -> <thank you> <0.7467>
+128 -> <throughout the history of computers weve been striving to shorten the gap between us and digital information the gap between our physical world and the world in the screen where our imagination can go wild> <0.0769>
+129 -> <and this gap has become shorter shorter and even shorter and now this gap is shortened down to less than a millimeter the thickness of a touch screen glass and the power of computing has become accessible to everyone> <0.0740>
+130 -> <but i wondered what if there could be no boundary at all> <0.1178>
+131 -> <i started to imagine what this would look like> <0.1000>
+132 -> <first i created this tool which penetrates into the digital space so when you press it hard on the screen it transfers its physical body into pixels> <0.0786>
+133 -> <designers can materialize their ideas directly in and surgeons can practice on virtual organs underneath the screen> <0.0886>
+134 -> <so with this tool this boundary has been broken> <0.1215>
+135 -> <but our two hands still remain outside the screen> <0.1000>
+136 -> <how can you reach inside and interact with the digital information using the full dexterity of our hands> <0.0870>
+137 -> <at microsoft applied sciences along with my mentor cati boulanger i redesigned the computer and turned a little space above the keyboard into a digital workspace> <0.0820>
+138 -> <by combining a transparent display and depth cameras for sensing your fingers and face now you can lift up your hands from the keyboard and reach inside this space and grab pixels with your bare hands> <0.0772>
+139 -> <because windows and files have a position in the real space selecting them is as easy as grabbing a book off your shelf> <0.0903>
+140 -> <then you can flip through this book while highlighting the lines words on the virtual touch pad below each floating window> <0.0820>
+141 -> <architects can stretch or rotate the models with their two hands directly> <0.0836>
+142 -> <so in these examples we are reaching into the digital world> <0.0975>
+143 -> <but how about reversing its role and having the digital information reach us instead> <0.1081>
+144 -> <im sure many of us have had the experience of buying and returning items online> <0.1090>
+145 -> <but now you dont have to worry about it> <0.1120>
+146 -> <what i got here is an online augmented fitting room> <0.0975>
+147 -> <this is a view that you get from head mounted or see through display when the system understands the geometry of your body> <0.0796>
+148 -> <taking this idea further i started to think instead of just seeing these pixels in our space how can we make it physical so that we can touch and feel it> <0.0827>
+149 -> <what would such a future look like> <0.1325>
+150 -> <at mit media lab along with my advisor hiroshi ishii and my collaborator rehmi post we created this one physical pixel> <0.0825>
+151 -> <well in this case this spherical magnet acts like a pixel in our space which means that both computers and people can move this object to anywhere within this little space> <0.0795>
+152 -> <what we did was essentially canceling gravity and controlling the movement by combining magnetic levitation and mechanical actuation and sensing technologies> <0.0830>
+153 -> <and by digitally programming the object we are liberating the object from constraints of time and space which means that now human motions can be recorded and played back and left permanently in the physical world> <0.0823>
+154 -> <so choreography can be taught physically over distance and michael jordans famous shooting can be replicated over and over as a physical reality> <0.0830>
+155 -> <students can use this as a tool to learn about the complex concepts such as planetary motion physics and unlike computer screens or textbooks this is a real tangible experience that you can touch and feel and its very powerful> <0.0735>
+156 -> <and whats more exciting than just turning whats currently in the computer physical is to start imagining how programming the world will alter even our daily physical activities> <0.0769>
+157 -> <as you can see the digital information will not just show us something but it will start directly acting upon us as a part of our physical surroundings without disconnecting ourselves from our world> <0.0795>
+158 -> <today we started by talking about the boundary but if we remove this boundary the only boundary left is our imagination> <0.0814>
+159 -> <thank you> <0.7467>
+160 -> <so i was trained to become a gymnast for two years in hunan china in the> <0.0867>
+161 -> <when i was in the first grade the government wanted to transfer me to a school for athletes all expenses paid> <0.0814>
+162 -> <but my tiger mother said no> <0.1032>
+163 -> <my parents wanted me to become an engineer like them> <0.1045>
+164 -> <after surviving the cultural revolution they firmly believed theres only one sure way to happiness a safe and well paid job> <0.0830>
+165 -> <it is not important if i like the job or not> <0.1173>
+166 -> <but my dream was to become a chinese opera singer> <0.0890>
+167 -> <that is me playing my imaginary piano> <0.0799>
+168 -> <an opera singer must start training young to learn acrobatics so i tried everything i could to go to opera school> <0.0814>
+169 -> <i even wrote to the school principal and the host of a radio show> <0.0932>
+170 -> <but no adults liked the idea> <0.1026>
+171 -> <no adults believed i was serious> <0.1026>
+172 -> <only my friends supported me but they were kids just as powerless as i was> <0.0932>
+173 -> <so at age i knew i was too old to be trained> <0.0921>
+174 -> <my dream would never come true> <0.1163>
+175 -> <i was afraid that for the rest of my life some second class happiness would be the best i could hope for> <0.1074>
+176 -> <but thats so unfair> <0.1163>
+177 -> <so i was determined to find another calling> <0.1107>
+178 -> <nobody around to teach me fine> <0.1163>
+179 -> <i turned to books> <0.0662>
+180 -> <i satisfied my hunger for parental advice from this book by a family of writers and musicians i found my role model of an independent woman when confucian tradition requires obedience and i learned to be efficient from this book and i was inspired to study abroad after reading these> <0.0655>
+181 -> <i came to the u s in so which books did i read here first> <0.1149>
+182 -> <books banned in china of course> <0.1026>
+183 -> <the good earth is about chinese peasant life> <0.1000>
+184 -> <thats just not convenient for propaganda got it> <0.1000>
+185 -> <the bible is interesting but strange> <0.1163>
+186 -> <thats a topic for a different day> <0.1000>
+187 -> <but the fifth commandment gave me an epiphany you shall honor your father and mother> <0.0946>
+188 -> <honor i said thats so different and better than obey> <0.0935>
+189 -> <so it becomes my tool to climb out of this confucian guilt trap and to restart my relationship with my parents> <0.0870>
+190 -> <encountering a new culture also started my habit of comparative reading> <0.0890>
+191 -> <it offers many insights> <0.1582>
+192 -> <for example i found this map out of place at first because this is what chinese students grew up with> <0.0870>
+193 -> <it had never occurred to me china doesnt have to be at the center of the world> <0.0968>
+194 -> <a map actually carries somebodys view> <0.0910>
+195 -> <comparative reading actually is nothing new> <0.1026>
+196 -> <its a standard practice in the academic world> <0.1032>
+197 -> <there are even research fields such as comparative religion and comparative literature> <0.0961>
+198 -> <compare and contrast gives scholars a more complete understanding of a topic> <0.0961>
+199 -> <so i thought well if comparative reading works for research why not do it in daily life too> <0.0776>
+200 -> <so i started reading books in pairs> <0.0799>
+201 -> <so they can be about people who are involved in the same event or friends with shared experiences> <0.0835>
+202 -> <i also compare the same stories in different genres or similar stories from different cultures as joseph campbell did in his wonderful book for example both the christ and the buddha went through three temptations> <0.0818>
+203 -> <for the christ the temptations are economic political and spiritual> <0.1074>
+204 -> <for the buddha they are all psychological lust fear and social duty interesting> <0.0789>
+205 -> <so if you know a foreign language its also fun to read your favorite books in two languages> <0.1015>
+206 -> <instead of lost in translation i found there is much to gain> <0.0852>
+207 -> <for example its through translation that i realized happiness in chinese literally means fast joy huh> <0.0894>
+208 -> <bride in chinese literally means new mother uh oh> <0.0920>
+209 -> <books have given me a magic portal to connect with people of the past and the present> <0.0870>
+210 -> <i know i shall never feel lonely or powerless again> <0.1425>
+211 -> <having a dream shattered really is nothing compared to what many others have suffered> <0.0685>
+212 -> <i have come to believe that coming true is not the only purpose of a dream> <0.1081>
+213 -> <its most important purpose is to get us in touch with where dreams come from where passion comes from where happiness comes from> <0.0786>
+214 -> <even a shattered dream can do that for you> <0.1000>
+215 -> <so because of books im here today happy living again with a purpose and a clarity most of the time> <0.0957>
+216 -> <so may books be always with you> <0.1026>
+217 -> <thank you> <0.7467>
+218 -> <thank you> <0.7467>
+219 -> <thank you> <0.7467>
+220 -> <so when i was eight years old a new girl came to join the class and she was so impressive as the new girl always seems to be> <0.0820>
+221 -> <she had vast quantities of very shiny hair and a cute little pencil case super strong on state capitals just a great speller> <0.0862>
+222 -> <and i just curdled with jealousy that year until i hatched my devious plan> <0.0988>
+223 -> <so one day i stayed a little late after school a little too late and i lurked in the girls bathroom> <0.1106>
+224 -> <when the coast was clear i emerged crept into the classroom and took from my teachers desk the grade book> <0.0649>
+225 -> <and then i did it> <0.1678>
+226 -> <i fiddled with my rivals grades just a little just demoted some of those as> <0.0878>
+227 -> <all of those as> <0.1325>
+228 -> <and i got ready to return the book to the drawer when hang on some of my other classmates had appallingly good grades too> <0.1184>
+229 -> <so in a frenzy i corrected everybodys marks not imaginatively> <0.0659>
+230 -> <i gave everybody a row of ds and i gave myself a row of as just because i was there you know might as well> <0.0986>
+231 -> <and i am still baffled by my behavior> <0.1000>
+232 -> <i dont understand where the idea came from> <0.1000>
+233 -> <i dont understand why i felt so great doing it> <0.1358>
+234 -> <i felt great> <0.0988>
+235 -> <i dont understand why i was never caught> <0.1107>
+236 -> <i mean it should have been so blatantly obvious> <0.1000>
+237 -> <i was never caught> <0.1163>
+238 -> <but most of all i am baffled by why did it bother me so much that this little girl this tiny little girl was so good at spelling> <0.0896>
+239 -> <jealousy baffles me> <0.0988>
+240 -> <its so mysterious and its so pervasive> <0.1032>
+241 -> <we know babies suffer from jealousy> <0.0906>
+242 -> <we know primates do bluebirds are actually very prone> <0.0870>
+243 -> <we know that jealousy is the number one cause of spousal murder in the united states> <0.0870>
+244 -> <and yet i have never read a study that can parse to me its loneliness or its longevity or its grim thrill> <0.0759>
+245 -> <for that we have to go to fiction because the novel is the lab that has studied jealousy in every possible configuration> <0.0830>
+246 -> <in fact i dont know if its an exaggeration to say that if we didnt have jealousy would we even have literature> <0.1154>
+247 -> <well no faithless helen no odyssey> <0.1163>
+248 -> <no jealous king no arabian nights> <0.0795>
+249 -> <no shakespeare> <0.1163>
+250 -> <there goes high school reading lists because were losing sound and the fury were losing gatsby sun also rises were losing madame bovary anna k> <0.0629>
+251 -> <no jealousy no proust and now i mean i know its fashionable to say that proust has the answers to everything but in the case of jealousy he kind of does> <0.0949>
+252 -> <this year is the centennial of his masterpiece in search of lost time and its the most exhaustive study of sexual jealousy and just regular competitiveness my brand that we can hope to have> <0.0823>
+253 -> <and we think about proust we think about the sentimental bits right> <0.0878>
+254 -> <we think about a little boy trying to get to sleep> <0.0975>
+255 -> <we think about a madeleine moistened in lavender tea> <0.0937>
+256 -> <we forget how harsh his vision was> <0.0799>
+257 -> <we forget how pitiless he is> <0.0910>
+258 -> <i mean these are books that virginia woolf said were tough as cat gut> <0.0897>
+259 -> <i dont know what cat gut is but lets assume its formidable> <0.2447>
+260 -> <lets look at why they go so well together the novel and jealousy jealousy and proust> <0.0932>
+261 -> <is it something as obvious as that jealousy which boils down into person desire impediment is such a solid narrative foundation> <0.0862>
+262 -> <i dont know i think it cuts very close to the bone because lets think about what happens when we feel jealous> <0.1744>
+263 -> <when we feel jealous we tell ourselves a story> <0.1000>
+264 -> <we tell ourselves a story about other peoples lives and these stories make us feel terrible because theyre designed to make us feel terrible> <0.0820>
+265 -> <as the teller of the tale and the audience we know just what details to include to dig that knife in right> <0.0909>
+266 -> <jealousy makes us all amateur novelists and this is something proust understood> <0.0739>
+267 -> <in the first volume swanns way the series of books swann one of the main characters is thinking very fondly of his mistress and how great she is in bed and suddenly in the course of a few sentences and these are proustian sentences so theyre long as rivers but in the course of a few sentences he suddenly recoils and he realizes hang on everything i love about this woman somebody else would love about this woman> <0.0603>
+268 -> <everything that she does that gives me pleasure could be giving somebody else pleasure maybe right about now> <0.0759>
+269 -> <and this is the story he starts to tell himself and from then on proust writes that every fresh charm swann detects in his mistress he adds to his collection of instruments in his private torture chamber> <0.0879>
+270 -> <now swann and proust we have to admit were notoriously jealous> <0.1173>
+271 -> <you know prousts boyfriends would have to leave the country if they wanted to break up with him> <0.0820>
+272 -> <but you dont have to be that jealous to concede that its hard work right> <0.0946>
+273 -> <jealousy is exhausting> <0.1206>
+274 -> <its a hungry emotion it must be fed> <0.1107>
+275 -> <and what does jealousy like> <0.1163>
+276 -> <jealousy likes information> <0.1206>
+277 -> <jealousy likes details> <0.0988>
+278 -> <jealousy likes the vast quantities of shiny hair the cute little pencil case> <0.0902>
+279 -> <jealousy likes photos> <0.0988>
+280 -> <thats why instagram is such a hit> <0.1000>
+281 -> <proust actually links the language of scholarship and jealousy> <0.1019>
+282 -> <when swann is in his jealous throes and suddenly hes listening at doorways and bribing his mistress servants he defends these behaviors> <0.0838>
+283 -> <he says you know look i know you think this is repugnant but it is no different from interpreting an ancient text or looking at a monument> <0.0907>
+284 -> <he says they are scientific investigations with real intellectual value> <0.0774>
+285 -> <proust is trying to show us that jealousy feels intolerable and makes us look absurd but it is at its crux a quest for knowledge a quest for truth painful truth and actually where proust is concerned the more painful the truth the better> <0.0760>
+286 -> <grief humiliation loss these were the avenues to wisdom for proust> <0.0836>
+287 -> <he says a woman whom we need who makes us suffer elicits from us a gamut of feelings far more profound and vital than a man of genius who interests us> <0.0858>
+288 -> <is he telling us to just go and find cruel women> <0.0975>
+289 -> <no i think hes trying to say that jealousy reveals us to ourselves> <0.0862>
+290 -> <and does any other emotion crack us open in this particular way> <0.0716>
+291 -> <does any other emotion reveal to us our aggression and our hideous ambition and our entitlement> <0.0870>
+292 -> <does any other emotion teach us to look with such peculiar intensity> <0.0614>
+293 -> <freud would write about this later> <0.1026>
+294 -> <one day freud was visited by this very anxious young man who was consumed with the thought of his wife cheating on him> <0.0825>
+295 -> <and freud says its something strange about this guy because hes not looking at what his wife is doing> <0.1123>
+296 -> <because shes blameless everybody knows it> <0.0799>
+297 -> <the poor creature is just under suspicion for no cause> <0.0975>
+298 -> <but hes looking for things that his wife is doing without noticing unintentional behaviors> <0.0946>
+299 -> <is she smiling too brightly here or did she accidentally brush up against a man there> <0.0833>
+300 -> <says that the man is becoming the custodian of his wifes unconscious> <0.0946>
+301 -> <the novel is very good on this point> <0.1163>
+302 -> <the novel is very good at describing how jealousy trains us to look with intensity but not accuracy> <0.0878>
+303 -> <in fact the more intensely jealous we are the more we become residents of fantasy> <0.0867>
+304 -> <and this is why i think jealousy doesnt just provoke us to do violent things or illegal things> <0.0826>
+305 -> <jealousy prompts us to behave in ways that are wildly inventive> <0.0890>
+306 -> <now im thinking of myself at eight i concede but im also thinking of this story i heard on the news> <0.0933>
+307 -> <a year old michigan woman was caught creating a fake facebook account from which she sent vile hideous messages to herself for a year> <0.0786>
+308 -> <for a year a year> <0.1325>
+309 -> <and she was trying to frame her ex boyfriends new girlfriend and i have to confess when i heard this i just reacted with admiration> <0.1064>
+310 -> <because i mean lets be real> <0.1026>
+311 -> <what immense if misplaced creativity right> <0.1026>
+312 -> <this is something from a novel> <0.1163>
+313 -> <this is something from a patricia highsmith novel> <0.1000>
+314 -> <now highsmith is a particular favorite of mine> <0.1107>
+315 -> <she is the very brilliant and bizarre woman of american letters> <0.1074>
+316 -> <shes the author of strangers on a train and the talented mr ripley books that are all about how jealousy it muddles our minds and once were in the sphere in that realm of jealousy the membrane between what is and what could be can be pierced in an instant> <0.0720>
+317 -> <take tom ripley her most famous character> <0.1026>
+318 -> <now tom ripley goes from wanting you or wanting what you have to being you and having what you once had and youre under the floorboards hes answering to your name hes wearing your rings emptying your bank account> <0.0706>
+319 -> <thats one way to go> <0.1163>
+320 -> <but what do we do we cant go the tom ripley route> <0.0977>
+321 -> <i cant give the world ds as much as i would really like to some days> <0.1197>
+322 -> <and its a pity because we live in envious times> <0.1283>
+323 -> <we live in jealous times> <0.1163>
+324 -> <i mean were all good citizens of social media arent we where the currency is envy> <0.0974>
+325 -> <does the novel show us a way out im not sure> <0.0931>
+326 -> <so lets do what characters always do when theyre not sure when they are in possession of a mystery> <0.0870>
+327 -> <lets go to baker street and ask for sherlock holmes> <0.0961>
+328 -> <when people think of holmes they think of his nemesis being professor moriarty right this criminal mastermind> <0.0867>
+329 -> <but ive always preferred lestrade who is the rat faced head of scotland yard who needs holmes desperately needs holmes genius but resents him> <0.0782>
+330 -> <oh its so familiar to me> <0.1206>
+331 -> <so lestrade needs his help resents him and sort of seethes with bitterness over the course of the mysteries> <0.0868>
+332 -> <but as they work together something starts to change and finally in the adventure of the six napoleons once holmes comes in dazzles everybody with his solution lestrade turns to holmes and he says were not jealous of you mr holmes> <0.0747>
+333 -> <were proud of you> <0.0662>
+334 -> <and he says that theres not a man at scotland yard who wouldnt want to shake sherlock holmes hand> <0.1059>
+335 -> <its one of the few times we see holmes moved in the mysteries and i find it very moving this little scene but its also mysterious right> <0.0939>
+336 -> <it seems to treat jealousy as a problem of geometry not emotion> <0.0739>
+337 -> <you know one minute holmes is on the other side from lestrade> <0.0890>
+338 -> <the next minute theyre on the same side> <0.1335>
+339 -> <suddenly lestrade is letting himself admire this mind that hes resented> <0.0878>
+340 -> <could it be so simple though> <0.1163>
+341 -> <what if jealousy really is a matter of geometry just a matter of where we allow ourselves to stand in relation to another> <0.0908>
+342 -> <well maybe then we wouldnt have to resent somebodys excellence> <0.0852>
+343 -> <we could align ourselves with it> <0.1163>
+344 -> <but i like contingency plans> <0.0809>
+345 -> <so while we wait for that to happen let us remember that we have fiction for consolation> <0.0962>
+346 -> <fiction alone demystifies jealousy> <0.0809>
+347 -> <fiction alone domesticates it invites it to the table> <0.1000>
+348 -> <and look who it gathers sweet lestrade terrifying tom ripley crazy swann marcel proust himself> <0.0929>
+349 -> <we are in excellent company> <0.1163>
+350 -> <thank you> <0.7467>
+351 -> <i was about years old on a camping trip with my dad in the adirondack mountains a wilderness area in the northern part of new york state> <0.0786>
+352 -> <it was a beautiful day> <0.1163>
+353 -> <the forest was sparkling> <0.1206>
+354 -> <the sun made the leaves glow like stained glass and if it werent for the path we were following we could almost pretend we were the first human beings to ever walk that land> <0.0823>
+355 -> <we got to our campsite> <0.1163>
+356 -> <it was a lean to on a bluff looking over a crystal beautiful lake when i discovered a horror> <0.0814>
+357 -> <behind the lean to was a dump maybe feet square with rotting apple cores and balled up aluminum foil and a dead sneaker> <0.0771>
+358 -> <and i was astonished i was very angry and i was deeply confused> <0.1074>
+359 -> <the campers who were too lazy to take out what they had brought in who did they think would clean up after them> <0.0814>
+360 -> <that question stayed with me and it simplified a little> <0.0975>
+361 -> <who cleans up after us> <0.1163>
+362 -> <however you configure or wherever you place the us who cleans up after us in istanbul> <0.0790>
+363 -> <who cleans up after us in rio or in paris or in london> <0.0902>
+364 -> <here in new york the department of sanitation cleans up after us to the tune of tons of garbage and tons of recyclables every day> <0.0820>
+365 -> <i wanted to get to know them as individuals> <0.1000>
+366 -> <i wanted to understand who takes the job> <0.1000>
+367 -> <whats it like to wear the uniform and bear that burden> <0.1086>
+368 -> <so i started a research project with them> <0.1000>
+369 -> <i rode in the trucks and walked the routes and interviewed people in offices and facilities all over the city and i learned a lot but i was still an outsider> <0.0855>
+370 -> <i needed to go deeper> <0.1325>
+371 -> <so i took the job as a sanitation worker> <0.1000>
+372 -> <i didnt just ride in the trucks now i drove the trucks> <0.1328>
+373 -> <and i operated the mechanical brooms and i plowed the snow> <0.1074>
+374 -> <it was a remarkable privilege and an amazing education> <0.1429>
+375 -> <everyone asks about the smell> <0.0906>
+376 -> <its there but its not as prevalent as you think and on days when it is really bad you get used to it rather quickly> <0.0896>
+377 -> <the weight takes a long time to get used to> <0.0975>
+378 -> <i knew people who were several years on the job whose bodies were still adjusting to the burden of bearing on your body tons of trash every week> <0.0782>
+379 -> <then theres the danger> <0.2855>
+380 -> <according to the bureau of labor statistics sanitation work is one of the most dangerous occupations in the country and i learned why> <0.0855>
+381 -> <youre in and out of traffic all day and its zooming around you> <0.0498>
+382 -> <it just wants to get past you so its often the motorist is not paying attention> <0.1013>
+383 -> <thats really bad for the worker> <0.1163>
+384 -> <and then the garbage itself is full of hazards that often fly back out of the truck and do terrible harm> <0.0963>
+385 -> <i also learned about the relentlessness of trash> <0.1000>
+386 -> <when you step off the curb and you see a city from behind a truck you come to understand that trash is like a force of nature unto itself> <0.0858>
+387 -> <it never stops coming> <0.1206>
+388 -> <its also like a form of respiration or circulation> <0.1019>
+389 -> <it must always be in motion> <0.1163>
+390 -> <and then theres the stigma> <0.2913>
+391 -> <you put on the uniform and you become invisible until someone is upset with you for whatever reason like youve blocked traffic with your truck or youre taking a break too close to their home or youre drinking coffee in their diner and they will come and scorn you and tell you that they dont want you anywhere near them> <0.0756>
+392 -> <i find the stigma especially ironic because i strongly believe that sanitation workers are the most important labor force on the streets of the city for three reasons> <0.1015>
+393 -> <they are the first guardians of public health> <0.1000>
+394 -> <if theyre not taking away trash efficiently and effectively every day it starts to spill out of its containments and the dangers inherent to it threaten us in very real ways> <0.0823>
+395 -> <diseases weve had in check for decades and centuries burst forth again and start to harm us> <0.0919>
+396 -> <the economy needs them> <0.1206>
+397 -> <if we cant throw out the old stuff we have no room for the new stuff so then the engines of the economy start to sputter when consumption is compromised> <0.0855>
+398 -> <im not advocating capitalism im just pointing out their relationship> <0.1583>
+399 -> <and then theres what i call our average necessary quotidian velocity> <0.1186>
+400 -> <by that i simply mean how fast were used to moving in the contemporary day and age> <0.0878>
+401 -> <we usually dont care for repair clean carry around our coffee cup our shopping bag our bottle of water> <0.0919>
+402 -> <we use them we throw them out we forget about them because we know theres a workforce on the other side thats going to take it all away> <0.0792>
+403 -> <so i want to suggest today a couple of ways to think about sanitation that will perhaps help ameliorate the stigma and bring them into this conversation of how to craft a city that is sustainable and humane> <0.0760>
+404 -> <their work i think is kind of liturgical> <0.1000>
+405 -> <theyre on the streets every day rhythmically> <0.0920>
+406 -> <they wear a uniform in many cities> <0.0906>
+407 -> <you know when to expect them> <0.0906>
+408 -> <and their work lets us do our work> <0.1443>
+409 -> <they are almost a form of reassurance> <0.1169>
+410 -> <the flow that they maintain keeps us safe from ourselves from our own dross our cast offs and that flow must be maintained always no matter what> <0.0820>
+411 -> <on the day after september in i heard the growl of a sanitation truck on the street and i grabbed my infant son and i ran downstairs and there was a man doing his paper recycling route like he did every wednesday> <0.0798>
+412 -> <and i tried to thank him for doing his work on that day of all days but i started to cry> <0.0782>
+413 -> <and he looked at me and he just nodded and he said were going to be okay> <0.0886>
+414 -> <were going to be okay> <0.0809>
+415 -> <it was a little while later that i started my research with sanitation and i met that man again> <0.0919>
+416 -> <his name is paulie and we worked together many times and we became good friends> <0.0946>
+417 -> <i want to believe that paulie was right> <0.1107>
+418 -> <we are going to be okay> <0.1163>
+419 -> <but in our effort to reconfigure how we as a species exist on this planet we must include and take account of all the costs including the very real human cost of the labor> <0.0758>
+420 -> <and we also would be well informed to reach out to the people who do that work and get their expertise on how do we think about how do we create systems around sustainability that perhaps take us from curbside recycling which is a remarkable success across years across the united states and countries around the world and lift us up to a broader horizon where were looking at other forms of waste that could be lessened from manufacturing and industrial sources> <0.0330>
+421 -> <municipal waste what we think of when we talk about garbage accounts for three percent of the nations waste stream> <0.0825>
+422 -> <its a remarkable statistic> <0.1933>
+423 -> <so in the flow of your days in the flow of your lives next time you see someone whose job is to clean up after you take a moment to acknowledge them> <0.0792>
+424 -> <take a moment to say thank you> <0.1163>
+425 -> <hello tedwomen whats up> <0.1206>
+426 -> <not good enough> <0.1933>
+427 -> <hello tedwomen what is up> <0.0988>
+428 -> <my name is maysoon zayid and i am not drunk but the doctor who delivered me was> <0.2833>
+429 -> <he cut my mom six different times in six different directions suffocating poor little me in the process> <0.0820>
+430 -> <as a result i have cerebral palsy which means i shake all the time> <0.1157>
+431 -> <look> <0.1999>
+432 -> <its exhausting im like shakira shakira meets muhammad ali> <0.1173>
+433 -> <c p is not genetic> <0.1163>
+434 -> <its not a birth defect you cant catch it> <0.1272>
+435 -> <no one put a curse on my mothers uterus and i didnt get it because my parents are first cousins which they are> <0.1015>
+436 -> <it only happens from accidents like what happened to me on my birth day> <0.0946>
+437 -> <now i must warn you im not inspirational and i dont want anyone in this room to feel bad for me because at some point in your life you have dreamt of being disabled> <0.1735>
+438 -> <come on a journey with me> <0.1163>
+439 -> <its christmas eve youre at the mall youre driving around in circles looking for parking and what do you see> <0.0876>
+440 -> <sixteen empty handicapped spaces> <0.0988>
+441 -> <and youre like god cant i just be a little disabled> <0.1079>
+442 -> <also i gotta tell you i got problems and palsy is just one> <0.1100>
+443 -> <if there was an oppression olympics i would win the gold medal> <0.0921>
+444 -> <im palestinian muslim im female im disabled and i live in new jersey> <0.1223>
+445 -> <if you dont feel better about yourself maybe you should> <0.0975>
+446 -> <cliffside park new jersey is my hometown> <0.0799>
+447 -> <i have always loved the fact that my hood and my affliction share the same initials> <0.0996>
+448 -> <i also love the fact that if i wanted to walk from my house to new york city i could> <0.1060>
+449 -> <a lot of people with c p dont walk but my parents didnt believe in cant> <0.1132>
+450 -> <my fathers mantra was you can do it yes you can can> <0.0890>
+451 -> <so if my three older sisters were mopping i was mopping> <0.0946>
+452 -> <if my three older sisters went to public school my parents would sue the school system and guarantee that i went too and if we didnt all get as we all got my mothers slipper> <0.0794>
+453 -> <my father taught me how to walk when i was five years old by placing my heels on his feet and just walking> <0.0820>
+454 -> <another tactic that he used is he would dangle a dollar bill in front of me and have me chase it> <0.1011>
+455 -> <my inner stripper was very strong and by yeah no by the first day of kindergarten i was walking like a champ who had been punched one too many times> <0.0858>
+456 -> <growing up there were only six arabs in my town and they were all my family> <0.0919>
+457 -> <now there are arabs in town and they are still all my family> <0.0731>
+458 -> <i dont think anyone even noticed we werent italian> <0.1088>
+459 -> <this was before and before politicians thought it was appropriate to use i hate moslems as a campaign slogan> <0.0873>
+460 -> <the people that i grew up with had no problem with my faith> <0.0946>
+461 -> <they did however seem very concerned that i would starve to death during ramadan> <0.1132>
+462 -> <i would explain to them that i have enough fat to live off of for three whole months so fasting from sunrise to sunset is a piece of cake> <0.0942>
+463 -> <i have tap danced on broadway> <0.1163>
+464 -> <yeah on broadway its crazy> <0.1162>
+465 -> <my parents couldnt afford physical therapy so they sent me to dancing school> <0.0924>
+466 -> <i learned how to dance in heels which means i can walk in heels> <0.0807>
+467 -> <and im from jersey and we are really concerned with being chic so if my friends wore heels so did i> <0.1229>
+468 -> <and when my friends went and spent their summer vacations on the jersey shore i did not> <0.1197>
+469 -> <i spent my summers in a war zone because my parents were afraid that if we didnt go back to palestine every single summer wed grow up to be madonna> <0.0971>
+470 -> <summer vacations often consisted of my father trying to heal me so i drank deers milk i had hot cups on my back i was dunked in the dead sea and i remember the water burning my eyes and thinking its working its working> <0.0844>
+471 -> <but one miracle cure we did find was yoga> <0.1443>
+472 -> <i have to tell you its very boring but before i did yoga i was a stand up comedian who cant stand up> <0.0896>
+473 -> <and now i can stand on my head> <0.1000>
+474 -> <my parents reinforced this notion that i could do anything that no dream was impossible and my dream was to be on the daytime soap opera general hospital> <0.0922>
+475 -> <i went to college during affirmative action and got a sweet scholarship to asu arizona state university because i fit every single quota> <0.1064>
+476 -> <i was like the pet lemur of the theater department> <0.0975>
+477 -> <everybody loved me> <0.1206>
+478 -> <i did all the less than intelligent kids homework i got as in all of my classes as in all of their classes> <0.0903>
+479 -> <every time i did a scene from the glass menagerie my professors would weep> <0.1120>
+480 -> <but i never got cast> <0.1026>
+481 -> <finally my senior year asu decided to do a show called they dance real slow in jackson> <0.0711>
+482 -> <its a play about a girl with c p> <0.1328>
+483 -> <i was a girl with c p> <0.1266>
+484 -> <so i start shouting from the rooftops im finally going to get a part> <0.0961>
+485 -> <i have cerebral palsy> <0.1163>
+486 -> <free at last free at last> <0.1163>
+487 -> <thank god almighty im free at last> <0.0799>
+488 -> <i didnt get the part> <0.1163>
+489 -> <sherry brown got the part> <0.1325>
+490 -> <i went racing to the head of the theater department crying hysterically like someone shot my cat to ask her why and she said it was because they didnt think i could do the stunts> <0.0999>
+491 -> <i said excuse me if i cant do the stunts neither can the character> <0.1138>
+492 -> <this was a part that i was literally born to play and they gave it they gave it to a non palsy actress> <0.0862>
+493 -> <college was imitating life> <0.0809>
+494 -> <hollywood has a sordid history of casting able bodied actors to play disabled onscreen> <0.0867>
+495 -> <upon graduating i moved back home and my first acting gig was as an extra on a daytime soap opera> <0.0942>
+496 -> <my dream was coming true> <0.1163>
+497 -> <and i knew that i would be promoted from diner diner to wacky best friend in no time> <0.0798>
+498 -> <but instead i remained a glorified piece of furniture that you could only recognize from the back of my head and it became clear to me that casting directors didnt hire fluffy ethnic disabled actors> <0.0862>
+499 -> <they only hired perfect people> <0.1026>
+500 -> <but there were exceptions to the rule> <0.1266>
+501 -> <i grew up watching whoopi goldberg roseanne barr ellen and all of these women had one thing in common they were comedians> <0.0862>
+502 -> <so i became a comic> <0.1163>
+503 -> <my first gig was driving famous comics from new york city to shows in new jersey and ill never forget the face of the first comic i ever drove when he realized that he was speeding down the new jersey turnpike with a chick with c p driving him> <0.0734>
+504 -> <ive performed in clubs all over america and ive also performed in arabic in the middle east uncensored and uncovered> <0.0903>
+505 -> <some people say im the first stand up comic in the arab world> <0.1091>
+506 -> <i never like to claim first but i do know that they never heard that nasty little rumor that women arent funny and they find us hysterical> <0.1009>
+507 -> <in my brother from another mother and father dean obeidallah and i started the new york arab american comedy festival now in its year> <0.0595>
+508 -> <our goal was to change the negative image of arab americans in media while also reminding casting directors that south asian and arab are not synonymous> <0.0933>
+509 -> <mainstreaming arabs was much much easier than conquering the challenge against the stigma against disability> <0.0946>
+510 -> <my big break came in> <0.1169>
+511 -> <i was invited to be a guest on the cable news show countdown with keith olbermann> <0.0820>
+512 -> <i walked in looking like i was going to the prom and they shuffle me into a studio and seat me on a spinning rolling chair> <0.0825>
+513 -> <so i looked at the stage manager and im like excuse me can i have another chair> <0.1204>
+514 -> <and she looked at me and she went five four three two> <0.0946>
+515 -> <and we were live right> <0.1481>
+516 -> <so i had to grip onto the anchors desk so that i wouldnt roll off the screen during the segment and when the interview was over i was livid> <0.0855>
+517 -> <i had finally gotten my chance and i blew it and i knew i would never get invited back> <0.1533>
+518 -> <but not only did mr olbermann invite me back he made me a full time contributor and he taped down my chair> <0.0862>
+519 -> <one fun fact i learned while on the air with keith olbermann was that humans on the internet are scumbags> <0.0864>
+520 -> <people say children are cruel but i was never made fun of as a child or an adult> <0.0901>
+521 -> <suddenly my disability on the world wide web is fair game> <0.0975>
+522 -> <i would look at clips online and see comments like yo whys she tweakin> <0.1063>
+523 -> <yo is she retarded> <0.0662>
+524 -> <and my favorite poor gumby mouth terrorist> <0.1335>
+525 -> <what does she suffer from> <0.0988>
+526 -> <we should really pray for her> <0.1026>
+527 -> <one commenter even suggested that i add my disability to my credits screenwriter comedian palsy> <0.0537>
+528 -> <disability is as visual as race> <0.0906>
+529 -> <if a wheelchair user cant play beyoncé then beyoncé cant play a wheelchair user> <0.1018>
+530 -> <the disabled are the largest yeah clap for that man cmon> <0.0902>
+531 -> <people with disabilities are the largest minority in the world and we are the most underrepresented in entertainment> <0.0862>
+532 -> <the doctors said that i wouldnt walk but i am here in front of you> <0.1630>
+533 -> <however if i grew up with social media i dont think i would be> <0.1587>
+534 -> <i hope that together we can create more positive images of disability in the media and in everyday life> <0.0909>
+535 -> <perhaps if there were more positive images it would foster less hate on the internet> <0.0932>
+536 -> <or maybe not> <0.1163>
+537 -> <maybe it still takes a village to teach our children well> <0.0890>
+538 -> <my crooked journey has taken me to some very spectacular places> <0.0975>
+539 -> <i got to walk the red carpet flanked by soap diva susan lucci and the iconic lorraine arbus> <0.0862>
+540 -> <i got to act in a movie with adam sandler and work with my idol the amazing dave matthews> <0.0870>
+541 -> <i toured the world as a headliner on arabs gone wild> <0.0634>
+542 -> <i was a delegate representing the great state of new jersey at the dnc> <0.0878>
+543 -> <and i founded maysoons kids a charity that hopes to give palestinian refugee children a sliver of the chance my parents gave me> <0.0947>
+544 -> <but the one moment that stands out the most was when i got before this moment but the one moment that stands out the most was when i got to perform for the man who floats like a butterfly and stings like a bee has parkinsons and shakes just like me muhammad ali> <0.0729>
+545 -> <it was the only time that my father ever saw me perform live and i dedicate this talk to his memory> <0.0947>
+546 -> <my name is maysoon zayid and if i can can you can can> <0.1013>
+547 -> <so we used to solve big problems> <0.0799>
+548 -> <on july buzz aldrin climbed out of apollo lunar module and descended onto the sea of tranquility> <0.0886>
+549 -> <armstrong and aldrin were alone but their presence on the moons gray surface was the culmination of a convulsive collective effort> <0.0825>
+550 -> <the apollo program was the greatest peacetime mobilization in the history of the united states> <0.0820>
+551 -> <to get to the moon nasa spent around billion dollars in todays money or four percent of the federal budget> <0.0820>
+552 -> <apollo employed around people and demanded the collaboration of companies universities and government agencies> <0.0946>
+553 -> <people died including the crew of apollo> <0.1000>
+554 -> <but before the apollo program ended men flew to the moon> <0.0961>
+555 -> <twelve walked on its surface of whom aldrin following the death of armstrong last year is now the most senior> <0.0820>
+556 -> <so why did they go> <0.0809>
+557 -> <they didnt bring much back pounds of old rocks and something all later emphasized a new sense of the smallness and the fragility of our common home> <0.0855>
+558 -> <why did they go the cynical answer is they went because president kennedy wanted to show the soviets that his nation had the better rockets> <0.0827>
+559 -> <but kennedys own words at rice university in provide a better clue> <0.0731>
+560 -> <to contemporaries apollo wasnt only a victory of west over east in the cold war> <0.0843>
+561 -> <at the time the strongest emotion was of wonder at the transcendent powers of technology> <0.0878>
+562 -> <they went because it was a big thing to do> <0.0994>
+563 -> <landing on the moon occurred in the context of a long series of technological triumphs> <0.0867>
+564 -> <the first half of the century produced the assembly line and the airplane penicillin and a vaccine for tuberculosis> <0.0870>
+565 -> <in the middle years of the century polio was eradicated and smallpox eliminated> <0.0961>
+566 -> <technology itself seemed to possess what alvin toffler in called accelerative thrust> <0.0716>
+567 -> <for most of human history we could go no faster than a horse or a boat with a sail but in the crew of apollo flew at miles an hour> <0.0827>
+568 -> <since no human beings have been back to the moon> <0.1045>
+569 -> <no one has traveled faster than the crew of apollo and blithe optimism about technologys powers has evaporated as big problems we had imagined technology would solve such as going to mars creating clean energy curing cancer or feeding the world have come to seem intractably hard> <0.0712>
+570 -> <i remember watching the liftoff of apollo> <0.1026>
+571 -> <i was five years old and my mother told me not to stare at the fiery exhaust of a saturn v rocket> <0.0957>
+572 -> <i vaguely knew this was to be the last of the moon missions but i was absolutely certain there would be mars colonies in my lifetime> <0.0823>
+573 -> <so something happened to our capacity to solve big problems with technology has become a commonplace> <0.0581>
+574 -> <you hear it all the time> <0.1163>
+575 -> <weve heard it over the last two days here at ted> <0.0878>
+576 -> <it feels as if technologists have diverted us and enriched themselves with trivial toys with things like iphones and apps and social media or algorithms that speed automated trading> <0.0639>
+577 -> <theres nothing wrong with most of these things> <0.1028>
+578 -> <theyve expanded and enriched our lives> <0.1169>
+579 -> <but they dont solve humanitys big problems> <0.1000>
+580 -> <what happened> <0.1206>
+581 -> <so there is a parochial explanation in silicon valley which admits that it has been funding less ambitious companies than it did in the years when it financed intel microsoft apple and genentech> <0.0827>
+582 -> <silicon valley says the markets are to blame in particular the incentives that venture capitalists offer to entrepreneurs> <0.0901>
+583 -> <silicon valley says that venture investing shifted away from funding transformational ideas and towards funding incremental problems or even fake problems> <0.0805>
+584 -> <but i dont think that explanation is good enough> <0.1749>
+585 -> <it mostly explains whats wrong with silicon valley> <0.0846>
+586 -> <even when venture capitalists were at their most risk happy they preferred small investments tiny investments that offered an exit within years> <0.0756>
+587 -> <v c s have always struggled to invest profitably in technologies such as energy whose capital requirements are huge and whose development is long and lengthy and v c s have never never funded the development of technologies meant to solve big problems that possess no immediate commercial value> <0.0780>
+588 -> <no the reasons we cant solve big problems are more complicated and more profound> <0.0932>
+589 -> <sometimes we choose not to solve big problems> <0.1019>
+590 -> <we could go to mars if we want> <0.1000>
+591 -> <nasa even has the outline of a plan> <0.1000>
+592 -> <but going to mars would follow a political decision with popular appeal and that will never happen> <0.0870>
+593 -> <we wont go to mars because everyone thinks there are more important things to do here on earth> <0.0919>
+594 -> <sometimes we cant solve big problems because our political systems fail> <0.1104>
+595 -> <today less than two percent of the worlds energy consumption derives from advanced renewable sources such as solar wind and biofuels less than two percent and the reason is purely economic> <0.0823>
+596 -> <coal and natural gas are cheaper than solar and wind and petroleum is cheaper than biofuels> <0.0748>
+597 -> <we want alternative energy sources that can compete on price none exist> <0.0878>
+598 -> <now technologists business leaders and economists all basically agree on what national policies and international treaties would spur the development of alternative energy mostly a significant increase in energy research and development and some kind of price on carbon> <0.0693>
+599 -> <but theres no hope in the present political climate that we will see u s energy policy or international treaties that reflect that consensus> <0.0786>
+600 -> <sometimes big problems that had seemed technological turn out not to be so> <0.1006>
+601 -> <famines were long understood to be caused by failures in food supply> <0.0789>
+602 -> <but years of research have taught us that famines are political crises that catastrophically affect food distribution> <0.0690>
+603 -> <technology can improve things like crop yields or systems for storing and transporting food but there will be famines so long as there are bad governments> <0.0753>
+604 -> <finally big problems sometimes elude solution because we dont really understand the problem> <0.0802>
+605 -> <president nixon declared war on cancer in but we soon discovered there are many kinds of cancer most of them fiendishly resistant to therapy and it is only in the last years that effective viable therapies have come to seem real> <0.0758>
+606 -> <hard problems are hard> <0.0988>
+607 -> <its not true that we cant solve big problems through technology> <0.0637>
+608 -> <we can we must but these four elements must all be present political leaders and the public must care to solve a problem institutions must support its solution it must really be a technological problem and we must understand it> <0.0629>
+609 -> <the apollo mission which has become a kind of metaphor for technologys capacity to solve big problems met these criteria> <0.0789>
+610 -> <but it is an irreproducible model for the future> <0.1000>
+611 -> <it is not> <0.1206>
+612 -> <there is no galvanizing contest like the cold war no politician like john kennedy who can heroize the difficult and the dangerous and no popular science fictional mythology such as exploring the solar system> <0.0775>
+613 -> <most of all going to the moon turned out to be easy> <0.1281>
+614 -> <it was just three days away> <0.1163>
+615 -> <and arguably it wasnt even solving much of a problem> <0.1483>
+616 -> <we are left alone with our day and the solutions of the future will be harder won> <0.0843>
+617 -> <god knows we dont lack for the challenges> <0.1443>
+618 -> <thank you very much> <0.2619>
+619 -> <id like to invite you to close your eyes> <0.1074>
+620 -> <imagine yourself standing outside the front door of your home> <0.0953>
+621 -> <id like you to notice the color of the door the material that its made out of> <0.0996>
+622 -> <now visualize a pack of overweight nudists on bicycles> <0.0920>
+623 -> <they are competing in a naked bicycle race and they are headed straight for your front door> <0.0870>
+624 -> <i need you to actually see this> <0.1026>
+625 -> <they are pedaling really hard theyre sweaty theyre bouncing around a lot> <0.0996>
+626 -> <and they crash straight into the front door of your home> <0.1283>
+627 -> <bicycles fly everywhere wheels roll past you spokes end up in awkward places> <0.0796>
+628 -> <step over the threshold of your door into your foyer your hallway whatevers on the other side and appreciate the quality of the light> <0.0889>
+629 -> <the light is shining down on cookie monster> <0.1000>
+630 -> <cookie monster is waving at you from his perch on top of a tan horse> <0.0890>
+631 -> <its a talking horse> <0.1325>
+632 -> <you can practically feel his blue fur tickling your nose> <0.0890>
+633 -> <you can smell the oatmeal raisin cookie that hes about to shovel into his mouth> <0.0946>
+634 -> <walk past him walk past him into your living room> <0.0975>
+635 -> <in your living room in full imaginative broadband picture britney spears> <0.0975>
+636 -> <she is scantily clad shes dancing on your coffee table and shes singing hit me baby one more time> <0.0870>
+637 -> <and then follow me into your kitchen> <0.1163>
+638 -> <in your kitchen the floor has been paved over with a yellow brick road and out of your oven are coming towards you dorothy the tin man the scarecrow and the lion from the wizard of oz hand in hand skipping straight towards you> <0.0650>
+639 -> <okay open your eyes> <0.1206>
+640 -> <i want to tell you about a very bizarre contest that is held every spring in new york city> <0.0932>
+641 -> <its called the united states memory championship> <0.1000>
+642 -> <and i had gone to cover this contest a few years back as a science journalist expecting i guess that this was going to be like the superbowl of savants> <0.1097>
+643 -> <this was a bunch of guys and a few ladies widely varying in both age and hygienic upkeep> <0.0870>
+644 -> <they were memorizing hundreds of random numbers looking at them just once> <0.0961>
+645 -> <they were memorizing the names of dozens and dozens and dozens of strangers> <0.0890>
+646 -> <they were memorizing entire poems in just a few minutes> <0.0975>
+647 -> <they were competing to see who could memorize the order of a shuffled pack of playing cards the fastest> <0.0814>
+648 -> <i was like this is unbelievable> <0.1163>
+649 -> <these people must be freaks of nature> <0.1000>
+650 -> <and i started talking to a few of the competitors> <0.1283>
+651 -> <this is a guy called ed cook who had come over from england where he had one of the best trained memories> <0.0820>
+652 -> <and i said to him ed when did you realize that you were a savant> <0.1542>
+653 -> <and ed was like im not a savant> <0.1228>
+654 -> <in fact i have just an average memory> <0.1107>
+655 -> <everybody who competes in this contest will tell you that they have just an average memory> <0.0867>
+656 -> <weve all trained ourselves to perform these utterly miraculous feats of memory using a set of ancient techniques techniques invented years ago in greece the same techniques that cicero had used to memorize his speeches that medieval scholars had used to memorize entire books> <0.0694>
+657 -> <and i was like whoa how come i never heard of this before> <0.1115>
+658 -> <and we were standing outside the competition hall and ed who is a wonderful brilliant but somewhat eccentric english guy says to me josh youre an american journalist> <0.0881>
+659 -> <do you know britney spears> <0.0988>
+660 -> <im like what no why> <0.1163>
+661 -> <because i really want to teach britney spears how to memorize the order of a shuffled pack of playing cards on u s national television> <0.0855>
+662 -> <it will prove to the world that anybody can do this> <0.1074>
+663 -> <i was like well im not britney spears but maybe you could teach me> <0.1982>
+664 -> <i mean youve got to start somewhere right> <0.1019>
+665 -> <and that was the beginning of a very strange journey for me> <0.1283>
+666 -> <i ended up spending the better part of the next year not only training my memory but also investigating it trying to understand how it works why it sometimes doesnt work and what its potential might be> <0.0822>
+667 -> <i met a host of really interesting people> <0.1000>
+668 -> <this is a guy called e p> <0.1026>
+669 -> <hes an amnesic who had very possibly the very worst memory in the world> <0.0878>
+670 -> <his memory was so bad that he didnt even remember he had a memory problem which is amazing> <0.0919>
+671 -> <and he was this incredibly tragic figure but he was a window into the extent to which our memories make us who we are> <0.0858>
+672 -> <the other end of the spectrum i met this guy> <0.0953>
+673 -> <this is kim peek> <0.2360>
+674 -> <he was the basis for dustin hoffmans character in the movie rain man> <0.0890>
+675 -> <we spent an afternoon together in the salt lake city public library memorizing phone books which was scintillating> <0.0820>
+676 -> <and i went back and i read a whole host of memory treatises treatises written plus years ago in latin in antiquity and then later in the middle ages> <0.0855>
+677 -> <and i learned a whole bunch of really interesting stuff> <0.1283>
+678 -> <one of the really interesting things that i learned is that once upon a time this idea of having a trained disciplined cultivated memory was not nearly so alien as it would seem to us to be today> <0.0798>
+679 -> <once upon a time people invested in their memories in laboriously furnishing their minds> <0.0878>
+680 -> <over the last few millenia weve invented a series of technologies from the alphabet to the scroll to the codex the printing press photography the computer the smartphone that have made it progressively easier and easier for us to externalize our memories for us to essentially outsource this fundamental human capacity> <0.0683>
+681 -> <these technologies have made our modern world possible but theyve also changed us> <0.0867>
+682 -> <theyve changed us culturally and i would argue that theyve changed us cognitively> <0.0946>
+683 -> <having little need to remember anymore it sometimes seems like weve forgotten how> <0.0731>
+684 -> <one of the last places on earth where you still find people passionate about this idea of a trained disciplined cultivated memory is at this totally singular memory contest> <0.0761>
+685 -> <its actually not that singular there are contests held all over the world> <0.0909>
+686 -> <and i was fascinated i wanted to know how do these guys do it> <0.1383>
+687 -> <a few years back a group of researchers at university college london brought a bunch of memory champions into the lab> <0.0710>
+688 -> <they wanted to know do these guys have brains that are somehow structurally anatomically different from the rest of ours> <0.0862>
+689 -> <the answer was no> <0.1163>
+690 -> <are they smarter than the rest of us> <0.1215>
+691 -> <they gave them a bunch of cognitive tests and the answer was not really> <0.1013>
+692 -> <there was however one really interesting and telling difference between the brains of the memory champions and the control subjects that they were comparing them to> <0.0825>
+693 -> <when they put these guys in an fmri machine scanned their brains while they were memorizing numbers and peoples faces and pictures of snowflakes they found that the memory champions were lighting up different parts of the brain than everyone else> <0.0798>
+694 -> <of note they were using or they seemed to be using a part of the brain thats involved in spatial memory and navigation> <0.0820>
+695 -> <why and is there something the rest of us can learn from this> <0.0798>
+696 -> <the sport of competitive memorizing is driven by a kind of arms race where every year somebody comes up with a new way to remember more stuff more quickly and then the rest of the field has to play catchup> <0.0718>
+697 -> <this is my friend ben pridmore three time world memory champion> <0.0902>
+698 -> <on his desk in front of him are shuffled packs of playing cards that he is about to try to memorize in one hour using a technique that he invented and he alone has mastered> <0.0823>
+699 -> <he used a similar technique to memorize the precise order of random binary digits in half an hour> <0.0820>
+700 -> <yeah> <0.1999>
+701 -> <and while there are a whole host of ways of remembering stuff in these competitions everything all of the techniques that are being used ultimately come down to a concept that psychologists refer to as elaborative encoding> <0.0804>
+702 -> <and its well illustrated by a nifty paradox known as the baker baker paradox which goes like this if i tell two people to remember the same word if i say to you remember that there is a guy named baker> <0.0848>
+703 -> <thats his name> <0.2360>
+704 -> <and i say to you remember that there is a guy who is a baker> <0.1157>
+705 -> <and i come back to you at some point later on and i say do you remember that word that i told you a while back> <0.1190>
+706 -> <do you remember what it was> <0.1026>
+707 -> <the person who was told his name is baker is less likely to remember the same word than the person was told his job is that he is a baker> <0.0827>
+708 -> <same word different amount of remembering thats weird> <0.1000>
+709 -> <whats going on here> <0.0988>
+710 -> <well the name baker doesnt actually mean anything to you> <0.1383>
+711 -> <it is entirely untethered from all of the other memories floating around in your skull> <0.0890>
+712 -> <but the common noun baker we know bakers> <0.1107>
+713 -> <bakers wear funny white hats> <0.0906>
+714 -> <bakers have flour on their hands> <0.0799>
+715 -> <bakers smell good when they come home from work> <0.1000>
+716 -> <maybe we even know a baker> <0.1307>
+717 -> <and when we first hear that word we start putting these associational hooks into it that make it easier to fish it back out at some later date> <0.0865>
+718 -> <the entire art of what is going on in these memory contests and the entire art of remembering stuff better in everyday life is figuring out ways to transform capital b bakers into lower case b bakers to take information that is lacking in context in significance in meaning and transform it in some way so that it becomes meaningful in the light of all the other things that you have in your mind> <0.0419>
+719 -> <one of the more elaborate techniques for doing this dates back years to ancient greece> <0.0890>
+720 -> <it came to be known as the memory palace> <0.0953>
+721 -> <the story behind its creation goes like this there was a poet called simonides who was attending a banquet> <0.0814>
+722 -> <he was actually the hired entertainment because back then if you wanted to throw a really slamming party you didnt hire a d j you hired a poet> <0.0743>
+723 -> <and he stands up delivers his poem from memory walks out the door and at the moment he does the banquet hall collapses kills everybody inside> <0.0815>
+724 -> <it doesnt just kill everybody it mangles the bodies beyond all recognition> <0.0860>
+725 -> <nobody can say who was inside nobody can say where they were sitting> <0.1033>
+726 -> <the bodies cant be properly buried> <0.0906>
+727 -> <its one tragedy compounding another> <0.1933>
+728 -> <simonides standing outside the sole survivor amid the wreckage closes his eyes and has this realization which is that in his minds eye he can see where each of the guests at the banquet had been sitting> <0.0769>
+729 -> <and he takes the relatives by the hand and guides them each to their loved ones amid the wreckage> <0.0963>
+730 -> <what simonides figured out at that moment is something that i think we all kind of intuitively know which is that as bad as we are at remembering names and phone numbers and word for word instructions from our colleagues we have really exceptional visual and spatial memories> <0.0727>
+731 -> <if i asked you to recount the first words of the story that i just told you about simonides chances are you would have a tough time with it> <0.1015>
+732 -> <but i would wager that if i asked you to recall who is sitting on top of a talking tan horse in your foyer right now you would be able to see that> <0.0896>
+733 -> <the idea behind the memory palace is to create this imagined edifice in your minds eye and populate it with images of the things that you want to remember the crazier weirder more bizarre funnier raunchier stinkier the image is the more unforgettable its likely to be> <0.0717>
+734 -> <this is advice that goes back plus years to the earliest latin memory treatises> <0.0790>
+735 -> <so how does this work> <0.1206>
+736 -> <lets say that youve been invited to ted center stage to give a speech and you want to do it from memory and you want to do it the way that cicero would have done it if he had been invited to tedxrome years ago> <0.0804>
+737 -> <what you might do is picture yourself at the front door of your house> <0.0814>
+738 -> <and youd come up with some sort of an absolutely crazy ridiculous unforgettable image to remind you that the first thing you want to talk about is this totally bizarre contest> <0.0891>
+739 -> <and then youd go inside your house and you would see an image of cookie monster on top of mister ed> <0.0862>
+740 -> <and that would remind you that you would want to then introduce your friend ed cook> <0.1184>
+741 -> <and then youd see an image of britney spears to remind you of this funny anecdote you want to tell> <0.1132>
+742 -> <and you go into your kitchen and the fourth topic you were going to talk about was this strange journey that you went on for a year and you have some friends to help you remember that> <0.0656>
+743 -> <this is how roman orators memorized their speeches not word for word which is just going to screw you up but topic for topic> <0.0909>
+744 -> <in fact the phrase topic sentence that comes from the greek word topos which means place> <0.0750>
+745 -> <thats a vestige of when people used to think about oratory and rhetoric in these sorts of spatial terms> <0.0802>
+746 -> <the phrase in the first place thats like in the first place of your memory palace> <0.0820>
+747 -> <i thought this was just fascinating and i got really into it> <0.1558>
+748 -> <and i went to a few more of these memory contests> <0.1592>
+749 -> <and i had this notion that i might write something longer about this subculture of competitive memorizers> <0.0764>
+750 -> <but there was a problem> <0.2006>
+751 -> <the problem was that a memory contest is a pathologically boring event> <0.0902>
+752 -> <truly it is like a bunch of people sitting around taking the sats> <0.0890>
+753 -> <i mean the most dramatic it gets is when somebody starts massaging their temples> <0.0932>
+754 -> <and im a journalist i need something to write about> <0.1963>
+755 -> <i know that theres this incredible stuff happening in these peoples minds but i dont have access to it> <0.1005>
+756 -> <and i realized if i was going to tell this story i needed to walk in their shoes a little bit> <0.1500>
+757 -> <and so i started trying to spend or minutes every morning before i sat down with my new york times just trying to remember something> <0.0908>
+758 -> <maybe it was a poem> <0.1163>
+759 -> <maybe it was names from an old yearbook that i bought at a flea market> <0.0867>
+760 -> <and i found that this was shockingly fun> <0.1443>
+761 -> <i never would have expected that> <0.0906>
+762 -> <it was fun because this is actually not about training your memory> <0.1104>
+763 -> <what youre doing is youre trying to get better and better and better at creating at dreaming up these utterly ludicrous raunchy hilarious and hopefully unforgettable images in your minds eye> <0.0823>
+764 -> <and i got pretty into it> <0.1481>
+765 -> <this is me wearing my standard competitive memorizers training kit> <0.0975>
+766 -> <its a pair of earmuffs and a set of safety goggles that have been masked over except for two small pinholes because distraction is the competitive memorizers greatest enemy> <0.0858>
+767 -> <i ended up coming back to that same contest that i had covered a year earlier> <0.0946>
+768 -> <and i had this notion that i might enter it sort of as an experiment in participatory journalism> <0.1336>
+769 -> <itd make i thought maybe a nice epilogue to all my research> <0.0890>
+770 -> <problem was the experiment went haywire> <0.1026>
+771 -> <i won the contest which really wasnt supposed to happen> <0.0994>
+772 -> <now it is nice to be able to memorize speeches and phone numbers and shopping lists but its actually kind of beside the point> <0.0858>
+773 -> <these are just tricks> <0.1325>
+774 -> <they are tricks that work because theyre based on some pretty basic principles about how our brains work> <0.0747>
+775 -> <and you dont have to be building memory palaces or memorizing packs of playing cards to benefit from a little bit of insight about how your mind works> <0.0929>
+776 -> <we often talk about people with great memories as though it were some sort of an innate gift but that is not the case> <0.0862>
+777 -> <great memories are learned> <0.0809>
+778 -> <at the most basic level we remember when we pay attention> <0.0902>
+779 -> <we remember when we are deeply engaged> <0.0906>
+780 -> <we remember when we are able to take a piece of information and experience and figure out why it is meaningful to us why it is significant why its colorful when were able to transform it in some way that it makes sense in the light of all of the other things floating around in our minds when were able to transform bakers into bakers> <0.0481>
+781 -> <the memory palace these memory techniques theyre just shortcuts> <0.0836>
+782 -> <in fact theyre not even really shortcuts> <0.1000>
+783 -> <they work because they make you work> <0.1026>
+784 -> <they force a kind of depth of processing a kind of mindfulness that most of us dont normally walk around exercising> <0.0957>
+785 -> <but there actually are no shortcuts> <0.1325>
+786 -> <this is how stuff is made memorable> <0.1163>
+787 -> <and i think if theres one thing that i want to leave you with its what e p the amnesic who couldnt even remember that he had a memory problem left me with which is the notion that our lives are the sum of our memories> <0.1064>
+788 -> <how much are we willing to lose from our already short lives by losing ourselves in our blackberries our iphones by not paying attention to the human being across from us who is talking with us by being so lazy that were not willing to process deeply> <0.0778>
+789 -> <i learned firsthand that there are incredible memory capacities latent in all of us> <0.0796>
+790 -> <but if you want to live a memorable life you have to be the kind of person who remembers to remember> <0.0814>
+791 -> <thank you> <0.7467>
+792 -> <when i was years old i left a very demanding job in management consulting for a job that was even more demanding teaching> <0.0786>
+793 -> <i went to teach seventh graders math in the new york city public schools> <0.0685>
+794 -> <and like any teacher i made quizzes and tests> <0.1130>
+795 -> <i gave out homework assignments> <0.1026>
+796 -> <when the work came back i calculated grades> <0.0920>
+797 -> <what struck me was that i q was not the only difference between my best and my worst students> <0.0968>
+798 -> <some of my strongest performers did not have stratospheric i q scores> <0.0852>
+799 -> <some of my smartest kids werent doing so well> <0.1006>
+800 -> <and that got me thinking> <0.1678>
+801 -> <the kinds of things you need to learn in seventh grade math sure theyre hard ratios decimals the area of a parallelogram> <0.0786>
+802 -> <but these concepts are not impossible and i was firmly convinced that every one of my students could learn the material if they worked hard and long enough> <0.0933>
+803 -> <after several more years of teaching i came to the conclusion that what we need in education is a much better understanding of students and learning from a motivational perspective from a psychological perspective> <0.0807>
+804 -> <in education the one thing we know how to measure best is i q but what if doing well in school and in life depends on much more than your ability to learn quickly and easily> <0.0860>
+805 -> <so i left the classroom and i went to graduate school to become a psychologist> <0.1225>
+806 -> <i started studying kids and adults in all kinds of super challenging settings and in every study my question was who is successful here and why> <0.0820>
+807 -> <my research team and i went to west point military academy> <0.1033>
+808 -> <we tried to predict which cadets would stay in military training and which would drop out> <0.0946>
+809 -> <we went to the national spelling bee and tried to predict which children would advance farthest in competition> <0.0870>
+810 -> <we studied rookie teachers working in really tough neighborhoods asking which teachers are still going to be here in teaching by the end of the school year and of those who will be the most effective at improving learning outcomes for their students> <0.0739>
+811 -> <we partnered with private companies asking which of these salespeople is going to keep their jobs> <0.0843>
+812 -> <and whos going to earn the most money> <0.1335>
+813 -> <in all those very different contexts one characteristic emerged as a significant predictor of success> <0.0878>
+814 -> <and it wasnt social intelligence> <0.1678>
+815 -> <it wasnt good looks physical health and it wasnt i q> <0.1010>
+816 -> <it was grit> <0.1473>
+817 -> <grit is passion and perseverance for very long term goals> <0.0789>
+818 -> <grit is having stamina> <0.0952>
+819 -> <grit is sticking with your future day in day out not just for the week not just for the month but for years and working really hard to make that future a reality> <0.0822>
+820 -> <grit is living life like its a marathon not a sprint> <0.0789>
+821 -> <a few years ago i started studying grit in the chicago public schools> <0.0842>
+822 -> <i asked thousands of high school juniors to take grit questionnaires and then waited around more than a year to see who would graduate> <0.0825>
+823 -> <turns out that grittier kids were significantly more likely to graduate even when i matched them on every characteristic i could measure things like family income standardized achievement test scores even how safe kids felt when they were at school> <0.0775>
+824 -> <so its not just at west point or the national spelling bee that grit matters its also in school especially for kids at risk for dropping out> <0.0809>
+825 -> <to me the most shocking thing about grit is how little we know how little science knows about building it> <0.0479>
+826 -> <every day parents and teachers ask me how do i build grit in kids> <0.0685>
+827 -> <what do i do to teach kids a solid work ethic> <0.0946>
+828 -> <how do i keep them motivated for the long run> <0.0994>
+829 -> <the honest answer is i dont know> <0.1000>
+830 -> <what i do know is that talent doesnt make you gritty> <0.1361>
+831 -> <our data show very clearly that there are many talented individuals who simply do not follow through on their commitments> <0.0919>
+832 -> <in fact in our data grit is usually unrelated or even inversely related to measures of talent> <0.0747>
+833 -> <so far the best idea ive heard about building grit in kids is something called growth mindset> <0.0870>
+834 -> <this is an idea developed at stanford university by carol dweck and it is the belief that the ability to learn is not fixed that it can change with your effort> <0.0860>
+835 -> <dr dweck has shown that when kids read and learn about the brain and how it changes and grows in response to challenge theyre much more likely to persevere when they fail because they dont believe that failure is a permanent condition> <0.0863>
+836 -> <so growth mindset is a great idea for building grit> <0.0836>
+837 -> <but we need more> <0.1163>
+838 -> <and thats where im going to end my remarks because thats where we are> <0.1563>
+839 -> <thats the work that stands before us> <0.1107>
+840 -> <we need to take our best ideas our strongest intuitions and we need to test them> <0.0946>
+841 -> <we need to measure whether weve been successful and we have to be willing to fail to be wrong to start over again with lessons learned> <0.0820>
+842 -> <in other words we need to be gritty about getting our kids grittier> <0.0946>
+843 -> <thank you> <0.7467>
+844 -> <my work focuses on the connection of both thinking about our community life being part of the environment where architecture grows from the natural local conditions and traditions> <0.0795>
+845 -> <today i brought two recent projects as an example of this> <0.1074>
+846 -> <both projects are in emerging countries one in ethiopia and another one in tunisia> <0.0946>
+847 -> <and also they have in common that the different analyses from different perspectives becomes an essential part of the final piece of architecture> <0.0998>
+848 -> <the first example started with an invitation to design a multistory shopping mall in ethiopias capital city addis ababa> <0.0820>
+849 -> <and this is the type of building we were shown as an example to my team and myself of what we had to design> <0.0903>
+850 -> <at first the first thing i thought was i want to run away> <0.1173>
+851 -> <after seeing a few of these buildings there are many in the city we realized that they have three very big points> <0.0785>
+852 -> <first these buildings they are almost empty because they have very large shops where people cannot afford to buy things> <0.0665>
+853 -> <second they need tons of energy to perform because of the skin treatment with glass that creates heat in the inside and then you need a lot of cooling> <0.0820>
+854 -> <in a city where this shouldnt happen because they have really mild weather that ranges from to degrees the whole year> <0.0896>
+855 -> <and third is that their image has nothing to do with africa and with ethiopia> <0.0994>
+856 -> <it is a pity in a place that has such rich culture and traditions> <0.0946>
+857 -> <also during our first visit to ethiopia i was really captivated by the old merkato that is this open air structure where thousands of people they go and buy things every day from small vendors> <0.0743>
+858 -> <and also it has this idea of the public space that uses the outdoors to create activity> <0.0820>
+859 -> <so i thought this is what i really want to design not a shopping mall> <0.1197>
+860 -> <but the question was how we could do a multistory contemporary building with these principles> <0.0614>
+861 -> <the next challenge was when we looked at the site that is in a really growing area of the city where most of these buildings that you see in the image they were not there> <0.0819>
+862 -> <and its also between two parallel streets that dont have any connection for hundreds of meters> <0.0851>
+863 -> <so the first thing we did was to create a connection between these two streets putting all the entrances of the building> <0.0825>
+864 -> <and this extends with an inclined atrium that creates an open air space in the building that self protects itself with its own shape from the sun and the rain> <0.0784>
+865 -> <and around this void we placed this idea of the market with small shops that change in each floor because of the shape of the void> <0.0908>
+866 -> <i also thought how to close the building> <0.1000>
+867 -> <and i really wanted to find a solution that would respond to the local climate conditions> <0.1430>
+868 -> <and i started thinking about the textile like a shell made of concrete with perforations that would let the air in and also the light but in a filtered way> <0.0792>
+869 -> <and then the inspiration came from these beautiful buttons of the ethiopian womens dresses> <0.1088>
+870 -> <that they have fractal geometry properties and this helped me to shape the whole facade> <0.0946>
+871 -> <and we are building that with these small prefabricated pieces that are the windows that let the air and the light in a controlled way inside the building> <0.0820>
+872 -> <and this is complemented by these small colored glasses that use the light from the inside of the building to light up the building at night> <0.0901>
+873 -> <with these ideas it was not easy first to convince the developers because they were like this is not a shopping mall we didnt ask for that> <0.0896>
+874 -> <but then we all realized that this idea of the market happened to be a lot more profitable than the idea of the shopping mall because basically they had more shops to sell> <0.0825>
+875 -> <and also that the idea of the facade was much much cheaper not only because of the material compared with the glass but also because we didnt need to have air conditioning anymore> <0.0891>
+876 -> <so we created some budget savings that we used to implement the project> <0.0946>
+877 -> <and the first implementation was to think about how we could make the building self sufficient in terms of energy in a city that has electricity cuts almost every day> <0.0860>
+878 -> <so we created a huge asset by placing photovoltaics there on the roof> <0.0890>
+879 -> <and then under those panels we thought about the roof like a new public space with gathering areas and bars that would create this urban oasis> <0.0865>
+880 -> <and these porches on the roof all together they collect the water to reuse for sanitation on the inside> <0.0974>
+881 -> <hopefully by the beginning of next year because we are already on the fifth floor of the construction> <0.0870>
+882 -> <the second example is a master plan of apartments and facilities in the city of tunis> <0.0946>
+883 -> <and for doing such a big project the biggest project ive ever designed i really needed to understand the city of tunis but also its surroundings and the tradition and culture> <0.1008>
+884 -> <during that analysis i paid special attention to the medina that is this year old structure that used to be closed by a wall opened by twelve different gates connected by almost straight lines> <0.0792>
+885 -> <when i went to the site the first design operation we did was to extend the existing streets creating initial blocks similar in size and characteristics to the ones we have in barcelona and other cities in europe with these courtyards> <0.0819>
+886 -> <on top of that we selected some strategic points reminded of this idea of the gates and connecting them by straight lines and this modified this initial pattern> <0.0795>
+887 -> <and the last operation was to think about the cell the small cell of the project like the apartment as an essential part of the master plan> <0.0901>
+888 -> <and for that i thought what would be the best orientation in the mediterranean climate for an apartment> <0.1074>
+889 -> <and its north south because it creates a thermal difference between both sides of the house and then a natural ventilation> <0.0870>
+890 -> <so we overlap a pattern that makes sure that most of the apartments are perfectly oriented in that direction> <0.0870>
+891 -> <and this is the result that is almost like a combination of the european block and the arab city> <0.0974>
+892 -> <it has these blocks with courtyards and then on the ground floor you have all these connections for the pedestrians> <0.0820>
+893 -> <and also it responds to the local regulations that establish a higher density on the upper levels and a lower density on the ground floor> <0.0820>
+894 -> <and it also reinforces this idea of the gates> <0.1335>
+895 -> <the volume has this connecting shape that shades itself with three different types of apartments and also lets the light go on the ground floor in a very dense neighborhood and in the courtyards there are the different facilities such as a gym and a kindergarten and close by a series of commercial that bring activity to the ground floor> <0.0650>
+896 -> <the roof which is my favorite space of the project is almost like giving back to the community the space taken by the construction> <0.0782>
+897 -> <and its where all the neighbors they can go up and socialize and do activities such as having a two kilometer run in the morning jumping from one building to another> <0.0860>
+898 -> <these two examples they have a common approach in the design process> <0.0902>
+899 -> <and also they are in emerging countries where you can see the cities literally growing> <0.1067>
+900 -> <in these cities the impact of architecture in peoples lives of today and tomorrow changes the local communities and economies at the same speed as the buildings grow> <0.0858>
+901 -> <for this reason i see even more importance to look at architecture finding simple but affordable solutions that enhance the relationship between the community and the environment and that aim to connect nature and people> <0.0742>
+902 -> <thank you very much> <0.2619>
+903 -> <so im going to talk about trust and im going to start by reminding you of the standard views that people have about trust> <0.0977>
+904 -> <i think these are so commonplace theyve become clichés of our society> <0.0932>
+905 -> <and i think there are three> <0.1312>
+906 -> <ones a claim there has been a great decline in trust very widely believed> <0.0498>
+907 -> <the second is an aim we should have more trust> <0.0975>
+908 -> <and the third is a task we should rebuild trust> <0.1283>
+909 -> <i think that the claim the aim and the task are all misconceived> <0.1104>
+910 -> <so what im going to try to tell you today is a different story about a claim an aim and a task which i think give one quite a lot better purchase on the matter> <0.0843>
+911 -> <first the claim why do people think trust has declined> <0.0961>
+912 -> <and if i really think about it on the basis of my own evidence i dont know the answer> <0.1204>
+913 -> <im inclined to think it may have declined in some activities or some institutions and it might have grown in others> <0.0932>
+914 -> <i dont have an overview> <0.1163>
+915 -> <but of course i can look at the opinion polls and the opinion polls are supposedly the source of a belief that trust has declined> <0.0946>
+916 -> <when you actually look at opinion polls across time theres not much evidence for that> <0.0766>
+917 -> <thats to say the people who were mistrusted years ago principally journalists and politicians are still mistrusted> <0.0919>
+918 -> <and the people who were highly trusted years ago are still rather highly trusted judges nurses> <0.0753>
+919 -> <the rest of us are in between and by the way the average person in the street is almost exactly midway> <0.0862>
+920 -> <but is that good evidence> <0.0906>
+921 -> <what opinion polls record is of course opinions> <0.1019>
+922 -> <what else can they record> <0.1163>
+923 -> <so theyre looking at the generic attitudes that people report when you ask them certain questions> <0.0878>
+924 -> <do you trust politicians do you trust teachers> <0.1000>
+925 -> <now if somebody said to you do you trust greengrocers> <0.0569>
+926 -> <do you trust fishmongers> <0.0988>
+927 -> <do you trust elementary school teachers> <0.0906>
+928 -> <you would probably begin by saying to do what> <0.0920>
+929 -> <and that would be a perfectly sensible response> <0.1443>
+930 -> <and you might say when you understood the answer to that well i trust some of them but not others> <0.1074>
+931 -> <thats a perfectly rational thing> <0.1163>
+932 -> <in short in our real lives we seek to place trust in a differentiated way> <0.0878>
+933 -> <we dont make an assumption that the level of trust that we will have in every instance of a certain type of official or office holder or type of person is going to be uniform> <0.0977>
+934 -> <i might for example say that i certainly trust a certain elementary school teacher i know to teach the reception class to read but in no way to drive the school minibus> <0.0954>
+935 -> <i might after all know that she wasnt a good driver> <0.1173>
+936 -> <i might trust my most loquacious friend to keep a conversation going but not but perhaps not to keep a secret> <0.0864>
+937 -> <simple> <0.2360>
+938 -> <so if weve got those evidence in our ordinary lives of the way that trust is differentiated why do we sort of drop all that intelligence when we think about trust more abstractly> <0.0792>
+939 -> <i think the polls are very bad guides to the level of trust that actually exists because they try to obliterate the good judgment that goes into placing trust> <0.0823>
+940 -> <secondly what about the aim> <0.1325>
+941 -> <the aim is to have more trust> <0.1000>
+942 -> <well frankly i think thats a stupid aim> <0.1107>
+943 -> <its not what i would aim at> <0.1026>
+944 -> <i would aim to have more trust in the trustworthy but not in the untrustworthy> <0.0776>
+945 -> <in fact i aim positively to try not to trust the untrustworthy> <0.1045>
+946 -> <and i think of those people who for example placed their savings with the very aptly named mr madoff who then made off with them and i think of them and i think well yes too much trust> <0.1033>
+947 -> <more trust is not an intelligent aim in this life> <0.1074>
+948 -> <intelligently placed and intelligently refused trust is the proper aim> <0.1074>
+949 -> <well once one says that one says yeah okay that means that what matters in the first place is not trust but trustworthiness> <0.0946>
+950 -> <its judging how trustworthy people are in particular respects> <0.0296>
+951 -> <and i think that judgment requires us to look at three things> <0.1963>
+952 -> <are they competent are they honest are they reliable> <0.1000>
+953 -> <and if we find that a person is competent in the relevant matters and reliable and honest well have a pretty good reason to trust them because theyll be trustworthy> <0.0875>
+954 -> <but if on the other hand theyre unreliable we might not> <0.0935>
+955 -> <i have friends who are competent and honest but i would not trust them to post a letter because theyre forgetful> <0.1106>
+956 -> <i have friends who are very confident they can do certain things but i realize that they overestimate their own competence> <0.0862>
+957 -> <and im very glad to say i dont think i have many friends who are competent and reliable but extremely dishonest> <0.1768>
+958 -> <if so i havent yet spotted it> <0.0920>
+959 -> <but thats what were looking for trustworthiness before trust> <0.1000>
+960 -> <trust is the response> <0.0988>
+961 -> <trustworthiness is what we have to judge and of course its difficult> <0.1173>
+962 -> <across the last few decades weve tried to construct systems of accountability for all sorts of institutions and professionals and officials and so on that will make it easier for us to judge their trustworthiness> <0.0758>
+963 -> <a lot of these systems have the converse effect> <0.1000>
+964 -> <they dont work as theyre supposed to> <0.1000>
+965 -> <i remember i was talking with a midwife who said well you see the problem is it takes longer to do the paperwork than to deliver the baby> <0.0844>
+966 -> <and all over our public life our institutional life we find that problem that the system of accountability that is meant to secure trustworthiness and evidence of trustworthiness is actually doing the opposite> <0.0891>
+967 -> <it is distracting people who have to do difficult tasks like midwives from doing them by requiring them to tick the boxes as we say> <0.0785>
+968 -> <you can all give your own examples there> <0.1000>
+969 -> <so so much for the aim> <0.1163>
+970 -> <the aim i think is more trustworthiness and that is going to be different if we are trying to be trustworthy and communicate our trustworthiness to other people and if we are trying to judge whether other people or office holders or politicians are trustworthy> <0.0775>
+971 -> <its not easy it is judgment and simple reaction attitudes dont do adequately here> <0.0637>
+972 -> <now thirdly the task> <0.0809>
+973 -> <calling the task rebuilding trust i think also gets things backwards> <0.0798>
+974 -> <it suggests that you and i should rebuild trust> <0.1215>
+975 -> <well we can do that for ourselves> <0.0799>
+976 -> <we can rebuild a bit of trustworthiness> <0.1163>
+977 -> <we can do it two people together trying to improve trust> <0.0902>
+978 -> <but trust in the end is distinctive because its given by other people> <0.0890>
+979 -> <you cant rebuild what other people give you> <0.0681>
+980 -> <you have to give them the basis for giving you their trust> <0.0902>
+981 -> <so you have to i think be trustworthy> <0.1000>
+982 -> <and that of course is because you cant fool all of the people all of the time usually> <0.1106>
+983 -> <but you also have to provide usable evidence that you are trustworthy> <0.0852>
+984 -> <how to do it> <0.1473>
+985 -> <well every day all over the place its being done by ordinary people by officials by institutions quite effectively> <0.0820>
+986 -> <let me give you a simple commercial example> <0.0705>
+987 -> <the shop where i buy my socks says i may take them back and they dont ask any questions> <0.0820>
+988 -> <they take them back and give me the money or give me the pair of socks of the color i wanted> <0.1059>
+989 -> <thats super i trust them because they have made themselves vulnerable to me> <0.0961>
+990 -> <i think theres a big lesson in that> <0.1758>
+991 -> <if you make yourself vulnerable to the other party then that is very good evidence that you are trustworthy and you have confidence in what you are saying> <0.0942>
+992 -> <so in the end i think what we are aiming for is not very difficult to discern> <0.1045>
+993 -> <it is relationships in which people are trustworthy and can judge when and how the other person is trustworthy> <0.0862>
+994 -> <so the moral of all this is we need to think much less about trust let alone about attitudes of trust detected or mis detected by opinion polls much more about being trustworthy and how you give people adequate useful and simple evidence that youre trustworthy> <0.0780>
+995 -> <thanks> <0.7467>
+996 -> <you know my favorite part of being a dad is the movies i get to watch> <0.1132>
+997 -> <i love sharing my favorite movies with my kids and when my daughter was four we got to watch the wizard of oz together> <0.0825>
+998 -> <it totally dominated her imagination for months> <0.1107>
+999 -> <her favorite character was glinda of course> <0.1026>
+1000 -> <it gave her a great excuse to wear a sparkly dress and carry a wand> <0.0932>
+1001 -> <but you watch that movie enough times and you start to realize how unusual it is> <0.0820>
+1002 -> <now we live today and are raising our children in a kind of childrens fantasy spectacular industrial complex> <0.0802>
+1003 -> <but the wizard of oz stood alone> <0.1032>
+1004 -> <it did not start that trend> <0.1325>
+1005 -> <forty years later was when the trend really caught on with interestingly another movie that featured a metal guy and a furry guy rescuing a girl by dressing up as the enemys guards> <0.0855>
+1006 -> <do you know what im talking about> <0.1000>
+1007 -> <yeah> <0.1999>
+1008 -> <now theres a big difference between these two movies a couple of really big differences between the wizard of oz and all the movies we watch today> <0.0858>
+1009 -> <one is theres very little violence in the wizard of oz> <0.0836>
+1010 -> <the monkeys are rather aggressive as are the apple trees> <0.0961>
+1011 -> <but i think if the wizard of oz were made today the wizard would say dorothy you are the savior of oz that the prophecy foretold> <0.0858>
+1012 -> <use your magic slippers to defeat the computer generated armies of the wicked witch> <0.0878>
+1013 -> <but thats not how it happens> <0.0906>
+1014 -> <another thing thats really unique about the wizard of oz to me is that all of the most heroic and wise and even villainous characters are female> <0.0827>
+1015 -> <now i started to notice this when i actually showed star wars to my daughter which was years later and the situation was different> <0.0825>
+1016 -> <at that point i also had a son> <0.1107>
+1017 -> <he was only three at the time> <0.1169>
+1018 -> <he was not invited to the screening he was too young for that> <0.0961>
+1019 -> <but he was the second child and the level of supervision had plummeted> <0.0946>
+1020 -> <so he wandered in and it imprinted on him like a mommy duck does to its duckling and i dont think he understands whats going on but he is sure soaking in it> <0.0910>
+1021 -> <and i wonder what hes soaking in> <0.1443>
+1022 -> <is he picking up on the themes of courage and perseverance and loyalty> <0.0946>
+1023 -> <is he picking up on the fact that luke joins an army to overthrow the government> <0.0932>
+1024 -> <is he picking up on the fact that there are only boys in the universe except for aunt beru and of course this princess whos really cool but who kind of waits around through most of the movie so that she can award the hero with a medal and a wink to thank him for saving the universe which he does by the magic that he was born with> <0.0712>
+1025 -> <compare this to with the wizard of oz> <0.1070>
+1026 -> <how does dorothy win her movie> <0.0906>
+1027 -> <by making friends with everybody and being a leader> <0.0937>
+1028 -> <thats kind of the world id rather raise my kids in oz right and not the world of dudes fighting which is where we kind of have to be> <0.0880>
+1029 -> <why is there so much force capital f force in the movies we have for our kids and so little yellow brick road> <0.0753>
+1030 -> <there is a lot of great writing about the impact that the boy violent movie has on girls and you should do that reading its very good> <0.0858>
+1031 -> <i havent read as much on how boys are picking up on this vibe> <0.1013>
+1032 -> <i know from my own experience that princess leia did not provide the adequate context that i could have used in navigating the adult world that is co ed> <0.0954>
+1033 -> <i think there was a first kiss moment when i really expected the credits to start rolling because thats the end of the movie right> <0.0977>
+1034 -> <i finished my quest i got the girl> <0.1000>
+1035 -> <why are you still standing there> <0.1163>
+1036 -> <i dont know what im supposed to do> <0.2858>
+1037 -> <the movies are very very focused on defeating the villain and getting your reward and theres not a lot of room for other relationships and other journeys> <0.0858>
+1038 -> <its almost as though if youre a boy you are a dopey animal and if you are a girl you should bring your warrior costume> <0.0825>
+1039 -> <there are plenty of exceptions and i will defend the disney princesses in front of any you> <0.1024>
+1040 -> <but they do send a message to boys that they are not the boys are not really the target audience> <0.0909>
+1041 -> <they are doing a phenomenal job of teaching girls how to defend against the patriarchy but they are not necessarily showing boys how theyre supposed to defend against the patriarchy> <0.0823>
+1042 -> <theres no models for them> <0.1157>
+1043 -> <and we also have some terrific women who are writing new stories for our kids and as three dimensional and delightful as hermione and katniss are these are still war movies> <0.0853>
+1044 -> <and of course the most successful studio of all time continues to crank out classic after classic every single one of them about the journey of a boy or a man or two men who are friends or a man and his son or two men who are raising a little girl> <0.0736>
+1045 -> <until as many of you are thinking this year when they finally came out with brave> <0.0946>
+1046 -> <i recommend it to all of you its on demand now> <0.0921>
+1047 -> <do you remember what the critics said when brave came out> <0.0852>
+1048 -> <aw i cant believe pixar made a princess movie> <0.1010>
+1049 -> <its very good dont let that stop you> <0.1107>
+1050 -> <now almost none of these movies pass the bechdel test> <0.0994>
+1051 -> <i dont know if youve heard of this> <0.1000>
+1052 -> <it has not yet caught on and caught fire but maybe today we will start a movement> <0.0870>
+1053 -> <alison bechdel is a comic book artist and back in the mid she recorded this conversation shed had with a friend about assessing the movies that they saw> <0.0825>
+1054 -> <and its very simple theres just three questions you should ask is there more than one character in the movie that is female who has lines> <0.0897>
+1055 -> <so try to meet that bar> <0.1163>
+1056 -> <and do these women talk to each other at any point in the movie> <0.1120>
+1057 -> <and is their conversation about something other than the guy that they both like> <0.1013>
+1058 -> <right thank you> <0.2619>
+1059 -> <thank you very much> <0.2619>
+1060 -> <two women who exist and talk to each other about stuff> <0.0961>
+1061 -> <it does happen ive seen it and yet i very rarely see it in the movies that we know and love> <0.0957>
+1062 -> <in fact this week i went to see a very high quality movie argo> <0.1013>
+1063 -> <right oscar buzz doing great at the box office a consensus idea of what a quality hollywood film is> <0.0867>
+1064 -> <it pretty much flunks the bechdel test> <0.0910>
+1065 -> <and i dont think it should because a lot of the movie i dont know if youve seen it but a lot of the movie takes place in this embassy where men and women are hiding out during the hostage crisis> <0.1441>
+1066 -> <weve got quite a few scenes of the men having deep angst ridden conversations in this hideout and the great moment for one of the actresses is to peek through the door and say are you coming to bed honey> <0.0798>
+1067 -> <thats hollywood for you> <0.1163>
+1068 -> <so lets look at the numbers> <0.1163>
+1069 -> <of the most popular movies how many of them do you think actually have female protagonists> <0.0867>
+1070 -> <eleven its not bad> <0.1163>
+1071 -> <its not as many percent as the number of women weve just elected to congress so thats good> <0.0923>
+1072 -> <but there is a number that is greater than this thats going to bring this room down> <0.0932>
+1073 -> <last year the new york times published a study that the government had done> <0.0867>
+1074 -> <heres what it said> <0.1206>
+1075 -> <one out of five women in america say that they have been sexually assaulted some time in their life> <0.0820>
+1076 -> <now i dont think thats the fault of popular entertainment> <0.1445>
+1077 -> <i dont think kids movies have anything to do with that> <0.1389>
+1078 -> <i dont even think that music videos or pornography are really directly related to that but something is going wrong and when i hear that statistic one of the things i think of is thats a lot of sexual assailants> <0.0935>
+1079 -> <who are these guys what are they learning> <0.1000>
+1080 -> <what are they failing to learn> <0.1026>
+1081 -> <are they absorbing the story that a male heros job is to defeat the villain with violence and then collect the reward which is a woman who has no friends and doesnt speak> <0.0808>
+1082 -> <are we soaking up that story> <0.0705>
+1083 -> <you know as a parent with the privilege of raising a daughter like all of you who are doing the same thing we find this world and this statistic very alarming and we want to prepare them> <0.0795>
+1084 -> <we have tools at our disposal like girl power and we hope that that will help but i gotta wonder is girl power going to protect them if at the same time actively or passively we are training our sons to maintain their boy power> <0.0819>
+1085 -> <i mean i think the netflix queue is one way that we can do something very important and im talking mainly to the dads here> <0.0986>
+1086 -> <i think we have got to show our sons a new definition of manhood> <0.1033>
+1087 -> <the definition of manhood is already turning upside down> <0.0846>
+1088 -> <youve read about how the new economy is changing the roles of caregiver and wage earner> <0.0690>
+1089 -> <theyre throwing it up in the air> <0.1000>
+1090 -> <so our sons are going to have to find some way of adapting to this some new relationship with each other and i think we really have to show them and model for them how a real man is someone who trusts his sisters and respects them and wants to be on their team and stands up against the real bad guys who are the men who want to abuse the women> <0.0584>
+1091 -> <and i think our job in the netflix queue is to look out for those movies that pass the bechdel test if we can find them and to seek out the heroines who are there who show real courage who bring people together and to nudge our sons to identify with those heroines and to say i want to be on their team because theyre going to be on their team> <0.0826>
+1092 -> <when i asked my daughter who her favorite character was in star wars do you know what she said> <0.0867>
+1093 -> <obi wan> <0.1473>
+1094 -> <obi wan kenobi and glinda> <0.1325>
+1095 -> <what do these two have in common> <0.1163>
+1096 -> <maybe its not just the sparkly dress> <0.1552>
+1097 -> <i think these people are experts> <0.0906>
+1098 -> <i think these are the two people in the movie who know more than anybody else and they love sharing their knowledge with other people to help them reach their potential> <0.0833>
+1099 -> <now they are leaders> <0.1163>
+1100 -> <i like that kind of quest for my daughter and i like that kind of quest for my son> <0.0870>
+1101 -> <i want more quests like that> <0.1026>
+1102 -> <i want fewer quests where my son is told go out and fight it alone and more quests where he sees that its his job to join a team maybe a team led by women to help other people become better and be better people like the wizard of oz> <0.0731>
+1103 -> <thank you> <0.7467>
+1104 -> <i would like to talk to you about a story about a small town kid> <0.0878>
+1105 -> <i dont know his name but i do know his story> <0.1466>
+1106 -> <he lives in a small village in southern somalia> <0.1019>
+1107 -> <his village is near mogadishu> <0.1163>
+1108 -> <drought drives the small village into poverty and to the brink of starvation> <0.0897>
+1109 -> <with nothing left for him there he leaves for the big city in this case mogadishu the capital of somalia> <0.0820>
+1110 -> <when he arrives there are no opportunities no jobs no way forward> <0.0836>
+1111 -> <he ends up living in a tent city on the outskirts of mogadishu> <0.0867>
+1112 -> <maybe a year passes nothing> <0.1312>
+1113 -> <one day hes approached by a gentleman who offers to take him to lunch then to dinner to breakfast> <0.0870>
+1114 -> <he meets this dynamic group of people and they give him a break> <0.0878>
+1115 -> <hes given a bit of money to buy himself some new clothes money to send back home to his family> <0.0814>
+1116 -> <he is introduced to this young woman> <0.1169>
+1117 -> <he eventually gets married> <0.0988>
+1118 -> <he starts this new life> <0.0988>
+1119 -> <he has a purpose in life> <0.1157>
+1120 -> <one beautiful day in mogadishu under an azure blue sky a car bomb goes off> <0.0867>
+1121 -> <that small town kid with the big city dreams was the suicide bomber and that dynamic group of people were al shabaab a terrorist organization linked to al qaeda> <0.0792>
+1122 -> <so how does the story of a small town kid just trying to make it big in the city end up with him blowing himself up> <0.0763>
+1123 -> <he was waiting> <0.0988>
+1124 -> <he was waiting for an opportunity waiting to begin his future waiting for a way forward and this was the first thing that came along> <0.0825>
+1125 -> <this was the first thing that pulled him out of what we call waithood> <0.0731>
+1126 -> <and his story repeats itself in urban centers around the world> <0.1100>
+1127 -> <it is the story of the disenfranchised unemployed urban youth who sparks riots in johannesburg sparks riots in london who reaches out for something other than waithood> <0.0820>
+1128 -> <for young people the promise of the city the big city dream is that of opportunity of jobs of wealth but young people are not sharing in the prosperity of their cities> <0.0823>
+1129 -> <often its youth who suffer from the highest unemployment rates> <0.0509>
+1130 -> <by three out of five people living in cities will be under the age of> <0.0878>
+1131 -> <if we do not include young people in the growth of our cities if we do not provide them opportunities the story of waithood the gateway to terrorism to violence to gangs will be the story of cities> <0.0852>
+1132 -> <and in my city of birth mogadishu percent of young people suffer from unemployment> <0.0890>
+1133 -> <percent dont work dont go to school> <0.1000>
+1134 -> <they pretty much do nothing> <0.0662>
+1135 -> <i went back to mogadishu last month and i went to visit madina hospital the hospital i was born in> <0.1005>
+1136 -> <i remember standing in front of that bullet ridden hospital thinking what if i had never left> <0.0923>
+1137 -> <what if i had been forced into that same state of waithood> <0.0890>
+1138 -> <would i have become a terrorist> <0.1163>
+1139 -> <im not really sure about the answer> <0.1000>
+1140 -> <my reason for being in mogadishu that month was actually to host a youth leadership and entrepreneurship summit> <0.0919>
+1141 -> <i brought together about young somali leaders> <0.1163>
+1142 -> <we sat down and brainstormed on solutions to the biggest challenges facing their city> <0.0890>
+1143 -> <one of the young men in the room was aden> <0.0975>
+1144 -> <he went to university in mogadishu graduated> <0.0910>
+1145 -> <there were no jobs no opportunities> <0.1032>
+1146 -> <i remember him telling me because he was a college graduate unemployed frustrated that he was the perfect target for al shabaab and other terrorist organizations to be recruited> <0.0855>
+1147 -> <they sought people like him out> <0.1163>
+1148 -> <but his story takes a different route> <0.1026>
+1149 -> <in mogadishu the biggest barrier to getting from point a to point b are the roads> <0.0820>
+1150 -> <twenty three years of civil war have completely destroyed the road system and a motorbike can be the easiest way to get around> <0.0855>
+1151 -> <aden saw an opportunity and seized it> <0.1491>
+1152 -> <he started a motorbike company> <0.1454>
+1153 -> <he began renting out motorbikes to local residents who couldnt normally afford them> <0.0770>
+1154 -> <he bought bikes with the help of family and friends and his dream is to eventually expand to several hundred within the next three years> <0.0825>
+1155 -> <how is this story different> <0.0799>
+1156 -> <what makes his story different> <0.0444>
+1157 -> <i believe it is his ability to identify and seize a new opportunity> <0.1010>
+1158 -> <its entrepreneurship and i believe entrepreneurship can be the most powerful tool against waithood> <0.1063>
+1159 -> <it empowers young people to be the creators of the very economic opportunities they are so desperately seeking> <0.0867>
+1160 -> <and you can train young people to be entrepreneurs> <0.1335>
+1161 -> <i want to talk to you about a young man who attended one of my meetings mohamed mohamoud a florist> <0.0870>
+1162 -> <he was helping me train some of the young people at the summit in entrepreneurship and how to be innovative and how to create a culture of entrepreneurship> <0.0820>
+1163 -> <hes actually the first florist mogadishu has seen in over years and until recently until mohamed came along if you wanted flowers at your wedding you used plastic bouquets shipped from abroad> <0.0758>
+1164 -> <if you asked someone when was the last time you saw fresh flowers for many who grew up under civil war the answer would be never> <0.0737>
+1165 -> <so mohamed saw an opportunity> <0.0809>
+1166 -> <he started a landscaping and design floral company> <0.1216>
+1167 -> <he created a farm right outside of mogadishu and started growing tulips and lilies which he said could survive the harsh mogadishu climate> <0.0820>
+1168 -> <and he began delivering flowers to weddings creating gardens at homes and businesses around the city and hes now working on creating mogadishus first public park in years> <0.0839>
+1169 -> <theres no public park in mogadishu> <0.1021>
+1170 -> <he wants to create a space where families young people can come together and as he says smell the proverbial roses> <0.0830>
+1171 -> <and he doesnt grow roses because they use too much water by the way> <0.1013>
+1172 -> <so the first step is to inspire young people and in that room mohameds presence had a really profound impact on the youth in that room> <0.0820>
+1173 -> <they had never really thought about starting up a business> <0.0975>
+1174 -> <theyve thought about working for an ngo working for the government but his story his innovation really had a strong impact on them> <0.0782>
+1175 -> <he forced them to look at their city as a place of opportunity> <0.0902>
+1176 -> <he empowered them to believe that they could be entrepreneurs that they could be change makers> <0.0878>
+1177 -> <by the end of the day they were coming up with innovative solutions to some of the biggest challenges facing their city> <0.0789>
+1178 -> <they came up with entrepreneurial solutions to local problems> <0.1000>
+1179 -> <so inspiring young people and creating a culture of entrepreneurship is a really great step but young people need capital to make their ideas a reality> <0.0858>
+1180 -> <they need expertise and mentorship to guide them in developing and launching their businesses> <0.0843>
+1181 -> <connect young people with the resources they need provide them the support they need to go from ideation to creation and you will create catalysts for urban growth> <0.0820>
+1182 -> <for me entrepreneurship is more than just starting up a business> <0.0961>
+1183 -> <its about creating a social impact> <0.1026>
+1184 -> <mohamed is not simply selling flowers> <0.1026>
+1185 -> <i believe he is selling hope> <0.1325>
+1186 -> <his peace park and thats what he calls it when its created will actually transform the way people see their city> <0.0809>
+1187 -> <aden hired street kids to help rent out and maintain those bikes for him> <0.0946>
+1188 -> <he gave them the opportunity to escape the paralysis of waithood> <0.0774>
+1189 -> <these young entrepreneurs are having a tremendous impact in their cities> <0.0975>
+1190 -> <so my suggestion is turn youth into entrepreneurs incubate and nurture their inherent innovation and you will have more stories of flowers and peace parks than of car bombs and waithood> <0.0827>
+1191 -> <thank you> <0.1026>
+1192 -> <when i was a child growing up in maine one of my favorite things to do was to look for sand dollars on the seashores of maine because my parents told me it would bring me luck> <0.0763>
+1193 -> <but you know these shells theyre hard to find> <0.0975>
+1194 -> <theyre covered in sand theyre difficult to see> <0.0975>
+1195 -> <however overtime i got used to looking for them> <0.0846>
+1196 -> <i started seeing shapes and patterns that helped me to collect them> <0.0852>
+1197 -> <this grew into a passion for finding things a love for the past and archaeology> <0.0946>
+1198 -> <and eventually when i started studying egyptology i realized that seeing with my naked eyes alone wasnt enough> <0.1018>
+1199 -> <because all of the sudden in egypt my beach had grown from a tiny beach in maine to one eight hundred miles long next to the nile and my sand dollars had grown to the size of cities> <0.0795>
+1200 -> <this is really what brought me to using satellite imagery> <0.0975>
+1201 -> <for trying to map the past i knew that i had to see differently> <0.0946>
+1202 -> <so i want to show you an example of how we see differently using the infrared> <0.0870>
+1203 -> <this is a site located in the eastern egyptian delta called bendix> <0.0890>
+1204 -> <and the site visibly appears brown but when we use the infrared and we process it all of the sudden using false color the site appears as bright pink> <0.0789>
+1205 -> <what you are seeing are the actual chemical changes to the landscape caused by the building materials and activities of the ancient egyptians> <0.0858>
+1206 -> <what i want to share with you today is how weve used satellite data to find an ancient egyptian city called itjtawy missing for thousands of years> <0.0939>
+1207 -> <itjtawy was ancient egypts capital for over four hundred years at a period of time called the middle kingdom about four thousand years ago> <0.0820>
+1208 -> <the site is located in the faiyum of egypt and site is really important because in the middle kingdom there was this great renaissance for ancient egyptian art architecture and religion> <0.0776>
+1209 -> <egyptologists have always known the site of itjtawy was located somewhere near the pyramids of the two kings who built it indicated within the red circles here but somewhere within this massive flood plane> <0.0743>
+1210 -> <this area is huge its four miles by three miles in size> <0.0975>
+1211 -> <the nile used to flow right next to the city of itjtawy and as it shifted and changed and moved over time to the east it covered over the city> <0.0792>
+1212 -> <so how do you find a buried city in a vast landscape> <0.0975>
+1213 -> <finding it randomly would be the equivalent of locating a needle in a haystack blindfolded wearing baseball mitts> <0.0870>
+1214 -> <so what we did is we used nasa topography data to map out the landscape very subtle changes> <0.0576>
+1215 -> <we started to be able to see where the nile used to flow> <0.0878>
+1216 -> <but you can see in more detail and even more interesting this very slight raised area seen within the circle up here which we thought could possibly be the location of the city of itjtawy> <0.0879>
+1217 -> <so we collaborated with the egyptian scientists to do coring work which you see here> <0.0946>
+1218 -> <when i say coring its like ice coring but instead of layers of climate change youre looking for layers of human occupation> <0.0932>
+1219 -> <and five meters down underneath a thick layer of mud we found a dense layer of pottery> <0.0867>
+1220 -> <what this shows is that at this possible location of itjtawy five meters down we have of layer of occupation for several hundred years dating to the middle kingdom dating to the exact period of time we think itjtawy is> <0.0740>
+1221 -> <we also found work stone carnelian quartz and agate that shows that there was a jewelers workshop here> <0.0820>
+1222 -> <these might not look like much but when you think about the most common stones used in jewelry from the middle kingdom these are the stones that were used> <0.0864>
+1223 -> <so we have a dense layer of occupation dating to the middle kingdom at this site> <0.0867>
+1224 -> <we also have evidence of an elite jewelers workshop showing that whatever was there was a very important city> <0.0837>
+1225 -> <no itjtawy was here yet but were going to be returning to the site in the near future to map it out> <0.0909>
+1226 -> <and even more importantly we have funding to train young egyptians in the use of satellite technology so they can be the ones making great discoveries as well> <0.0820>
+1227 -> <so i wanted to end with my favorite quote from the middle kingdom it was probably written at the city of itjtawy four thousand years ago> <0.0820>
+1228 -> <sharing knowledge is the greatest of all callings> <0.1000>
+1229 -> <theres nothing like it in the land> <0.1215>
+1230 -> <so as it turns out ted was not founded in ad> <0.1086>
+1231 -> <making ideas actually started in bc at a not lost for long city found from above> <0.0763>
+1232 -> <it certainly puts finding seashells by the seashore in perspective> <0.0902>
+1233 -> <thank you very much> <0.2619>
+1234 -> <thank you> <0.7467>
+1235 -> <growing up in taiwan as the daughter of a calligrapher one of my most treasured memories was my mother showing me the beauty the shape and the form of chinese characters> <0.0947>
+1236 -> <ever since then i was fascinated by this incredible language> <0.0975>
+1237 -> <but to an outsider it seems to be as impenetrable as the great wall of china> <0.0932>
+1238 -> <over the past few years ive been wondering if i can break down this wall so anyone who wants to understand and appreciate the beauty of this sophisticated language could do so> <0.0874>
+1239 -> <i started thinking about how a new fast method of learning chinese might be useful> <0.0946>
+1240 -> <since the age of five i started to learn how to draw every single stroke for each character in the correct sequence> <0.0862>
+1241 -> <i learned new characters every day during the course of the next years> <0.0836>
+1242 -> <since we only have five minutes its better that we have a fast and simpler way> <0.0996>
+1243 -> <a chinese scholar would understand characters> <0.1325>
+1244 -> <you only need to understand the basic literacy> <0.1215>
+1245 -> <the top will allow you to comprehend percent of basic literature enough to read road signs restaurant menus to understand the basic idea of the web pages or the newspapers> <0.0763>
+1246 -> <today im going to start with eight to show you how the method works> <0.0932>
+1247 -> <you are ready> <0.1473>
+1248 -> <open your mouth as wide as possible until its square> <0.0994>
+1249 -> <you get a mouth> <0.1206>
+1250 -> <this is a person going for a walk> <0.1325>
+1251 -> <person> <0.1473>
+1252 -> <if the shape of the fire is a person with two arms on both sides as if she was yelling frantically help im on fire this symbol actually is originally from the shape of the flame but i like to think that way whichever works for you> <0.0650>
+1253 -> <this is a tree> <0.1420>
+1254 -> <tree> <0.1473>
+1255 -> <this is a mountain> <0.1163>
+1256 -> <the sun> <0.1473>
+1257 -> <the moon> <0.1473>
+1258 -> <the symbol of the door looks like a pair of saloon doors in the wild west> <0.0820>
+1259 -> <i call these eight characters radicals> <0.1163>
+1260 -> <they are the building blocks for you to create lots more characters> <0.0878>
+1261 -> <a person> <0.1473>
+1262 -> <if someone walks behind that is to follow> <0.1000>
+1263 -> <as the old saying goes two is company three is a crowd> <0.0890>
+1264 -> <if a person stretched their arms wide this person is saying it was this big> <0.0878>
+1265 -> <the person inside the mouth the person is trapped> <0.0920>
+1266 -> <hes a prisoner just like jonah inside the whale> <0.0975>
+1267 -> <one tree is a tree two trees together we have the woods> <0.0975>
+1268 -> <three trees together we create the forest> <0.1325>
+1269 -> <put a plank underneath the tree we have the foundation> <0.1660>
+1270 -> <put a mouth on the top of the tree thats idiot> <0.1074>
+1271 -> <easy to remember since a talking tree is pretty idiotic> <0.0920>
+1272 -> <remember fire> <0.0988>
+1273 -> <two fires together i get really hot> <0.1435>
+1274 -> <three fires together thats a lot of flames> <0.1000>
+1275 -> <set the fire underneath the two trees its burning> <0.1443>
+1276 -> <for us the sun is the source of prosperity> <0.1107>
+1277 -> <two suns together prosperous> <0.1206>
+1278 -> <three together thats sparkles> <0.1162>
+1279 -> <put the sun and the moon shining together its brightness> <0.1074>
+1280 -> <it also means tomorrow after a day and a night> <0.1074>
+1281 -> <the sun is coming up above the horizon sunrise> <0.1000>
+1282 -> <a door put a plank inside the door its a door bolt> <0.0890>
+1283 -> <put a mouth inside the door asking questions> <0.1107>
+1284 -> <knock knock is anyone home> <0.1163>
+1285 -> <this person is sneaking out of a door escaping evading> <0.0975>
+1286 -> <on the left we have a woman> <0.1842>
+1287 -> <two women together they have an argument> <0.1325>
+1288 -> <three women together be careful its adultery> <0.1163>
+1289 -> <so we have gone through almost characters> <0.1163>
+1290 -> <by using this method the first eight radicals will allow you to build> <0.0890>
+1291 -> <the next group of eight characters will build an extra> <0.0975>
+1292 -> <so with very little effort you will be able to learn a couple hundred characters which is the same as a chinese eight year old> <0.0782>
+1293 -> <so after we know the characters we start building phrases> <0.0975>
+1294 -> <for example the mountain and the fire together we have fire mountain its a volcano> <0.0946>
+1295 -> <we know japan is the land of the rising sun> <0.1074>
+1296 -> <this is a sun placed with the origin because japan lies to the east of china> <0.0878>
+1297 -> <so a sun origin together we build japan> <0.1443>
+1298 -> <a person behind japan what do we get> <0.1215>
+1299 -> <a japanese person> <0.1734>
+1300 -> <the character on the left is two mountains stacked on top of each other> <0.0890>
+1301 -> <in ancient china that means in exile because chinese emperors they put their political enemies in exile beyond mountains> <0.0802>
+1302 -> <nowadays exile has turned into getting out> <0.1163>
+1303 -> <a mouth which tells you where to get out is an exit> <0.0975>
+1304 -> <this is a slide to remind me that i should stop talking and get off of the stage thank you> <0.1074>
+
+
+--> average score: 0.1039

@@ -33,6 +33,9 @@ class Encoder(nn.Module):
         self.dropout = nn.Dropout(dropout)
 
     def forward(self, x, mask):
+        # NOTE: embedding creates the mapping from vocabulary to the embedding space
+        # so input is of shape (batch_size, seq_length)
+        # and output is of shape (batch_size, seq_length, embed_size)
         out = self.dropout(self.with_positional_encoding(self.word_embedding(x)))
 
         for transformer_block in self.transformer_blocks:

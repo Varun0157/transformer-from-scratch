@@ -77,6 +77,10 @@ def translate_sentence(
     # NOTE: LongTensor because we are dealing with indices, which are integers
 
     src_mask = model.make_src_mask(src_tensor)
+    # the source mask is probably not needed during inference here because I'm doing a sentence at a time. 
+    #  but it's better to have in case I switch to a dataloader
+    # also don't want to change code last min 
+
     enc_src = model.encoder(src_tensor, src_mask)
 
     trg_indexes = [fr_vocab[start_of_sent]]
@@ -127,7 +131,7 @@ def test(MODEL_LOAD_PATH):
 
         def write_and_print(line):
             out_file.write(line)
-            # print(line)
+            print(line)
 
         for index, (en_sentence, fr_tokens) in enumerate(zip(en_file, fr_file)):
             fr_tokens = (
