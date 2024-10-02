@@ -1,5 +1,7 @@
 # transformer-from-scratch
 Implementing a Transformer from scratch in PyTorch. Assignment 2 of Advanced NLP (IIIT-H Monsoon '24). 
+
+Check `docs/report` for more details on the implementation and some useful sources while implementing the models. 
 ___
 ## Dependencies
 ### General

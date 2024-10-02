@@ -1,0 +1,36 @@
+Hyperparameters:
+- learning rate:  0.0005
+- num layers:     1
+- num heads:      8
+- embedding dim:  240
+- dropout:        0.25
+
+Details:
+- device:        cuda
+- batch size:    4
+- criterion:     <class 'torch.nn.modules.loss.CrossEntropyLoss'>
+- optimizer:     <class 'torch.optim.adam.Adam'>
+- eng vocab len: 21178
+- fr vocab len:  30437
+
+epoch 0 -> train loss: 118.9331, eval loss: 118.6748	time: 150.87s
+	model saved
+epoch 1 -> train loss: 105.1112, eval loss: 115.1267	time: 148.58s
+	model saved
+epoch 2 -> train loss: 99.9756, eval loss: 113.5591	time: 157.12s
+	model saved
+epoch 3 -> train loss: 96.8044, eval loss: 112.8793	time: 156.58s
+	model saved
+epoch 4 -> train loss: 94.2412, eval loss: 112.3301	time: 135.96s
+	model saved
+epoch 5 -> train loss: 92.0144, eval loss: 111.9258	time: 140.72s
+	model saved
+epoch 6 -> train loss: 90.1566, eval loss: 111.6674	time: 157.18s
+	model saved
+epoch 7 -> train loss: 88.4447, eval loss: 111.0768	time: 145.83s
+	model saved
+epoch 8 -> train loss: 86.8349, eval loss: 111.2906	time: 136.27s
+epoch 9 -> train loss: 85.3151, eval loss: 109.5054	time: 145.30s
+	model saved
+
+training complete.
