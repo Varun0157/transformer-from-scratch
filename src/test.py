@@ -74,13 +74,12 @@ def translate_sentence(
     tokens = [start_of_sent] + en_tokenizer(sentence) + [end_of_sent]
     src_indexes = [en_vocab[token] for token in tokens]
     src_tensor = torch.LongTensor(src_indexes).unsqueeze(0).to(DEVICE)
+    # NOTE: LongTensor because we are dealing with indices, which are integers
 
     src_mask = model.make_src_mask(src_tensor)
-
     enc_src = model.encoder(src_tensor, src_mask)
 
     trg_indexes = [fr_vocab[start_of_sent]]
-
     for _ in range(max_length):
         trg_tensor = torch.LongTensor(trg_indexes).unsqueeze(0).to(DEVICE)
         trg_mask = model.make_trg_mask(trg_tensor)
@@ -99,6 +98,9 @@ def translate_sentence(
 
 def calculate_bleu(reference, hypothesis) -> float:
     smo_func = SmoothingFunction().method7
+    # added a smoothing function because https://stackoverflow.com/a/75628711
+    # using method 7 because it seems to perform best (tried 1, 3, and 7)
+
     scores = sentence_bleu([reference], hypothesis, smoothing_function=smo_func)
     assert type(scores) == float
     return scores

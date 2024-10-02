@@ -140,9 +140,14 @@ def train(model: Transformer, dataloader: DataLoader, optimizer, criterion):
 
         optimizer.zero_grad()
         output = model(en_batch, fr_batch[:, :-1])  # exclude last token for input
+        # NOTE: why exclude the last token for input? 
+        #   because the model is trained to predict the next token in the sequence
 
         output = output.reshape(-1, output.shape[2])
         fr_batch = fr_batch[:, 1:].reshape(-1)  # exclude first token for target
+        # NOTE: why exclude the first token for target?
+        #   the model is trained to predict next token based on the previous tokens
+        #   so the first token is not used as a target        
 
         loss = criterion(output, fr_batch)
         loss.backward()
