@@ -73,6 +73,8 @@ class Decoder(nn.Module):
             # NOTE: we do not feed back the output to the next layer during training
             #   we just use the mask to ensure we consider the required tokens per layer
             #   of the stack. We do have to feed it back during inference, however.
+            # NOTE: this is the cross attention mechanism. We use our queries to attend to
+            #  the keys and values from the encoder
 
         out = self.linear(x)
         return self.softmax(out)

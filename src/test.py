@@ -77,9 +77,9 @@ def translate_sentence(
     # NOTE: LongTensor because we are dealing with indices, which are integers
 
     src_mask = model.make_src_mask(src_tensor)
-    # the source mask is probably not needed during inference here because I'm doing a sentence at a time. 
+    # the source mask is probably not needed during inference here because I'm doing a sentence at a time.
     #  but it's better to have in case I switch to a dataloader
-    # also don't want to change code last min 
+    # also don't want to change code last min
 
     enc_src = model.encoder(src_tensor, src_mask)
 
@@ -90,6 +90,9 @@ def translate_sentence(
 
         output = model.decoder(trg_tensor, enc_src, src_mask, trg_mask)
         pred_token = output.argmax(2)[:, -1].item()
+        # NOTE:
+        # argmax = index of the highest value
+        # -1 = last token in the sequence
 
         trg_indexes.append(pred_token)
 

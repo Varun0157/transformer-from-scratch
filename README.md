@@ -1,6 +1,6 @@
 # transformer-from-scratch
 Implementing a Transformer from scratch in PyTorch. Assignment 2 of Advanced NLP (IIIT-H Monsoon '24). 
-
+___
 ## Dependencies
 ### General
 The dependencies can be imported in conda using the envs file in `docs`. 
@@ -25,7 +25,7 @@ Following the above, install the english and french tokenizers using
 python -m spacy download en
 python -m spacy download fr
 ```
-
+___
 ## Usage
 ## Cleaning / Processing
 The data can be cleaned by calling the following function
@@ -50,12 +50,18 @@ An example test command could be:
 ```sh
 python -m src.test "transformer_en_fr-0.3-240-3-2.pth"
 ```
-
+___
 ## Pre-trained models
 Some pre-trained models on various values of the above hyper-params can be found in [this](https://drive.google.com/drive/folders/1b8qnuLzz-PF50hJpnwir4tJ5jSFRlZSX?usp=sharing) google drive link. 
 
 Their corresponding results with loss variation and bleu score files can also be found there. 
+The `final` directories denote experimental models whose parameters were determined on tuning. They are expected to have better results than the rest. 
 
+The current best BLEU achieved with my limited compute is 0.2021. 
+___
 ## TODO
 - add more hyper-parameters as arguments
 - add corpus as argument
+
+___
+___

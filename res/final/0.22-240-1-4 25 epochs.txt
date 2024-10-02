@@ -1,0 +1,58 @@
+Hyperparameters:
+- learning rate:  0.0005
+- num layers:     1
+- num heads:      4
+- embedding dim:  240
+- dropout:        0.22
+
+Details:
+- device:        cuda
+- batch size:    4
+- criterion:     <class 'torch.nn.modules.loss.CrossEntropyLoss'>
+- optimizer:     <class 'torch.optim.adam.Adam'>
+- eng vocab len: 21178
+- fr vocab len:  30437
+
+epoch 0 -> train loss: 116.6675, eval loss: 116.4959	time: 138.39s
+	model saved
+epoch 1 -> train loss: 102.1695, eval loss: 112.4526	time: 136.96s
+	model saved
+epoch 2 -> train loss: 96.5922, eval loss: 111.6072	time: 137.01s
+	model saved
+epoch 3 -> train loss: 92.9600, eval loss: 109.9444	time: 138.32s
+	model saved
+epoch 4 -> train loss: 90.1671, eval loss: 109.8989	time: 136.04s
+	model saved
+epoch 5 -> train loss: 87.7726, eval loss: 109.5286	time: 139.32s
+	model saved
+epoch 6 -> train loss: 85.8011, eval loss: 108.9864	time: 136.88s
+	model saved
+epoch 7 -> train loss: 83.8993, eval loss: 108.1379	time: 137.39s
+	model saved
+epoch 8 -> train loss: 82.2392, eval loss: 107.1150	time: 136.69s
+	model saved
+epoch 9 -> train loss: 80.6473, eval loss: 107.0664	time: 137.21s
+	model saved
+epoch 10 -> train loss: 79.2486, eval loss: 106.3574	time: 151.58s
+	model saved
+epoch 11 -> train loss: 77.9436, eval loss: 105.8047	time: 145.72s
+	model saved
+epoch 12 -> train loss: 76.7647, eval loss: 105.9590	time: 131.86s
+epoch 13 -> train loss: 75.5798, eval loss: 105.5194	time: 130.29s
+	model saved
+epoch 14 -> train loss: 74.4861, eval loss: 105.0771	time: 124.74s
+	model saved
+epoch 15 -> train loss: 73.5184, eval loss: 105.7634	time: 130.32s
+epoch 16 -> train loss: 72.5183, eval loss: 104.6356	time: 130.75s
+	model saved
+epoch 17 -> train loss: 71.5436, eval loss: 105.1666	time: 127.53s
+epoch 18 -> train loss: 70.7320, eval loss: 105.3467	time: 126.54s
+epoch 19 -> train loss: 69.9289, eval loss: 104.5905	time: 132.06s
+	model saved
+epoch 20 -> train loss: 69.1094, eval loss: 104.6303	time: 133.73s
+epoch 21 -> train loss: 68.3588, eval loss: 104.8239	time: 133.19s
+epoch 22 -> train loss: 67.6418, eval loss: 105.0064	time: 128.50s
+epoch 23 -> train loss: 66.9992, eval loss: 104.6422	time: 127.12s
+epoch 24 -> train loss: 66.4190, eval loss: 105.1353	time: 130.16s
+
+training complete.
