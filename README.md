@@ -59,11 +59,14 @@ Some pre-trained models on various values of the above hyper-params can be found
 Their corresponding results with loss variation and bleu score files can also be found there. 
 The `final` directories denote experimental models whose parameters were determined on tuning. They are expected to have better results than the rest. 
 
-The current best BLEU achieved with my limited compute is 0.2021. The model and results corresponding to it can be found in the directory `best`. 
+The current best BLEU achieved with my limited compute is 0.2297. The model and results corresponding to it can be found in the directory `best`. 
 ___
 ## TODO
 - add more hyper-parameters as arguments
 - add corpus as argument
-
+- no target padding mask in the current code. Likely works because of a mix of
+  - tril masking most of the pads
+  - celoss ignoring pad values
+  - but still not completely correct
 ___
 ___
