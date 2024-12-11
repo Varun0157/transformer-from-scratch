@@ -68,5 +68,9 @@ ___
 - [Aladdin Persson](https://www.youtube.com/watch?v=U0s0f995w14) for the overall structure
 - [Harvard Annotated Transformer](http://nlp.seas.harvard.edu/annotated-transformer/) for the sinusoidal positional encoding (with changes)
 - [Attention is All You Need](https://arxiv.org/abs/1706.03762) for the understanding needed to frame the inference 
+
+## todo
+- [ ] target padding mask missing? 
+  - Still works because the tril masks most of the pads and the cross entropy loss ignores pad values, but should account for it for completeness.  
 ___
 ___
