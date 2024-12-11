@@ -1,4 +1,5 @@
 import os
+import logging
 
 import re
 from string import punctuation as PUNCTUATION
@@ -29,7 +30,7 @@ def clean_file(in_path: str, out_path: str) -> None:
     ) as out_file:
         for line in in_file:
             out_file.write(_clean(line) + "\n")
-    print(f"{in_path} cleaned and saved to {out_path}")
+    logging.info(f"{in_path} cleaned and saved to {out_path}")
 
 
 def main(DATA_DIR="./data/ted-talks-corpus"):
@@ -44,7 +45,7 @@ def main(DATA_DIR="./data/ted-talks-corpus"):
         if not os.path.isfile(item_path):
             continue
         clean_file(item_path, f"{CLEAN_DIR + os.path.sep + item}")
-    print(f"\n->files in {DATA_DIR} cleaned and saved")
+    logging.info(f"\n->files in {DATA_DIR} cleaned and saved")
 
 
 if __name__ == "__main__":

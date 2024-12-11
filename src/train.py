@@ -1,8 +1,12 @@
 import torchtext
 
+from src.utils import get_logging_format
+
 torchtext.disable_torchtext_deprecation_warning()
 
 import time
+from tqdm import tqdm
+import logging
 
 import argparse
 import torch
@@ -37,25 +41,35 @@ LEARNING_RATE = 5e-4
 def print_hyperparams(
     NUM_LAYERS: int, NUM_HEADS: int, EMB_DIM: int, DROPOUT: float
 ) -> None:
-    print("Hyperparameters:")
-    print(f"- learning rate:  {LEARNING_RATE}")
-    print(f"- num layers:     {NUM_LAYERS}")
-    print(f"- num heads:      {NUM_HEADS}")
-    print(f"- embedding dim:  {EMB_DIM}")
-    print(f"- dropout:        {DROPOUT}")
+    params = {
+        "learning rate": LEARNING_RATE,
+        "num layers": NUM_LAYERS,
+        "num heads": NUM_HEADS,
+        "embedding dim": EMB_DIM,
+        "dropout": DROPOUT,
+    }
+
+    logging.info("Hyperparameters:")
+    for key, val in params.items():
+        logging.info(f"- {key}:\t\t{val}")
     print()
 
 
 def print_training_details(
     device, batch_size, criterion, optimizer, en_vocab, fr_vocab
 ):
-    print("Details:")
-    print(f"- device:        {device}")
-    print(f"- batch size:    {batch_size}")
-    print(f"- criterion:     {type(criterion)}")
-    print(f"- optimizer:     {type(optimizer)}")
-    print(f"- eng vocab len: {len(en_vocab)}")
-    print(f"- fr vocab len:  {len(fr_vocab)}")
+    details = {
+        "device": device,
+        "batch size": batch_size,
+        "criterion": type(criterion),
+        "optimizer": type(optimizer),
+        "eng vocab len": len(en_vocab),
+        "fr vocab len": len(fr_vocab),
+    }
+
+    logging.info("Details: ")
+    for key, val in details.items():
+        logging.info(f"- {key}:\t\t{val}")
     print()
 
 
@@ -129,13 +143,15 @@ def build_vocab(filepath, tokenizer):
     return vocab
 
 
-def train(model: Transformer, dataloader: DataLoader, optimizer, criterion):
+def train(model: Transformer, dataloader: DataLoader, optimizer, criterion, epoch: int):
     num_items = len(dataloader.dataset)  # type: ignore
 
     model.train()
     total_loss = 0
 
-    for _, (en_batch, fr_batch) in enumerate(dataloader):
+    for _, (en_batch, fr_batch) in tqdm(
+        enumerate(dataloader), desc=f"train epoch {epoch}"
+    ):
         en_batch, fr_batch = en_batch.to(DEVICE), fr_batch.to(DEVICE)
 
         optimizer.zero_grad()
@@ -159,12 +175,14 @@ def train(model: Transformer, dataloader: DataLoader, optimizer, criterion):
     return avg_loss
 
 
-def eval(model: Transformer, dataloader: DataLoader, criterion):
+def eval(model: Transformer, dataloader: DataLoader, criterion, epoch: int):
     num_items = len(dataloader.dataset)  # type: ignore
     model.eval()
     total_loss = 0
 
-    for _, (en_batch, fr_batch) in enumerate(dataloader):
+    for _, (en_batch, fr_batch) in tqdm(
+        enumerate(dataloader), desc=f"eval epoch {epoch}"
+    ):
         en_batch, fr_batch = en_batch.to(DEVICE), fr_batch.to(DEVICE)
 
         output = model(en_batch, fr_batch[:, :-1])  # exclude last token for input
@@ -262,21 +280,21 @@ def train_and_save(
     print_training_details(DEVICE, BATCH_SIZE, criterion, optimizer, en_vocab, fr_vocab)
 
     # training loop
-    best_loss = float("inf")
+    best_eval_loss = float("inf")
     for epoch in range(NUM_EPOCHS):
         start_time = time.time()
-        train_loss = train(model, train_loader, optimizer, criterion)
-        eval_loss = eval(model, eval_loader, criterion)
+        train_loss = train(model, train_loader, optimizer, criterion, epoch)
+        eval_loss = eval(model, eval_loader, criterion, epoch)
         epoch_time = time.time() - start_time
 
         print(
             f"epoch {epoch} -> train loss: {train_loss:.4f}, eval loss: {eval_loss:.4f}\ttime: {epoch_time:.2f}s"
         )
 
-        if eval_loss >= best_loss:
+        if eval_loss >= best_eval_loss:
             continue
 
-        best_loss = eval_loss
+        best_eval_loss = eval_loss
         save_model(model, en_vocab, fr_vocab, DROPOUT, EMB_DIM, NUM_LAYERS, NUM_HEADS)
         print(f"\tmodel saved")
 
@@ -296,7 +314,6 @@ def main():
         "--num_heads", type=int, required=True, help="number of attention heads"
     )
 
-    # Parse the arguments
     args = parser.parse_args()
 
     assert args.dropout >= 0 and args.dropout <= 1, "dropout must be between 0 and 1"
@@ -304,7 +321,6 @@ def main():
     assert args.num_layers > 0, "number of layers must be greater than 0"
     assert args.num_heads > 0, "number of heads must be greater than 0"
 
-    # Call the train_and_save function with the parsed arguments
     train_and_save(
         DROPOUT=args.dropout,
         EMB_DIM=args.embed_dim,
@@ -314,4 +330,6 @@ def main():
 
 
 if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO, format=get_logging_format())
+
     main()

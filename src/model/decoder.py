@@ -1,6 +1,6 @@
 import torch.nn as nn
 
-from src.utils import PositionalEncoding, SelfAttention, TransformerBlock
+from src.model.utils import PositionalEncoding, SelfAttention, TransformerBlock
 
 
 class DecoderBlock(nn.Module):

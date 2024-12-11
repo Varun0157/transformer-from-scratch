@@ -1,6 +1,9 @@
 import sys
+import logging
 
 import torchtext
+
+from src.utils import get_logging_format
 
 torchtext.disable_torchtext_deprecation_warning()
 
@@ -136,7 +139,7 @@ def test(MODEL_LOAD_PATH):
 
         def write_and_print(line):
             out_file.write(line)
-            print(line)
+            logging.info(line)
 
         for index, (en_sentence, fr_tokens) in enumerate(zip(en_file, fr_file)):
             fr_tokens = (
@@ -153,7 +156,7 @@ def test(MODEL_LOAD_PATH):
             write_and_print(f"{index} -> <{en_sentence.strip()}> <{bleu_score:.4f}>\n")
 
             if index % 100 == 0:
-                print("processed so far: ", index)
+                logging.info("processed so far: ", index)
 
         assert num_sent != 0
         avg_bleu = total_bleu / num_sent
@@ -163,7 +166,7 @@ def test(MODEL_LOAD_PATH):
 def main():
     # read the model load path as the only command line argument
     if len(sys.argv) != 2:
-        print("Usage: python test.py <model_load_path>")
+        logging.error("Usage: python test.py <model_load_path>")
         sys.exit(1)
 
     model_path = sys.argv[1]
@@ -173,4 +176,5 @@ def main():
 
 
 if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO, format=get_logging_format())
     main()

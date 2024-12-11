@@ -1,6 +1,6 @@
 import torch.nn as nn
 
-from src.utils import PositionalEncoding, TransformerBlock
+from src.model.utils import PositionalEncoding, TransformerBlock
 
 
 class Encoder(nn.Module):
