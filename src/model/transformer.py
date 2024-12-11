@@ -1,8 +1,8 @@
 import torch
 import torch.nn as nn
 
-from src.decoder import Decoder
-from src.encoder import Encoder
+from src.model.decoder import Decoder
+from src.model.encoder import Encoder
 
 
 # major source: https://www.youtube.com/watch?v=U0s0f995w14
