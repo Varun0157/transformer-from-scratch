@@ -1,7 +1,10 @@
 # transformer-from-scratch
-Implementing a Transformer from scratch in PyTorch. Assignment 2 of Advanced NLP (IIIT-H Monsoon '24). 
+*Assignment 2* of *Advanced Natural Language Processing* (IIIT-Hyderabad, Monsoon '24)
 
-Check `docs/report` for more details on the implementation and some useful sources while implementing the models. 
+Implementing a Transformer from scratch in PyTorch for the task of English to French translation. 
+
+Check [the report](./docs/Report.pdf) for more details on the implementation, some useful sources while implementing the models, and hyperparameter analysis and tuning. 
+
 ___
 ## Dependencies
 ### General
@@ -61,12 +64,9 @@ The `final` directories denote experimental models whose parameters were determi
 
 The current best BLEU achieved with my limited compute is 0.2297. The model and results corresponding to it can be found in the directory `best`. 
 ___
-## TODO
-- add more hyper-parameters as arguments
-- add corpus as argument
-- no target padding mask in the current code. Likely works because of a mix of
-  - tril masking most of the pads
-  - celoss ignoring pad values
-  - but still not completely correct
+## References
+- [Aladdin Persson](https://www.youtube.com/watch?v=U0s0f995w14) for the overall structure
+- [Harvard Annotated Transformer](http://nlp.seas.harvard.edu/annotated-transformer/) for the sinusoidal positional encoding (with changes)
+- [Attention is All You Need](https://arxiv.org/abs/1706.03762) for the understanding needed to frame the inference 
 ___
 ___
